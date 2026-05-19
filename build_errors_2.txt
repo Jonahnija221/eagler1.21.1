@@ -1,0 +1,1089 @@
+
+> Task :compileJava
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:878: error: Wrapping has protected access in DensityFunctionTypes
+		public DensityFunctionTypes.Wrapping.Type type() {
+		                           ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:698: error: Wrapping has protected access in DensityFunctionTypes
+		public DensityFunctionTypes.Wrapping.Type type() {
+		                           ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:831: error: Wrapping has protected access in DensityFunctionTypes
+		public DensityFunctionTypes.Wrapping.Type type() {
+		                           ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:592: error: Wrapping has protected access in DensityFunctionTypes
+		public DensityFunctionTypes.Wrapping.Type type() {
+		                           ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:647: error: Wrapping has protected access in DensityFunctionTypes
+		public DensityFunctionTypes.Wrapping.Type type() {
+		                           ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/NumberRange.java:39: error: incompatible types: inference variable R#1 has incompatible bounds
+			.xmap(either -> either.map(range -> range, value -> rangeFactory.create(Optional.of(value), Optional.of(value))), range -> {
+			     ^
+    equality constraints: T
+    lower bounds: Number
+  where R#1,L,T,R#2 are type-variables:
+    R#1 extends Object declared in method <L,R#1>right(R#1)
+    L extends Object declared in method <L,R#1>right(R#1)
+    T extends Number declared in method <T,R#2>createCodec(Codec<T>,Factory<T,R#2>)
+    R#2 extends NumberRange<T> declared in method <T,R#2>createCodec(Codec<T>,Factory<T,R#2>)
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/NumberRange.java:97: error: incompatible types: inference variable T#1 has incompatible bounds
+				return Optional.of((Number)converter.apply(string));
+				                  ^
+    equality constraints: T#2
+    lower bounds: Number
+  where T#1,T#2 are type-variables:
+    T#1 extends Object declared in method <T#1>of(T#1)
+    T#2 extends Number declared in method <T#2>fromStringReader(StringReader,Function<String,T#2>,Supplier<DynamicCommandExceptionType>)
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/NumberRange.java:120: error: non-static type variable T cannot be referenced from a static context
+		public static final Codec<NumberRange.DoubleRange> CODEC = NumberRange.createCodec((Codec<T>)Codec.DOUBLE, NumberRange.DoubleRange::new);
+		                                                                                          ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/NumberRange.java:168: error: non-static type variable T cannot be referenced from a static context
+				reader, NumberRange.DoubleRange::create, Double::parseDouble, CommandSyntaxException.BUILT_IN_EXCEPTIONS::readerInvalidDouble, (Function<T, T>)mapper
+				                                                                                                                                         ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/NumberRange.java:168: error: non-static type variable T cannot be referenced from a static context
+				reader, NumberRange.DoubleRange::create, Double::parseDouble, CommandSyntaxException.BUILT_IN_EXCEPTIONS::readerInvalidDouble, (Function<T, T>)mapper
+				                                                                                                                                            ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/NumberRange.java:180: error: non-static type variable T cannot be referenced from a static context
+		public static final Codec<NumberRange.IntRange> CODEC = NumberRange.createCodec((Codec<T>)Codec.INT, NumberRange.IntRange::new);
+		                                                                                       ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/NumberRange.java:228: error: non-static type variable T cannot be referenced from a static context
+				reader, NumberRange.IntRange::parse, Integer::parseInt, CommandSyntaxException.BUILT_IN_EXCEPTIONS::readerInvalidInt, (Function<T, T>)converter
+				                                                                                                                                ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/NumberRange.java:228: error: non-static type variable T cannot be referenced from a static context
+				reader, NumberRange.IntRange::parse, Integer::parseInt, CommandSyntaxException.BUILT_IN_EXCEPTIONS::readerInvalidInt, (Function<T, T>)converter
+				                                                                                                                                   ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/StringIdentifiable.java:67: error: incompatible types: bad return type in lambda expression
+			return name -> name == null ? null : (StringIdentifiable)map.get(name);
+			                                     ^
+    bad type in conditional expression
+      StringIdentifiable cannot be converted to T
+  where T is a type-variable:
+    T extends StringIdentifiable declared in method <T>createMapper(T[],Function<String,String>)
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/tag/TagKey.java:42: error: incompatible types: bad type in conditional expression
+		return this.isOf(registryRef) ? Optional.of(this) : Optional.empty();
+		                                           ^
+    inference variable T#1 has incompatible bounds
+      equality constraints: TagKey<E>
+      lower bounds: TagKey<T#2>
+  where T#1,E,T#2 are type-variables:
+    T#1 extends Object declared in method <T#1>of(T#1)
+    E extends Object declared in method <E>tryCast(RegistryKey<? extends Registry<E>>)
+    T#2 extends Object declared in record TagKey
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/RegistryKey.java:102: error: incompatible types: bad type in conditional expression
+		return this.isOf(registryRef) ? Optional.of(this) : Optional.empty();
+		                                           ^
+    inference variable T#1 has incompatible bounds
+      equality constraints: RegistryKey<E>
+      lower bounds: RegistryKey<T#2>
+  where T#1,E,T#2 are type-variables:
+    T#1 extends Object declared in method <T#1>of(T#1)
+    E extends Object declared in method <E>tryCast(RegistryKey<? extends Registry<E>>)
+    T#2 extends Object declared in class RegistryKey
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/Registry.java:192: error: cannot find symbol
+				entry -> entry.registryKey().getValue()
+				              ^
+  symbol:   method registryKey()
+  location: variable entry of type Object
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/Registry.java:430: error: incompatible types: Iterator<Reference<T>> cannot be converted to Iterator<RegistryEntry<T>>
+				return Registry.this.streamEntries().map(entry -> entry).iterator();
+				                                                                 ^
+  where T is a type-variable:
+    T extends Object declared in interface Registry
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/ComponentPredicate.java:23: error: incompatible types: incompatible parameter types in method reference
+			map -> new ComponentPredicate((List<Component<?>>)map.entrySet().stream().map(Component::of).collect(Collectors.toList())),
+			                                                                              ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/component/Component.java:14: error: non-static type variable T cannot be referenced from a static context
+			return read(registryByteBuf, (ComponentType<T>)componentType);
+			                                            ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/component/Component.java:22: error: non-static type variable T cannot be referenced from a static context
+			write(registryByteBuf, (Component<T>)component);
+			                                  ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/component/Component.java:32: error: non-static type variable T cannot be referenced from a static context
+		return of((ComponentType<T>)entry.getKey(), entry.getValue());
+		                         ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/component/ComponentType.java:102: error: incompatible types: Registry<ComponentType<?>> cannot be converted to Registry<SimpleDataComponentType<T>>
+				return Util.registryValueToString((Registry<ComponentType.Builder.SimpleDataComponentType<T>>)Registries.DATA_COMPONENT_TYPE, this);
+				                                                                                                        ^
+  where T is a type-variable:
+    T extends Object declared in class SimpleDataComponentType
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/BlockView.java:33: error: incompatible types: bad type in conditional expression
+		return blockEntity != null && blockEntity.getType() == type ? Optional.of(blockEntity) : Optional.empty();
+		                                                                         ^
+    inference variable T#1 has incompatible bounds
+      equality constraints: T#2
+      lower bounds: BlockEntity
+  where T#1,T#2 are type-variables:
+    T#1 extends Object declared in method <T#1>of(T#1)
+    T#2 extends BlockEntity declared in method <T#2>getBlockEntity(BlockPos,BlockEntityType<T#2>)
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/StatePredicate.java:126: error: incompatible types: Comparable cannot be converted to T
+			return optional.isPresent() && comparable.compareTo((Comparable)optional.get()) == 0;
+			                                                    ^
+  where T is a type-variable:
+    T extends Comparable<T> declared in method <T>test(State<?,?>,Property<T>)
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/StatePredicate.java:151: error: incompatible types: Comparable cannot be converted to T
+				if (optional.isEmpty() || comparable.compareTo((Comparable)optional.get()) < 0) {
+				                                               ^
+  where T is a type-variable:
+    T extends Comparable<T> declared in method <T>test(State<?,?>,Property<T>)
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/StatePredicate.java:158: error: incompatible types: Comparable cannot be converted to T
+				if (optional.isEmpty() || comparable.compareTo((Comparable)optional.get()) > 0) {
+				                                               ^
+  where T is a type-variable:
+    T extends Comparable<T> declared in method <T>test(State<?,?>,Property<T>)
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/state/State.java:99: error: incompatible types: bad type in conditional expression
+		return comparable == null ? Optional.empty() : Optional.of((Comparable)property.getType().cast(comparable));
+		                                                          ^
+    inference variable T#1 has incompatible bounds
+      equality constraints: T#2
+      lower bounds: Comparable
+  where T#1,T#2 are type-variables:
+    T#1 extends Object declared in method <T#1>of(T#1)
+    T#2 extends Comparable<T#2> declared in method <T#2>getOrEmpty(Property<T#2>)
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/state/State.java:163: error: incompatible types: inference variable E has incompatible bounds
+		return codec.dispatch(
+		                     ^
+    equality constraints: S#1
+    lower bounds: S#2,A#3,State,S#1
+  where E,A#1,S#1,O,S#2,A#2,A#3 are type-variables:
+    E extends Object declared in method <E>dispatch(String,Function<? super E,? extends A#1>,Function<? super A#1,? extends MapCodec<? extends E>>)
+    A#1 extends Object declared in interface Codec
+    S#1 extends State<O,S#1> declared in method <O,S#1>createCodec(Codec<O>,Function<O,S#1>)
+    O extends Object declared in method <O,S#1>createCodec(Codec<O>,Function<O,S#1>)
+    S#2 extends Object declared in method <S#2>xmap(Function<? super A#2,? extends S#2>,Function<? super S#2,? extends A#2>)
+    A#2 extends Object declared in class MapCodec
+    A#3 extends Object declared in method <A#3>unit(A#3)
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/math/BlockPos.java:575: error: incompatible types: inference variable L has incompatible bounds
+					nextQueuer.accept(blockPos, (Consumer)queuedPos -> queue.add(Pair.of(queuedPos, j + 1)));
+					                                                        ^
+    equality constraints: BlockPos
+    lower bounds: Object
+  where L,R are type-variables:
+    L extends Object declared in method <L,R>of(L,R)
+    R extends Object declared in method <L,R>of(L,R)
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/network/codec/PacketCodec.java:400: error: non-static type variable V cannot be referenced from a static context
+				((PacketCodec)this.codecSupplier.get()).encode(object, (V)object2);
+				                                                        ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/network/codec/PacketCodec.java:415: error: incompatible types: PacketCodec<B,V> cannot be converted to PacketCodec<S,V>
+		return this;
+		       ^
+  where B,V,S are type-variables:
+    B extends Object declared in interface PacketCodec
+    V extends Object declared in interface PacketCodec
+    S extends B declared in method <S>cast()
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/world/ServerWorld.java:493: error: cannot find symbol
+		((List)this.players.stream().filter(LivingEntity::isSleeping).collect(Collectors.toList())).forEach(player -> player.wakeUp(false, false));
+		                                                                                                                    ^
+  symbol:   method wakeUp(boolean,boolean)
+  location: variable player of type Object
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/world/ServerWorld.java:1822: error: incompatible types: cannot infer type-variable(s) T,U
+				.sorted(Comparator.comparing(Entry::getIntValue).reversed())
+				                            ^
+    (argument mismatch; invalid method reference
+      method getIntValue in interface Entry<K> cannot be applied to given types
+        required: no arguments
+        found:    Object
+        reason: actual and formal argument lists differ in length)
+  where T,U,K are type-variables:
+    T extends Object declared in method <T,U>comparing(Function<? super T,? extends U>)
+    U extends Comparable<? super U> declared in method <T,U>comparing(Function<? super T,? extends U>)
+    K extends Object declared in interface Entry
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/MinecraftServer.java:905: error: executeTask(ServerTask) in MinecraftServer cannot override executeTask(R) in ReentrantThreadExecutor
+	protected void executeTask(ServerTask serverTask) {
+	               ^
+  attempting to assign weaker access privileges; was public
+  where R is a type-variable:
+    R extends Runnable declared in class ReentrantThreadExecutor
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/text/Decoration.java:120: error: reference to createIdToValueFunction is ambiguous
+		private static final IntFunction<Decoration.Parameter> BY_ID = ValueLists.createIdToValueFunction(
+		                                                                         ^
+  both method <T#1>createIdToValueFunction(ToIntFunction<T#1>,T#1[],T#1) in ValueLists and method <T#2>createIdToValueFunction(ToIntFunction<T#2>,T#2[],OutOfBoundsHandling) in ValueLists match
+  where T#1,T#2 are type-variables:
+    T#1 extends Object declared in method <T#1>createIdToValueFunction(ToIntFunction<T#1>,T#1[],T#1)
+    T#2 extends Object declared in method <T#2>createIdToValueFunction(ToIntFunction<T#2>,T#2[],OutOfBoundsHandling)
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/text/Decoration.java:120: error: incompatible types: inference variable T has incompatible bounds
+		private static final IntFunction<Decoration.Parameter> BY_ID = ValueLists.createIdToValueFunction(
+		                                                                                                 ^
+    equality constraints: Parameter
+    lower bounds: OutOfBoundsHandling,Parameter
+  where T is a type-variable:
+    T extends Object declared in method <T>createIdToValueFunction(ToIntFunction<T>,T[],T)
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/RegistryWrapper.java:130: error: incompatible types: Map<RegistryKey<? extends Registry<? extends CAP#1>>,Impl<CAP#2>> cannot be converted to Map<RegistryKey<? extends Registry<?>>,Impl<?>>
+			final Map<RegistryKey<? extends Registry<?>>, RegistryWrapper.Impl<?>> map = (Map<RegistryKey<? extends Registry<?>>, RegistryWrapper.Impl<?>>)wrappers.collect(
+			                                                                                                                                                               ^
+  where CAP#1,CAP#2 are fresh type-variables:
+    CAP#1 extends Object from capture of ?
+    CAP#2 extends Object from capture of ?
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/biome/GenerationSettings.java:122: error: incompatible types: ImmutableMap<Carver,Direct> cannot be converted to Map<Carver,RegistryEntryList<ConfiguredCarver<?>>>
+					.collect(ImmutableMap.toImmutableMap(Entry::getKey, entry -> RegistryEntryList.of((List)entry.getValue()))),
+					        ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/biome/GenerationSettings.java:123: error: incompatible types: ImmutableList<Direct<PlacedFeature>> cannot be converted to List<RegistryEntryList<PlacedFeature>>
+				(List<RegistryEntryList<PlacedFeature>>)this.indexedFeaturesList.stream().map(RegistryEntryList::of).collect(ImmutableList.toImmutableList())
+				                                                                                                            ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:178: error: Beardifier has protected access in DensityFunctionTypes
+				DensityFunctionTypes.add(noiseRouter2.finalDensity(), DensityFunctionTypes.Beardifier.INSTANCE)
+				                                                                          ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:450: error: Wrapping has protected access in DensityFunctionTypes
+		if (function instanceof DensityFunctionTypes.Wrapping wrapping) {
+		                                            ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:460: error: BlendAlpha has protected access in DensityFunctionTypes
+				if (function == DensityFunctionTypes.BlendAlpha.INSTANCE) {
+				                                    ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:464: error: BlendOffset has protected access in DensityFunctionTypes
+				if (function == DensityFunctionTypes.BlendOffset.INSTANCE) {
+				                                    ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:469: error: Beardifier has protected access in DensityFunctionTypes
+			if (function == DensityFunctionTypes.Beardifier.INSTANCE) {
+			                                    ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:480: error: BlendAlpha has protected access in DensityFunctionTypes
+			return DensityFunctionTypes.BlendAlpha.INSTANCE;
+			                           ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:510: error: BlendAlpha has protected access in DensityFunctionTypes
+			return DensityFunctionTypes.BlendAlpha.CODEC;
+			                           ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:517: error: BlendOffset has protected access in DensityFunctionTypes
+			return DensityFunctionTypes.BlendOffset.INSTANCE;
+			                           ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:547: error: BlendOffset has protected access in DensityFunctionTypes
+			return DensityFunctionTypes.BlendOffset.CODEC;
+			                           ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:593: error: Wrapping has protected access in DensityFunctionTypes
+			return DensityFunctionTypes.Wrapping.Type.CACHE2D;
+			                           ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:648: error: Wrapping has protected access in DensityFunctionTypes
+			return DensityFunctionTypes.Wrapping.Type.CACHE_ONCE;
+			                           ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:699: error: Wrapping has protected access in DensityFunctionTypes
+			return DensityFunctionTypes.Wrapping.Type.CACHE_ALL_IN_CELL;
+			                           ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:832: error: Wrapping has protected access in DensityFunctionTypes
+			return DensityFunctionTypes.Wrapping.Type.INTERPOLATED;
+			                           ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:879: error: Wrapping has protected access in DensityFunctionTypes
+			return DensityFunctionTypes.Wrapping.Type.FLAT_CACHE;
+			                           ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/BlendingData.java:72: error: cannot find symbol
+					Codec.INT.fieldOf("min_section").forGetter(blendingData -> blendingData.oldHeightLimit.getBottomSectionCoord()),
+					                                                                       ^
+  symbol:   variable oldHeightLimit
+  location: variable blendingData of type Object
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/BlendingData.java:73: error: cannot find symbol
+					Codec.INT.fieldOf("max_section").forGetter(blendingData -> blendingData.oldHeightLimit.getTopSectionCoord()),
+					                                                                       ^
+  symbol:   variable oldHeightLimit
+  location: variable blendingData of type Object
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/BlendingData.java:76: error: cannot find symbol
+							blendingData -> DoubleStream.of(blendingData.surfaceHeights).anyMatch(height -> height != Double.MAX_VALUE)
+							                                            ^
+  symbol:   variable surfaceHeights
+  location: variable blendingData of type Object
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/BlendingData.java:77: error: cannot find symbol
+								? Optional.of(blendingData.surfaceHeights)
+								                          ^
+  symbol:   variable surfaceHeights
+  location: variable blendingData of type Object
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/BlendingData.java:83: error: incompatible types: invalid method reference
+		.comapFlatMap(BlendingData::validate, Function.identity());
+		              ^
+    incompatible types: Object cannot be converted to BlendingData
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/biome/source/util/MultiNoiseUtil.java:90: error: incompatible types: cannot infer type-variable(s) O
+							instance -> instance.group(MultiNoiseUtil.NoiseHypercube.CODEC.fieldOf("parameters").forGetter(Pair::getFirst), entryCodec.forGetter(Pair::getSecond))
+							                          ^
+    (argument mismatch; invalid method reference
+      method getFirst in class Pair<F,S> cannot be applied to given types
+        required: no arguments
+        found:    T
+        reason: actual and formal argument lists differ in length)
+  where O,A,T,F,S are type-variables:
+    O extends Object declared in method <O>forGetter(Function<O,A>)
+    A extends Object declared in class MapCodec
+    T extends Object declared in method <T>createCodec(MapCodec<T>)
+    F extends Object declared in class Pair
+    S extends Object declared in class Pair
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/biome/source/util/MultiNoiseUtil.java:95: error: incompatible types: cannot infer type-variable(s) S
+				.xmap(MultiNoiseUtil.Entries::new, MultiNoiseUtil.Entries::getEntries);
+				     ^
+    (argument mismatch; invalid constructor reference
+      constructor Entries in class Entries<T#2> cannot be applied to given types
+        required: List
+        found:    List<T#1>
+        reason: cannot infer type-variable(s) T#2
+          (argument mismatch; List<T#1> cannot be converted to List<Pair<NoiseHypercube,T#2>>))
+  where S,A,T#1,T#2 are type-variables:
+    S extends Object declared in method <S>xmap(Function<? super A,? extends S>,Function<? super S,? extends A>)
+    A extends Object declared in interface Codec
+    T#1 extends Object declared in method <T#1>createCodec(MapCodec<T#1>)
+    T#2 extends Object declared in class Entries
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/nbt/NbtByteArray.java:18: error: NbtByteArray is not abstract and does not override abstract method remove(int) in AbstractNbtList
+public class NbtByteArray extends AbstractNbtList<NbtByte> {
+       ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/nbt/NbtLongArray.java:19: error: NbtLongArray is not abstract and does not override abstract method set(int,NbtLong) in AbstractNbtList
+public class NbtLongArray extends AbstractNbtList<NbtLong> {
+       ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/network/message/LastSeenMessageList.java:54: error: reference to Indexed is ambiguous
+			this(buf.readCollection(PacketByteBuf.getMaxValidator(ArrayList::new, 20), MessageSignatureData.Indexed::fromBuf));
+			^
+  both constructor net.minecraft.network.message.LastSeenMessageList.Indexed(PacketByteBuf) in net.minecraft.network.message.LastSeenMessageList.Indexed and constructor net.minecraft.network.message.LastSeenMessageList.Indexed(List<net.minecraft.network.message.MessageSignatureData.Indexed>) in net.minecraft.network.message.LastSeenMessageList.Indexed match
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/network/message/LastSeenMessageList.java:54: error: incompatible types: inference variable C has incompatible bounds
+			this(buf.readCollection(PacketByteBuf.getMaxValidator(ArrayList::new, 20), MessageSignatureData.Indexed::fromBuf));
+			                       ^
+    upper bounds: PacketByteBuf,Object,Collection<T>
+    lower bounds: ArrayList<E>
+  where C,T,E are type-variables:
+    C extends Collection<T> declared in method <T,C>readCollection(IntFunction<C>,PacketDecoder<? super PacketByteBuf,T>)
+    T extends Object declared in method <T,C>readCollection(IntFunction<C>,PacketDecoder<? super PacketByteBuf,T>)
+    E extends Object declared in class ArrayList
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/item/map/MapState.java:143: error: incompatible types: Object cannot be converted to MapBannerMarker
+		for (MapBannerMarker mapBannerMarker : (List)MapBannerMarker.LIST_CODEC
+		                                       ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/GameMode.java:19: error: reference to createIdToValueFunction is ambiguous
+	private static final IntFunction<GameMode> BY_ID = ValueLists.createIdToValueFunction(GameMode::getId, values(), ValueLists.OutOfBoundsHandling.ZERO);
+	                                                             ^
+  both method <T#1>createIdToValueFunction(ToIntFunction<T#1>,T#1[],T#1) in ValueLists and method <T#2>createIdToValueFunction(ToIntFunction<T#2>,T#2[],OutOfBoundsHandling) in ValueLists match
+  where T#1,T#2 are type-variables:
+    T#1 extends Object declared in method <T#1>createIdToValueFunction(ToIntFunction<T#1>,T#1[],T#1)
+    T#2 extends Object declared in method <T#2>createIdToValueFunction(ToIntFunction<T#2>,T#2[],OutOfBoundsHandling)
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/GameMode.java:19: error: incompatible types: inference variable T has incompatible bounds
+	private static final IntFunction<GameMode> BY_ID = ValueLists.createIdToValueFunction(GameMode::getId, values(), ValueLists.OutOfBoundsHandling.ZERO);
+	                                                                                     ^
+    equality constraints: GameMode
+    lower bounds: OutOfBoundsHandling,GameMode
+  where T is a type-variable:
+    T extends Object declared in method <T>createIdToValueFunction(ToIntFunction<T>,T[],T)
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/data/TrackedDataHandler.java:16: error: incompatible types: TrackedDataHandler is not a functional interface
+		return () -> codec;
+		       ^
+    multiple non-overriding abstract methods found in interface TrackedDataHandler
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/collection/DefaultedList.java:28: error: incompatible types: cannot infer type arguments for DefaultedList<>
+		return new DefaultedList<>(Arrays.asList(objects), defaultValue);
+		                        ^
+    reason: inference variable E#1 has incompatible bounds
+      equality constraints: E#2,T
+      lower bounds: Object,E#2
+  where E#1,E#2,T are type-variables:
+    E#1 extends Object declared in class DefaultedList
+    E#2 extends Object declared in method <E#2>ofSize(int,E#2)
+    T extends Object declared in method <T>asList(T...)
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/component/type/AttributeModifierSlot.java:25: error: reference to createIdToValueFunction is ambiguous
+	public static final IntFunction<AttributeModifierSlot> ID_TO_VALUE = ValueLists.createIdToValueFunction(
+	                                                                               ^
+  both method <T#1>createIdToValueFunction(ToIntFunction<T#1>,T#1[],T#1) in ValueLists and method <T#2>createIdToValueFunction(ToIntFunction<T#2>,T#2[],OutOfBoundsHandling) in ValueLists match
+  where T#1,T#2 are type-variables:
+    T#1 extends Object declared in method <T#1>createIdToValueFunction(ToIntFunction<T#1>,T#1[],T#1)
+    T#2 extends Object declared in method <T#2>createIdToValueFunction(ToIntFunction<T#2>,T#2[],OutOfBoundsHandling)
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/component/type/AttributeModifierSlot.java:25: error: incompatible types: inference variable T has incompatible bounds
+	public static final IntFunction<AttributeModifierSlot> ID_TO_VALUE = ValueLists.createIdToValueFunction(
+	                                                                                                       ^
+    equality constraints: AttributeModifierSlot
+    lower bounds: OutOfBoundsHandling,AttributeModifierSlot
+  where T is a type-variable:
+    T extends Object declared in method <T>createIdToValueFunction(ToIntFunction<T>,T[],T)
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/LootPool.java:122: error: Builder is not abstract and does not override abstract method getThisConditionConsumingBuilder() in LootConditionConsumingBuilder
+	public static class Builder implements LootFunctionConsumingBuilder<LootPool.Builder>, LootConditionConsumingBuilder<LootPool.Builder> {
+	              ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/resource/metadata/ResourceMetadata.java:80: error: incompatible types: inference variable T#1 has incompatible bounds
+					return Optional.ofNullable(immutableMap.get(reader));
+					                          ^
+    equality constraints: T#2
+    lower bounds: Object
+  where T#1,T#2 are type-variables:
+    T#1 extends Object declared in method <T#1>ofNullable(T#1)
+    T#2 extends Object declared in method <T#2>decode(ResourceMetadataReader<T#2>)
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/ServerConfigList.java:145: error: incompatible types: ServerConfigEntry<K> cannot be converted to V
+							this.map.put(this.toString(serverConfigEntry.getKey()), serverConfigEntry);
+							                                                        ^
+  where K,V are type-variables:
+    K extends Object declared in class ServerConfigList
+    V extends ServerConfigEntry<K> declared in class ServerConfigList
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/network/ClientConnection.java:349: error: cannot find symbol
+			this.queuedTasks.add((Consumer)connection -> connection.sendImmediately(packet, callbacks, flush));
+			                                                       ^
+  symbol:   method sendImmediately(Packet<CAP#1>,PacketCallbacks,boolean)
+  location: variable connection of type Object
+  where CAP#1 is a fresh type-variable:
+    CAP#1 extends PacketListener from capture of ?
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/network/ServerPlayNetworkHandler.java:787: error: incompatible types: List<RawFilteredPair<MutableText>> cannot be converted to List<RawFilteredPair<Text>>
+			List<RawFilteredPair<Text>> list = pages.stream().map(page -> this.toRawFilteredPair(page).map(Text::literal)).toList();
+			                                                                                                                     ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/network/ChunkDataSender.java:86: error: incompatible types: invalid method reference
+				.mapToLong(Long::longValue)
+				           ^
+    method longValue in class Long cannot be applied to given types
+      required: no arguments
+      found:    Object
+      reason: actual and formal argument lists differ in length
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/network/message/ArgumentSignatureDataMap.java:21: error: reference to ArgumentSignatureDataMap is ambiguous
+		this(buf.readCollection(PacketByteBuf.getMaxValidator(ArrayList::new, 8), ArgumentSignatureDataMap.Entry::new));
+		^
+  both constructor ArgumentSignatureDataMap(PacketByteBuf) in ArgumentSignatureDataMap and constructor ArgumentSignatureDataMap(List<Entry>) in ArgumentSignatureDataMap match
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/network/message/ArgumentSignatureDataMap.java:21: error: incompatible types: inference variable C has incompatible bounds
+		this(buf.readCollection(PacketByteBuf.getMaxValidator(ArrayList::new, 8), ArgumentSignatureDataMap.Entry::new));
+		                       ^
+    upper bounds: PacketByteBuf,Object,Collection<T>
+    lower bounds: ArrayList<E>
+  where C,T,E are type-variables:
+    C extends Collection<T> declared in method <T,C>readCollection(IntFunction<C>,PacketDecoder<? super PacketByteBuf,T>)
+    T extends Object declared in method <T,C>readCollection(IntFunction<C>,PacketDecoder<? super PacketByteBuf,T>)
+    E extends Object declared in class ArrayList
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/network/packet/CustomPayload.java:28: error: incompatible types: Map<Identifier,PacketCodec<CAP#1,CAP#2>> cannot be converted to Map<Identifier,PacketCodec<? super B,? extends CustomPayload>>
+			.collect(Collectors.toUnmodifiableMap(type -> type.id().id(), CustomPayload.Type::codec));
+			        ^
+  where B is a type-variable:
+    B extends PacketByteBuf declared in method <B>createCodec(CodecFactory<B>,List<Type<? super B,?>>)
+  where CAP#1,CAP#2 are fresh type-variables:
+    CAP#1 extends PacketByteBuf super: B from capture of ? super B
+    CAP#2 extends CustomPayload from capture of ?
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/network/packet/CustomPayload.java:37: error: incompatible types: PacketCodec<CAP#1,CAP#2> cannot be converted to PacketCodec<B,T>
+				PacketCodec<B, T> packetCodec = this.getCodec(id.id);
+				                                             ^
+  where B,T are type-variables:
+    B extends PacketByteBuf declared in method <B>createCodec(CodecFactory<B>,List<Type<? super B,?>>)
+    T extends CustomPayload declared in method <T>encode(B,Id<T>,CustomPayload)
+  where CAP#1,CAP#2 are fresh type-variables:
+    CAP#1 extends Object super: B from capture of ? super B
+    CAP#2 extends CustomPayload from capture of ? extends CustomPayload
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/structure/StructureTemplate.java:167: error: cannot find symbol
+		Comparator<StructureTemplate.StructureBlockInfo> comparator = Comparator.comparingInt(blockInfo -> blockInfo.pos.getY())
+		                                                                                                            ^
+  symbol:   variable pos
+  location: variable blockInfo of type Object
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/structure/StructureTemplate.java:168: error: cannot find symbol
+			.thenComparingInt(blockInfo -> blockInfo.pos.getX())
+			                                        ^
+  symbol:   variable pos
+  location: variable blockInfo of type Object
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/structure/StructureTemplate.java:169: error: cannot find symbol
+			.thenComparingInt(blockInfo -> blockInfo.pos.getZ());
+			                                        ^
+  symbol:   variable pos
+  location: variable blockInfo of type Object
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/structure/StructureTemplate.java:169: error: incompatible types: Comparator<Object> cannot be converted to Comparator<StructureBlockInfo>
+			.thenComparingInt(blockInfo -> blockInfo.pos.getZ());
+			                 ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/GameRules.java:262: error: incompatible types: ImmutableMap<Key<?>,Rule> cannot be converted to Map<Key<?>,Rule<?>>
+			.collect(ImmutableMap.toImmutableMap(Entry::getKey, e -> ((GameRules.Type)e.getValue()).createRule()));
+			        ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/GameRules.java:288: error: incompatible types: ImmutableMap<Key<?>,Rule> cannot be converted to Map<Key<?>,Rule<?>>
+				.collect(ImmutableMap.toImmutableMap(Entry::getKey, entry -> ((GameRules.Rule)entry.getValue()).copy()))
+				        ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/GameRules.java:302: error: method visit in interface Visitor cannot be applied to given types;
+		consumer.visit(key, type);
+		        ^
+  required: Key<T>,Type<T>
+  found:    Key<CAP#1>,Type<CAP#2>
+  reason: inference variable T has incompatible equality constraints CAP#2,CAP#1
+  where T is a type-variable:
+    T extends Rule<T> declared in method <T>visit(Key<T>,Type<T>)
+  where CAP#1,CAP#2 are fresh type-variables:
+    CAP#1 extends Rule<CAP#1> from capture of ?
+    CAP#2 extends Rule<CAP#2> from capture of ?
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/GameRules.java:303: error: incompatible types: Key<CAP#1> cannot be converted to Key<CAP#2>
+		type.accept(consumer, key);
+		                      ^
+  where CAP#1,CAP#2 are fresh type-variables:
+    CAP#1 extends Rule<CAP#1> from capture of ?
+    CAP#2 extends Rule<CAP#2> from capture of ?
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/mob/MobEntity.java:1471: error: getHitbox() has protected access in LivingEntity
+		return this.getAttackBox().intersects(entity.getHitbox());
+		                                            ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/Leashable.java:53: error: incompatible types: Either<Object,BlockPos> cannot be converted to Either<UUID,BlockPos>
+				Either<UUID, BlockPos> either = (Either<UUID, BlockPos>)NbtHelper.toBlockPos(nbt, "leash").map(Either::right).orElse(null);
+				                                                                                                                    ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/Rarity.java:17: error: reference to createIdToValueFunction is ambiguous
+	public static final IntFunction<Rarity> ID_TO_VALUE = ValueLists.createIdToValueFunction(value -> value.index, values(), ValueLists.OutOfBoundsHandling.ZERO);
+	                                                                ^
+  both method <T#1>createIdToValueFunction(ToIntFunction<T#1>,T#1[],T#1) in ValueLists and method <T#2>createIdToValueFunction(ToIntFunction<T#2>,T#2[],OutOfBoundsHandling) in ValueLists match
+  where T#1,T#2 are type-variables:
+    T#1 extends Object declared in method <T#1>createIdToValueFunction(ToIntFunction<T#1>,T#1[],T#1)
+    T#2 extends Object declared in method <T#2>createIdToValueFunction(ToIntFunction<T#2>,T#2[],OutOfBoundsHandling)
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/Rarity.java:17: error: incompatible types: inference variable T has incompatible bounds
+	public static final IntFunction<Rarity> ID_TO_VALUE = ValueLists.createIdToValueFunction(value -> value.index, values(), ValueLists.OutOfBoundsHandling.ZERO);
+	                                                                                        ^
+    equality constraints: Rarity
+    lower bounds: OutOfBoundsHandling,Rarity
+  where T is a type-variable:
+    T extends Object declared in method <T>createIdToValueFunction(ToIntFunction<T>,T[],T)
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/timer/Timer.java:32: error: cannot find symbol
+		return Comparator.comparingLong(event -> event.triggerTime).thenComparing(event -> event.id);
+		                                              ^
+  symbol:   variable triggerTime
+  location: variable event of type Object
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/timer/Timer.java:32: error: cannot find symbol
+		return Comparator.comparingLong(event -> event.triggerTime).thenComparing(event -> event.id);
+		                                                                                        ^
+  symbol:   variable id
+  location: variable event of type Object
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/timer/Timer.java:32: error: incompatible types: no instance(s) of type variable(s) U exist so that Comparator<Object> conforms to Comparator<Event<T#2>>
+		return Comparator.comparingLong(event -> event.triggerTime).thenComparing(event -> event.id);
+		                                                                         ^
+  where U,T#1,T#2 are type-variables:
+    U extends Comparable<? super U> declared in method <U>thenComparing(Function<? super T#1,? extends U>)
+    T#1 extends Object declared in interface Comparator
+    T#2 extends Object declared in method <T#2>createEventComparator()
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkGenerator.java:367: error: incompatible types: Object cannot be converted to Structure
+						for (Structure structure : (List)map.getOrDefault(k, Collections.emptyList())) {
+						                           ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/feature/util/PlacedFeatureIndexer.java:79: error: incompatible types: Object cannot be converted to RegistryEntry<PlacedFeature>
+				for (RegistryEntry<PlacedFeature> registryEntry : (RegistryEntryList)list2.get(j)) {
+				                                                  ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/noise/NoiseConfig.java:105: error: EndIslands has protected access in DensityFunctionTypes
+					return (DensityFunction)(densityFunction instanceof DensityFunctionTypes.EndIslands ? new DensityFunctionTypes.EndIslands(seed) : densityFunction);
+					                                                                        ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API that is marked for removal.
+Note: Recompile with -Xlint:removal for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+100 errors
+
+> Task :compileJava FAILED
+
+[Incubating] Problems report is available at: file:///Users/Samar/Downloads/1.21.1-Deobfuscated-main%203/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler output below.
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/GameRules.java:302: error: method visit in interface Visitor cannot be applied to given types;
+  		consumer.visit(key, type);
+  		        ^
+    required: Key<T>,Type<T>
+    found:    Key<CAP#1>,Type<CAP#2>
+    reason: inference variable T has incompatible equality constraints CAP#2,CAP#1
+    where T is a type-variable:
+      T extends Rule<T> declared in method <T>visit(Key<T>,Type<T>)
+    where CAP#1,CAP#2 are fresh type-variables:
+      CAP#1 extends Rule<CAP#1> from capture of ?
+      CAP#2 extends Rule<CAP#2> from capture of ?
+  Note: Recompile with -Xlint:deprecation for details.
+  Note: Some input files use or override a deprecated API that is marked for removal.
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/MinecraftServer.java:905: error: executeTask(ServerTask) in MinecraftServer cannot override executeTask(R) in ReentrantThreadExecutor
+  	protected void executeTask(ServerTask serverTask) {
+  	               ^
+    attempting to assign weaker access privileges; was public
+    where R is a type-variable:
+      R extends Runnable declared in class ReentrantThreadExecutor
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/BlendingData.java:72: error: cannot find symbol
+  					Codec.INT.fieldOf("min_section").forGetter(blendingData -> blendingData.oldHeightLimit.getBottomSectionCoord()),
+  					                                                                       ^
+    symbol:   variable oldHeightLimit
+    location: variable blendingData of type Object
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/BlendingData.java:73: error: cannot find symbol
+  					Codec.INT.fieldOf("max_section").forGetter(blendingData -> blendingData.oldHeightLimit.getTopSectionCoord()),
+  					                                                                       ^
+    symbol:   variable oldHeightLimit
+    location: variable blendingData of type Object
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/BlendingData.java:76: error: cannot find symbol
+  							blendingData -> DoubleStream.of(blendingData.surfaceHeights).anyMatch(height -> height != Double.MAX_VALUE)
+  							                                            ^
+    symbol:   variable surfaceHeights
+    location: variable blendingData of type Object
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/BlendingData.java:77: error: cannot find symbol
+  								? Optional.of(blendingData.surfaceHeights)
+  								                          ^
+    symbol:   variable surfaceHeights
+    location: variable blendingData of type Object
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/structure/StructureTemplate.java:167: error: cannot find symbol
+  		Comparator<StructureTemplate.StructureBlockInfo> comparator = Comparator.comparingInt(blockInfo -> blockInfo.pos.getY())
+  		                                                                                                            ^
+    symbol:   variable pos
+    location: variable blockInfo of type Object
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/structure/StructureTemplate.java:168: error: cannot find symbol
+  			.thenComparingInt(blockInfo -> blockInfo.pos.getX())
+  			                                        ^
+    symbol:   variable pos
+    location: variable blockInfo of type Object
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/structure/StructureTemplate.java:169: error: cannot find symbol
+  			.thenComparingInt(blockInfo -> blockInfo.pos.getZ());
+  			                                        ^
+    symbol:   variable pos
+    location: variable blockInfo of type Object
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/timer/Timer.java:32: error: cannot find symbol
+  		return Comparator.comparingLong(event -> event.triggerTime).thenComparing(event -> event.id);
+  		                                              ^
+    symbol:   variable triggerTime
+    location: variable event of type Object
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/timer/Timer.java:32: error: cannot find symbol
+  		return Comparator.comparingLong(event -> event.triggerTime).thenComparing(event -> event.id);
+  		                                                                                        ^
+    symbol:   variable id
+    location: variable event of type Object
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:878: error: Wrapping has protected access in DensityFunctionTypes
+  		public DensityFunctionTypes.Wrapping.Type type() {
+  		                           ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:698: error: Wrapping has protected access in DensityFunctionTypes
+  		public DensityFunctionTypes.Wrapping.Type type() {
+  		                           ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:831: error: Wrapping has protected access in DensityFunctionTypes
+  		public DensityFunctionTypes.Wrapping.Type type() {
+  		                           ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:592: error: Wrapping has protected access in DensityFunctionTypes
+  		public DensityFunctionTypes.Wrapping.Type type() {
+  		                           ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:647: error: Wrapping has protected access in DensityFunctionTypes
+  		public DensityFunctionTypes.Wrapping.Type type() {
+  		                           ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:178: error: Beardifier has protected access in DensityFunctionTypes
+  				DensityFunctionTypes.add(noiseRouter2.finalDensity(), DensityFunctionTypes.Beardifier.INSTANCE)
+  				                                                                          ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:450: error: Wrapping has protected access in DensityFunctionTypes
+  		if (function instanceof DensityFunctionTypes.Wrapping wrapping) {
+  		                                            ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:460: error: BlendAlpha has protected access in DensityFunctionTypes
+  				if (function == DensityFunctionTypes.BlendAlpha.INSTANCE) {
+  				                                    ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:464: error: BlendOffset has protected access in DensityFunctionTypes
+  				if (function == DensityFunctionTypes.BlendOffset.INSTANCE) {
+  				                                    ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:469: error: Beardifier has protected access in DensityFunctionTypes
+  			if (function == DensityFunctionTypes.Beardifier.INSTANCE) {
+  			                                    ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:480: error: BlendAlpha has protected access in DensityFunctionTypes
+  			return DensityFunctionTypes.BlendAlpha.INSTANCE;
+  			                           ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:510: error: BlendAlpha has protected access in DensityFunctionTypes
+  			return DensityFunctionTypes.BlendAlpha.CODEC;
+  			                           ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:517: error: BlendOffset has protected access in DensityFunctionTypes
+  			return DensityFunctionTypes.BlendOffset.INSTANCE;
+  			                           ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:547: error: BlendOffset has protected access in DensityFunctionTypes
+  			return DensityFunctionTypes.BlendOffset.CODEC;
+  			                           ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:593: error: Wrapping has protected access in DensityFunctionTypes
+  			return DensityFunctionTypes.Wrapping.Type.CACHE2D;
+  			                           ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:648: error: Wrapping has protected access in DensityFunctionTypes
+  			return DensityFunctionTypes.Wrapping.Type.CACHE_ONCE;
+  			                           ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:699: error: Wrapping has protected access in DensityFunctionTypes
+  			return DensityFunctionTypes.Wrapping.Type.CACHE_ALL_IN_CELL;
+  			                           ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:832: error: Wrapping has protected access in DensityFunctionTypes
+  			return DensityFunctionTypes.Wrapping.Type.INTERPOLATED;
+  			                           ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:879: error: Wrapping has protected access in DensityFunctionTypes
+  			return DensityFunctionTypes.Wrapping.Type.FLAT_CACHE;
+  			                           ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/mob/MobEntity.java:1471: error: getHitbox() has protected access in LivingEntity
+  		return this.getAttackBox().intersects(entity.getHitbox());
+  		                                            ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/noise/NoiseConfig.java:105: error: EndIslands has protected access in DensityFunctionTypes
+  					return (DensityFunction)(densityFunction instanceof DensityFunctionTypes.EndIslands ? new DensityFunctionTypes.EndIslands(seed) : densityFunction);
+  					                                                                        ^
+  Note: Recompile with -Xlint:unchecked for details.
+  Note: Some input files use or override a deprecated API.
+  Note: Some input files use unchecked or unsafe operations.
+  Note: Recompile with -Xlint:removal for details.
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/Registry.java:192: error: cannot find symbol
+  				entry -> entry.registryKey().getValue()
+  				              ^
+    symbol:   method registryKey()
+    location: variable entry of type Object
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/world/ServerWorld.java:493: error: cannot find symbol
+  		((List)this.players.stream().filter(LivingEntity::isSleeping).collect(Collectors.toList())).forEach(player -> player.wakeUp(false, false));
+  		                                                                                                                    ^
+    symbol:   method wakeUp(boolean,boolean)
+    location: variable player of type Object
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/network/ClientConnection.java:349: error: cannot find symbol
+  			this.queuedTasks.add((Consumer)connection -> connection.sendImmediately(packet, callbacks, flush));
+  			                                                       ^
+    symbol:   method sendImmediately(Packet<CAP#1>,PacketCallbacks,boolean)
+    location: variable connection of type Object
+    where CAP#1 is a fresh type-variable:
+      CAP#1 extends PacketListener from capture of ?
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/text/Decoration.java:120: error: reference to createIdToValueFunction is ambiguous
+  		private static final IntFunction<Decoration.Parameter> BY_ID = ValueLists.createIdToValueFunction(
+  		                                                                         ^
+    both method <T#1>createIdToValueFunction(ToIntFunction<T#1>,T#1[],T#1) in ValueLists and method <T#2>createIdToValueFunction(ToIntFunction<T#2>,T#2[],OutOfBoundsHandling) in ValueLists match
+    where T#1,T#2 are type-variables:
+      T#1 extends Object declared in method <T#1>createIdToValueFunction(ToIntFunction<T#1>,T#1[],T#1)
+      T#2 extends Object declared in method <T#2>createIdToValueFunction(ToIntFunction<T#2>,T#2[],OutOfBoundsHandling)
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/network/message/LastSeenMessageList.java:54: error: reference to Indexed is ambiguous
+  			this(buf.readCollection(PacketByteBuf.getMaxValidator(ArrayList::new, 20), MessageSignatureData.Indexed::fromBuf));
+  			^
+    both constructor net.minecraft.network.message.LastSeenMessageList.Indexed(PacketByteBuf) in net.minecraft.network.message.LastSeenMessageList.Indexed and constructor net.minecraft.network.message.LastSeenMessageList.Indexed(List<net.minecraft.network.message.MessageSignatureData.Indexed>) in net.minecraft.network.message.LastSeenMessageList.Indexed match
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/GameMode.java:19: error: reference to createIdToValueFunction is ambiguous
+  	private static final IntFunction<GameMode> BY_ID = ValueLists.createIdToValueFunction(GameMode::getId, values(), ValueLists.OutOfBoundsHandling.ZERO);
+  	                                                             ^
+    both method <T#1>createIdToValueFunction(ToIntFunction<T#1>,T#1[],T#1) in ValueLists and method <T#2>createIdToValueFunction(ToIntFunction<T#2>,T#2[],OutOfBoundsHandling) in ValueLists match
+    where T#1,T#2 are type-variables:
+      T#1 extends Object declared in method <T#1>createIdToValueFunction(ToIntFunction<T#1>,T#1[],T#1)
+      T#2 extends Object declared in method <T#2>createIdToValueFunction(ToIntFunction<T#2>,T#2[],OutOfBoundsHandling)
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/component/type/AttributeModifierSlot.java:25: error: reference to createIdToValueFunction is ambiguous
+  	public static final IntFunction<AttributeModifierSlot> ID_TO_VALUE = ValueLists.createIdToValueFunction(
+  	                                                                               ^
+    both method <T#1>createIdToValueFunction(ToIntFunction<T#1>,T#1[],T#1) in ValueLists and method <T#2>createIdToValueFunction(ToIntFunction<T#2>,T#2[],OutOfBoundsHandling) in ValueLists match
+    where T#1,T#2 are type-variables:
+      T#1 extends Object declared in method <T#1>createIdToValueFunction(ToIntFunction<T#1>,T#1[],T#1)
+      T#2 extends Object declared in method <T#2>createIdToValueFunction(ToIntFunction<T#2>,T#2[],OutOfBoundsHandling)
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/network/message/ArgumentSignatureDataMap.java:21: error: reference to ArgumentSignatureDataMap is ambiguous
+  		this(buf.readCollection(PacketByteBuf.getMaxValidator(ArrayList::new, 8), ArgumentSignatureDataMap.Entry::new));
+  		^
+    both constructor ArgumentSignatureDataMap(PacketByteBuf) in ArgumentSignatureDataMap and constructor ArgumentSignatureDataMap(List<Entry>) in ArgumentSignatureDataMap match
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/Rarity.java:17: error: reference to createIdToValueFunction is ambiguous
+  	public static final IntFunction<Rarity> ID_TO_VALUE = ValueLists.createIdToValueFunction(value -> value.index, values(), ValueLists.OutOfBoundsHandling.ZERO);
+  	                                                                ^
+    both method <T#1>createIdToValueFunction(ToIntFunction<T#1>,T#1[],T#1) in ValueLists and method <T#2>createIdToValueFunction(ToIntFunction<T#2>,T#2[],OutOfBoundsHandling) in ValueLists match
+    where T#1,T#2 are type-variables:
+      T#1 extends Object declared in method <T#1>createIdToValueFunction(ToIntFunction<T#1>,T#1[],T#1)
+      T#2 extends Object declared in method <T#2>createIdToValueFunction(ToIntFunction<T#2>,T#2[],OutOfBoundsHandling)
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/nbt/NbtByteArray.java:18: error: NbtByteArray is not abstract and does not override abstract method remove(int) in AbstractNbtList
+  public class NbtByteArray extends AbstractNbtList<NbtByte> {
+         ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/nbt/NbtLongArray.java:19: error: NbtLongArray is not abstract and does not override abstract method set(int,NbtLong) in AbstractNbtList
+  public class NbtLongArray extends AbstractNbtList<NbtLong> {
+         ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/LootPool.java:122: error: Builder is not abstract and does not override abstract method getThisConditionConsumingBuilder() in LootConditionConsumingBuilder
+  	public static class Builder implements LootFunctionConsumingBuilder<LootPool.Builder>, LootConditionConsumingBuilder<LootPool.Builder> {
+  	              ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/NumberRange.java:39: error: incompatible types: inference variable R#1 has incompatible bounds
+  			.xmap(either -> either.map(range -> range, value -> rangeFactory.create(Optional.of(value), Optional.of(value))), range -> {
+  			     ^
+      equality constraints: T
+      lower bounds: Number
+    where R#1,L,T,R#2 are type-variables:
+      R#1 extends Object declared in method <L,R#1>right(R#1)
+      L extends Object declared in method <L,R#1>right(R#1)
+      T extends Number declared in method <T,R#2>createCodec(Codec<T>,Factory<T,R#2>)
+      R#2 extends NumberRange<T> declared in method <T,R#2>createCodec(Codec<T>,Factory<T,R#2>)
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/NumberRange.java:97: error: incompatible types: inference variable T#1 has incompatible bounds
+  				return Optional.of((Number)converter.apply(string));
+  				                  ^
+      equality constraints: T#2
+      lower bounds: Number
+    where T#1,T#2 are type-variables:
+      T#1 extends Object declared in method <T#1>of(T#1)
+      T#2 extends Number declared in method <T#2>fromStringReader(StringReader,Function<String,T#2>,Supplier<DynamicCommandExceptionType>)
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/StringIdentifiable.java:67: error: incompatible types: bad return type in lambda expression
+  			return name -> name == null ? null : (StringIdentifiable)map.get(name);
+  			                                     ^
+      bad type in conditional expression
+        StringIdentifiable cannot be converted to T
+    where T is a type-variable:
+      T extends StringIdentifiable declared in method <T>createMapper(T[],Function<String,String>)
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/tag/TagKey.java:42: error: incompatible types: bad type in conditional expression
+  		return this.isOf(registryRef) ? Optional.of(this) : Optional.empty();
+  		                                           ^
+      inference variable T#1 has incompatible bounds
+        equality constraints: TagKey<E>
+        lower bounds: TagKey<T#2>
+    where T#1,E,T#2 are type-variables:
+      T#1 extends Object declared in method <T#1>of(T#1)
+      E extends Object declared in method <E>tryCast(RegistryKey<? extends Registry<E>>)
+      T#2 extends Object declared in record TagKey
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/RegistryKey.java:102: error: incompatible types: bad type in conditional expression
+  		return this.isOf(registryRef) ? Optional.of(this) : Optional.empty();
+  		                                           ^
+      inference variable T#1 has incompatible bounds
+        equality constraints: RegistryKey<E>
+        lower bounds: RegistryKey<T#2>
+    where T#1,E,T#2 are type-variables:
+      T#1 extends Object declared in method <T#1>of(T#1)
+      E extends Object declared in method <E>tryCast(RegistryKey<? extends Registry<E>>)
+      T#2 extends Object declared in class RegistryKey
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/Registry.java:430: error: incompatible types: Iterator<Reference<T>> cannot be converted to Iterator<RegistryEntry<T>>
+  				return Registry.this.streamEntries().map(entry -> entry).iterator();
+  				                                                                 ^
+    where T is a type-variable:
+      T extends Object declared in interface Registry
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/ComponentPredicate.java:23: error: incompatible types: incompatible parameter types in method reference
+  			map -> new ComponentPredicate((List<Component<?>>)map.entrySet().stream().map(Component::of).collect(Collectors.toList())),
+  			                                                                              ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/component/ComponentType.java:102: error: incompatible types: Registry<ComponentType<?>> cannot be converted to Registry<SimpleDataComponentType<T>>
+  				return Util.registryValueToString((Registry<ComponentType.Builder.SimpleDataComponentType<T>>)Registries.DATA_COMPONENT_TYPE, this);
+  				                                                                                                        ^
+    where T is a type-variable:
+      T extends Object declared in class SimpleDataComponentType
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/BlockView.java:33: error: incompatible types: bad type in conditional expression
+  		return blockEntity != null && blockEntity.getType() == type ? Optional.of(blockEntity) : Optional.empty();
+  		                                                                         ^
+      inference variable T#1 has incompatible bounds
+        equality constraints: T#2
+        lower bounds: BlockEntity
+    where T#1,T#2 are type-variables:
+      T#1 extends Object declared in method <T#1>of(T#1)
+      T#2 extends BlockEntity declared in method <T#2>getBlockEntity(BlockPos,BlockEntityType<T#2>)
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/StatePredicate.java:126: error: incompatible types: Comparable cannot be converted to T
+  			return optional.isPresent() && comparable.compareTo((Comparable)optional.get()) == 0;
+  			                                                    ^
+    where T is a type-variable:
+      T extends Comparable<T> declared in method <T>test(State<?,?>,Property<T>)
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/StatePredicate.java:151: error: incompatible types: Comparable cannot be converted to T
+  				if (optional.isEmpty() || comparable.compareTo((Comparable)optional.get()) < 0) {
+  				                                               ^
+    where T is a type-variable:
+      T extends Comparable<T> declared in method <T>test(State<?,?>,Property<T>)
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/StatePredicate.java:158: error: incompatible types: Comparable cannot be converted to T
+  				if (optional.isEmpty() || comparable.compareTo((Comparable)optional.get()) > 0) {
+  				                                               ^
+    where T is a type-variable:
+      T extends Comparable<T> declared in method <T>test(State<?,?>,Property<T>)
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/state/State.java:99: error: incompatible types: bad type in conditional expression
+  		return comparable == null ? Optional.empty() : Optional.of((Comparable)property.getType().cast(comparable));
+  		                                                          ^
+      inference variable T#1 has incompatible bounds
+        equality constraints: T#2
+        lower bounds: Comparable
+    where T#1,T#2 are type-variables:
+      T#1 extends Object declared in method <T#1>of(T#1)
+      T#2 extends Comparable<T#2> declared in method <T#2>getOrEmpty(Property<T#2>)
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/state/State.java:163: error: incompatible types: inference variable E has incompatible bounds
+  		return codec.dispatch(
+  		                     ^
+      equality constraints: S#1
+      lower bounds: S#2,A#3,State,S#1
+    where E,A#1,S#1,O,S#2,A#2,A#3 are type-variables:
+      E extends Object declared in method <E>dispatch(String,Function<? super E,? extends A#1>,Function<? super A#1,? extends MapCodec<? extends E>>)
+      A#1 extends Object declared in interface Codec
+      S#1 extends State<O,S#1> declared in method <O,S#1>createCodec(Codec<O>,Function<O,S#1>)
+      O extends Object declared in method <O,S#1>createCodec(Codec<O>,Function<O,S#1>)
+      S#2 extends Object declared in method <S#2>xmap(Function<? super A#2,? extends S#2>,Function<? super S#2,? extends A#2>)
+      A#2 extends Object declared in class MapCodec
+      A#3 extends Object declared in method <A#3>unit(A#3)
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/math/BlockPos.java:575: error: incompatible types: inference variable L has incompatible bounds
+  					nextQueuer.accept(blockPos, (Consumer)queuedPos -> queue.add(Pair.of(queuedPos, j + 1)));
+  					                                                        ^
+      equality constraints: BlockPos
+      lower bounds: Object
+    where L,R are type-variables:
+      L extends Object declared in method <L,R>of(L,R)
+      R extends Object declared in method <L,R>of(L,R)
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/network/codec/PacketCodec.java:415: error: incompatible types: PacketCodec<B,V> cannot be converted to PacketCodec<S,V>
+  		return this;
+  		       ^
+    where B,V,S are type-variables:
+      B extends Object declared in interface PacketCodec
+      V extends Object declared in interface PacketCodec
+      S extends B declared in method <S>cast()
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/world/ServerWorld.java:1822: error: incompatible types: cannot infer type-variable(s) T,U
+  				.sorted(Comparator.comparing(Entry::getIntValue).reversed())
+  				                            ^
+      (argument mismatch; invalid method reference
+        method getIntValue in interface Entry<K> cannot be applied to given types
+          required: no arguments
+          found:    Object
+          reason: actual and formal argument lists differ in length)
+    where T,U,K are type-variables:
+      T extends Object declared in method <T,U>comparing(Function<? super T,? extends U>)
+      U extends Comparable<? super U> declared in method <T,U>comparing(Function<? super T,? extends U>)
+      K extends Object declared in interface Entry
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/text/Decoration.java:120: error: incompatible types: inference variable T has incompatible bounds
+  		private static final IntFunction<Decoration.Parameter> BY_ID = ValueLists.createIdToValueFunction(
+  		                                                                                                 ^
+      equality constraints: Parameter
+      lower bounds: OutOfBoundsHandling,Parameter
+    where T is a type-variable:
+      T extends Object declared in method <T>createIdToValueFunction(ToIntFunction<T>,T[],T)
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/RegistryWrapper.java:130: error: incompatible types: Map<RegistryKey<? extends Registry<? extends CAP#1>>,Impl<CAP#2>> cannot be converted to Map<RegistryKey<? extends Registry<?>>,Impl<?>>
+  			final Map<RegistryKey<? extends Registry<?>>, RegistryWrapper.Impl<?>> map = (Map<RegistryKey<? extends Registry<?>>, RegistryWrapper.Impl<?>>)wrappers.collect(
+  			                                                                                                                                                               ^
+    where CAP#1,CAP#2 are fresh type-variables:
+      CAP#1 extends Object from capture of ?
+      CAP#2 extends Object from capture of ?
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/biome/GenerationSettings.java:122: error: incompatible types: ImmutableMap<Carver,Direct> cannot be converted to Map<Carver,RegistryEntryList<ConfiguredCarver<?>>>
+  					.collect(ImmutableMap.toImmutableMap(Entry::getKey, entry -> RegistryEntryList.of((List)entry.getValue()))),
+  					        ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/biome/GenerationSettings.java:123: error: incompatible types: ImmutableList<Direct<PlacedFeature>> cannot be converted to List<RegistryEntryList<PlacedFeature>>
+  				(List<RegistryEntryList<PlacedFeature>>)this.indexedFeaturesList.stream().map(RegistryEntryList::of).collect(ImmutableList.toImmutableList())
+  				                                                                                                            ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/BlendingData.java:83: error: incompatible types: invalid method reference
+  		.comapFlatMap(BlendingData::validate, Function.identity());
+  		              ^
+      incompatible types: Object cannot be converted to BlendingData
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/biome/source/util/MultiNoiseUtil.java:90: error: incompatible types: cannot infer type-variable(s) O
+  							instance -> instance.group(MultiNoiseUtil.NoiseHypercube.CODEC.fieldOf("parameters").forGetter(Pair::getFirst), entryCodec.forGetter(Pair::getSecond))
+  							                          ^
+      (argument mismatch; invalid method reference
+        method getFirst in class Pair<F,S> cannot be applied to given types
+          required: no arguments
+          found:    T
+          reason: actual and formal argument lists differ in length)
+    where O,A,T,F,S are type-variables:
+      O extends Object declared in method <O>forGetter(Function<O,A>)
+      A extends Object declared in class MapCodec
+      T extends Object declared in method <T>createCodec(MapCodec<T>)
+      F extends Object declared in class Pair
+      S extends Object declared in class Pair
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/biome/source/util/MultiNoiseUtil.java:95: error: incompatible types: cannot infer type-variable(s) S
+  				.xmap(MultiNoiseUtil.Entries::new, MultiNoiseUtil.Entries::getEntries);
+  				     ^
+      (argument mismatch; invalid constructor reference
+        constructor Entries in class Entries<T#2> cannot be applied to given types
+          required: List
+          found:    List<T#1>
+          reason: cannot infer type-variable(s) T#2
+            (argument mismatch; List<T#1> cannot be converted to List<Pair<NoiseHypercube,T#2>>))
+    where S,A,T#1,T#2 are type-variables:
+      S extends Object declared in method <S>xmap(Function<? super A,? extends S>,Function<? super S,? extends A>)
+      A extends Object declared in interface Codec
+      T#1 extends Object declared in method <T#1>createCodec(MapCodec<T#1>)
+      T#2 extends Object declared in class Entries
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/network/message/LastSeenMessageList.java:54: error: incompatible types: inference variable C has incompatible bounds
+  			this(buf.readCollection(PacketByteBuf.getMaxValidator(ArrayList::new, 20), MessageSignatureData.Indexed::fromBuf));
+  			                       ^
+      upper bounds: PacketByteBuf,Object,Collection<T>
+      lower bounds: ArrayList<E>
+    where C,T,E are type-variables:
+      C extends Collection<T> declared in method <T,C>readCollection(IntFunction<C>,PacketDecoder<? super PacketByteBuf,T>)
+      T extends Object declared in method <T,C>readCollection(IntFunction<C>,PacketDecoder<? super PacketByteBuf,T>)
+      E extends Object declared in class ArrayList
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/item/map/MapState.java:143: error: incompatible types: Object cannot be converted to MapBannerMarker
+  		for (MapBannerMarker mapBannerMarker : (List)MapBannerMarker.LIST_CODEC
+  		                                       ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/GameMode.java:19: error: incompatible types: inference variable T has incompatible bounds
+  	private static final IntFunction<GameMode> BY_ID = ValueLists.createIdToValueFunction(GameMode::getId, values(), ValueLists.OutOfBoundsHandling.ZERO);
+  	                                                                                     ^
+      equality constraints: GameMode
+      lower bounds: OutOfBoundsHandling,GameMode
+    where T is a type-variable:
+      T extends Object declared in method <T>createIdToValueFunction(ToIntFunction<T>,T[],T)
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/data/TrackedDataHandler.java:16: error: incompatible types: TrackedDataHandler is not a functional interface
+  		return () -> codec;
+  		       ^
+      multiple non-overriding abstract methods found in interface TrackedDataHandler
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/collection/DefaultedList.java:28: error: incompatible types: cannot infer type arguments for DefaultedList<>
+  		return new DefaultedList<>(Arrays.asList(objects), defaultValue);
+  		                        ^
+      reason: inference variable E#1 has incompatible bounds
+        equality constraints: E#2,T
+        lower bounds: Object,E#2
+    where E#1,E#2,T are type-variables:
+      E#1 extends Object declared in class DefaultedList
+      E#2 extends Object declared in method <E#2>ofSize(int,E#2)
+      T extends Object declared in method <T>asList(T...)
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/component/type/AttributeModifierSlot.java:25: error: incompatible types: inference variable T has incompatible bounds
+  	public static final IntFunction<AttributeModifierSlot> ID_TO_VALUE = ValueLists.createIdToValueFunction(
+  	                                                                                                       ^
+      equality constraints: AttributeModifierSlot
+      lower bounds: OutOfBoundsHandling,AttributeModifierSlot
+    where T is a type-variable:
+      T extends Object declared in method <T>createIdToValueFunction(ToIntFunction<T>,T[],T)
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/resource/metadata/ResourceMetadata.java:80: error: incompatible types: inference variable T#1 has incompatible bounds
+  					return Optional.ofNullable(immutableMap.get(reader));
+  					                          ^
+      equality constraints: T#2
+      lower bounds: Object
+    where T#1,T#2 are type-variables:
+      T#1 extends Object declared in method <T#1>ofNullable(T#1)
+      T#2 extends Object declared in method <T#2>decode(ResourceMetadataReader<T#2>)
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/ServerConfigList.java:145: error: incompatible types: ServerConfigEntry<K> cannot be converted to V
+  							this.map.put(this.toString(serverConfigEntry.getKey()), serverConfigEntry);
+  							                                                        ^
+    where K,V are type-variables:
+      K extends Object declared in class ServerConfigList
+      V extends ServerConfigEntry<K> declared in class ServerConfigList
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/network/ServerPlayNetworkHandler.java:787: error: incompatible types: List<RawFilteredPair<MutableText>> cannot be converted to List<RawFilteredPair<Text>>
+  			List<RawFilteredPair<Text>> list = pages.stream().map(page -> this.toRawFilteredPair(page).map(Text::literal)).toList();
+  			                                                                                                                     ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/network/ChunkDataSender.java:86: error: incompatible types: invalid method reference
+  				.mapToLong(Long::longValue)
+  				           ^
+      method longValue in class Long cannot be applied to given types
+        required: no arguments
+        found:    Object
+        reason: actual and formal argument lists differ in length
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/network/message/ArgumentSignatureDataMap.java:21: error: incompatible types: inference variable C has incompatible bounds
+  		this(buf.readCollection(PacketByteBuf.getMaxValidator(ArrayList::new, 8), ArgumentSignatureDataMap.Entry::new));
+  		                       ^
+      upper bounds: PacketByteBuf,Object,Collection<T>
+      lower bounds: ArrayList<E>
+    where C,T,E are type-variables:
+      C extends Collection<T> declared in method <T,C>readCollection(IntFunction<C>,PacketDecoder<? super PacketByteBuf,T>)
+      T extends Object declared in method <T,C>readCollection(IntFunction<C>,PacketDecoder<? super PacketByteBuf,T>)
+      E extends Object declared in class ArrayList
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/network/packet/CustomPayload.java:28: error: incompatible types: Map<Identifier,PacketCodec<CAP#1,CAP#2>> cannot be converted to Map<Identifier,PacketCodec<? super B,? extends CustomPayload>>
+  			.collect(Collectors.toUnmodifiableMap(type -> type.id().id(), CustomPayload.Type::codec));
+  			        ^
+    where B is a type-variable:
+      B extends PacketByteBuf declared in method <B>createCodec(CodecFactory<B>,List<Type<? super B,?>>)
+    where CAP#1,CAP#2 are fresh type-variables:
+      CAP#1 extends PacketByteBuf super: B from capture of ? super B
+      CAP#2 extends CustomPayload from capture of ?
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/network/packet/CustomPayload.java:37: error: incompatible types: PacketCodec<CAP#1,CAP#2> cannot be converted to PacketCodec<B,T>
+  				PacketCodec<B, T> packetCodec = this.getCodec(id.id);
+  				                                             ^
+    where B,T are type-variables:
+      B extends PacketByteBuf declared in method <B>createCodec(CodecFactory<B>,List<Type<? super B,?>>)
+      T extends CustomPayload declared in method <T>encode(B,Id<T>,CustomPayload)
+    where CAP#1,CAP#2 are fresh type-variables:
+      CAP#1 extends Object super: B from capture of ? super B
+      CAP#2 extends CustomPayload from capture of ? extends CustomPayload
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/structure/StructureTemplate.java:169: error: incompatible types: Comparator<Object> cannot be converted to Comparator<StructureBlockInfo>
+  			.thenComparingInt(blockInfo -> blockInfo.pos.getZ());
+  			                 ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/GameRules.java:262: error: incompatible types: ImmutableMap<Key<?>,Rule> cannot be converted to Map<Key<?>,Rule<?>>
+  			.collect(ImmutableMap.toImmutableMap(Entry::getKey, e -> ((GameRules.Type)e.getValue()).createRule()));
+  			        ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/GameRules.java:288: error: incompatible types: ImmutableMap<Key<?>,Rule> cannot be converted to Map<Key<?>,Rule<?>>
+  				.collect(ImmutableMap.toImmutableMap(Entry::getKey, entry -> ((GameRules.Rule)entry.getValue()).copy()))
+  				        ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/GameRules.java:303: error: incompatible types: Key<CAP#1> cannot be converted to Key<CAP#2>
+  		type.accept(consumer, key);
+  		                      ^
+    where CAP#1,CAP#2 are fresh type-variables:
+      CAP#1 extends Rule<CAP#1> from capture of ?
+      CAP#2 extends Rule<CAP#2> from capture of ?
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/Leashable.java:53: error: incompatible types: Either<Object,BlockPos> cannot be converted to Either<UUID,BlockPos>
+  				Either<UUID, BlockPos> either = (Either<UUID, BlockPos>)NbtHelper.toBlockPos(nbt, "leash").map(Either::right).orElse(null);
+  				                                                                                                                    ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/Rarity.java:17: error: incompatible types: inference variable T has incompatible bounds
+  	public static final IntFunction<Rarity> ID_TO_VALUE = ValueLists.createIdToValueFunction(value -> value.index, values(), ValueLists.OutOfBoundsHandling.ZERO);
+  	                                                                                        ^
+      equality constraints: Rarity
+      lower bounds: OutOfBoundsHandling,Rarity
+    where T is a type-variable:
+      T extends Object declared in method <T>createIdToValueFunction(ToIntFunction<T>,T[],T)
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/timer/Timer.java:32: error: incompatible types: no instance(s) of type variable(s) U exist so that Comparator<Object> conforms to Comparator<Event<T#2>>
+  		return Comparator.comparingLong(event -> event.triggerTime).thenComparing(event -> event.id);
+  		                                                                         ^
+    where U,T#1,T#2 are type-variables:
+      U extends Comparable<? super U> declared in method <U>thenComparing(Function<? super T#1,? extends U>)
+      T#1 extends Object declared in interface Comparator
+      T#2 extends Object declared in method <T#2>createEventComparator()
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkGenerator.java:367: error: incompatible types: Object cannot be converted to Structure
+  						for (Structure structure : (List)map.getOrDefault(k, Collections.emptyList())) {
+  						                           ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/feature/util/PlacedFeatureIndexer.java:79: error: incompatible types: Object cannot be converted to RegistryEntry<PlacedFeature>
+  				for (RegistryEntry<PlacedFeature> registryEntry : (RegistryEntryList)list2.get(j)) {
+  				                                                  ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/NumberRange.java:120: error: non-static type variable T cannot be referenced from a static context
+  		public static final Codec<NumberRange.DoubleRange> CODEC = NumberRange.createCodec((Codec<T>)Codec.DOUBLE, NumberRange.DoubleRange::new);
+  		                                                                                          ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/NumberRange.java:168: error: non-static type variable T cannot be referenced from a static context
+  				reader, NumberRange.DoubleRange::create, Double::parseDouble, CommandSyntaxException.BUILT_IN_EXCEPTIONS::readerInvalidDouble, (Function<T, T>)mapper
+  				                                                                                                                                         ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/NumberRange.java:168: error: non-static type variable T cannot be referenced from a static context
+  				reader, NumberRange.DoubleRange::create, Double::parseDouble, CommandSyntaxException.BUILT_IN_EXCEPTIONS::readerInvalidDouble, (Function<T, T>)mapper
+  				                                                                                                                                            ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/NumberRange.java:180: error: non-static type variable T cannot be referenced from a static context
+  		public static final Codec<NumberRange.IntRange> CODEC = NumberRange.createCodec((Codec<T>)Codec.INT, NumberRange.IntRange::new);
+  		                                                                                       ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/NumberRange.java:228: error: non-static type variable T cannot be referenced from a static context
+  				reader, NumberRange.IntRange::parse, Integer::parseInt, CommandSyntaxException.BUILT_IN_EXCEPTIONS::readerInvalidInt, (Function<T, T>)converter
+  				                                                                                                                                ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/NumberRange.java:228: error: non-static type variable T cannot be referenced from a static context
+  				reader, NumberRange.IntRange::parse, Integer::parseInt, CommandSyntaxException.BUILT_IN_EXCEPTIONS::readerInvalidInt, (Function<T, T>)converter
+  				                                                                                                                                   ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/component/Component.java:14: error: non-static type variable T cannot be referenced from a static context
+  			return read(registryByteBuf, (ComponentType<T>)componentType);
+  			                                            ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/component/Component.java:22: error: non-static type variable T cannot be referenced from a static context
+  			write(registryByteBuf, (Component<T>)component);
+  			                                  ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/component/Component.java:32: error: non-static type variable T cannot be referenced from a static context
+  		return of((ComponentType<T>)entry.getKey(), entry.getValue());
+  		                         ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/network/codec/PacketCodec.java:400: error: non-static type variable V cannot be referenced from a static context
+  				((PacketCodec)this.codecSupplier.get()).encode(object, (V)object2);
+  				                                                        ^
+  Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+  100 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 8s
+1 actionable task: 1 executed

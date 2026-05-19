@@ -1,0 +1,953 @@
+
+> Task :compileJava
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/entry/RegistryEntryList.java:16: error: package org.jetbrains.annotations does not exist
+import org.jetbrains.annotations.VisibleForTesting;
+                                ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/chunk/ChunkStatus.java:12: error: package org.jetbrains.annotations does not exist
+import org.jetbrains.annotations.VisibleForTesting;
+                                ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/GameMode.java:9: error: package org.jetbrains.annotations does not exist
+import org.jetbrains.annotations.Contract;
+                                ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/Formatting.java:13: error: package org.jetbrains.annotations does not exist
+import org.jetbrains.annotations.Contract;
+                                ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/network/message/MessageSignatureStorage.java:8: error: package org.jetbrains.annotations does not exist
+import org.jetbrains.annotations.VisibleForTesting;
+                                ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/ai/pathing/PathNodeTypeCache.java:6: error: package org.jetbrains.annotations does not exist
+import org.jetbrains.annotations.Nullable;
+                                ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/DyeColor.java:15: error: package org.jetbrains.annotations does not exist
+import org.jetbrains.annotations.Contract;
+                                ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/TrackedPosition.java:4: error: package org.jetbrains.annotations does not exist
+import org.jetbrains.annotations.VisibleForTesting;
+                                ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:878: error: Wrapping has protected access in DensityFunctionTypes
+		public DensityFunctionTypes.Wrapping.Type type() {
+		                           ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:698: error: Wrapping has protected access in DensityFunctionTypes
+		public DensityFunctionTypes.Wrapping.Type type() {
+		                           ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:831: error: Wrapping has protected access in DensityFunctionTypes
+		public DensityFunctionTypes.Wrapping.Type type() {
+		                           ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/mob/WardenEntity.java:75: error: package org.jetbrains.annotations does not exist
+import org.jetbrains.annotations.Contract;
+                                ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/JsonHelper.java:31: error: package org.jetbrains.annotations does not exist
+import org.jetbrains.annotations.Contract;
+                                ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/chunk/light/ChunkSkyLightProvider.java:13: error: package org.jetbrains.annotations does not exist
+import org.jetbrains.annotations.VisibleForTesting;
+                                ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:592: error: Wrapping has protected access in DensityFunctionTypes
+		public DensityFunctionTypes.Wrapping.Type type() {
+		                           ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:647: error: Wrapping has protected access in DensityFunctionTypes
+		public DensityFunctionTypes.Wrapping.Type type() {
+		                           ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/world/ChunkLevels.java:7: error: package org.jetbrains.annotations does not exist
+import org.jetbrains.annotations.Contract;
+                                ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/util/NarratorManager.java:4: error: package com.mojang.text2speech does not exist
+import com.mojang.text2speech.Narrator;
+                             ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/util/NarratorManager.java:28: error: cannot find symbol
+	private final Narrator narrator = Narrator.getNarrator();
+	              ^
+  symbol:   class Narrator
+  location: class NarratorManager
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/util/MacWindowUtil.java:3: error: package ca.weblite.objc does not exist
+import ca.weblite.objc.Client;
+                      ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/util/MacWindowUtil.java:4: error: package ca.weblite.objc does not exist
+import ca.weblite.objc.NSObject;
+                      ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/util/MacWindowUtil.java:31: error: cannot find symbol
+	private static Optional<NSObject> getCocoaWindow(long handle) {
+	                        ^
+  symbol:   class NSObject
+  location: class MacWindowUtil
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/util/MacWindowUtil.java:36: error: cannot find symbol
+	private static boolean isFullscreen(NSObject handle) {
+	                                    ^
+  symbol:   class NSObject
+  location: class MacWindowUtil
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/util/MacWindowUtil.java:40: error: cannot find symbol
+	private static long getStyleMask(NSObject handle) {
+	                                 ^
+  symbol:   class NSObject
+  location: class MacWindowUtil
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/util/MacWindowUtil.java:44: error: cannot find symbol
+	private static void toggleFullscreen(NSObject handle) {
+	                                     ^
+  symbol:   class NSObject
+  location: class MacWindowUtil
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/network/BlockListChecker.java:5: error: package com.mojang.blocklist does not exist
+import com.mojang.blocklist.BlockListSupplier;
+                           ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileUpload.java:24: error: package org.apache.http does not exist
+import org.apache.http.HttpResponse;
+                      ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileUpload.java:25: error: package org.apache.http does not exist
+import org.apache.http.NameValuePair;
+                      ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileUpload.java:26: error: package org.apache.http.client.config does not exist
+import org.apache.http.client.config.RequestConfig;
+                                    ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileUpload.java:27: error: package org.apache.http.client.methods does not exist
+import org.apache.http.client.methods.HttpPost;
+                                     ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileUpload.java:28: error: package org.apache.http.entity does not exist
+import org.apache.http.entity.InputStreamEntity;
+                             ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileUpload.java:29: error: package org.apache.http.impl.client does not exist
+import org.apache.http.impl.client.CloseableHttpClient;
+                                  ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileUpload.java:30: error: package org.apache.http.impl.client does not exist
+import org.apache.http.impl.client.HttpClientBuilder;
+                                  ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileUpload.java:31: error: package org.apache.http.util does not exist
+import org.apache.http.util.Args;
+                           ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileUpload.java:32: error: package org.apache.http.util does not exist
+import org.apache.http.util.EntityUtils;
+                           ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileUpload.java:52: error: cannot find symbol
+	private final RequestConfig requestConfig = RequestConfig.custom()
+	              ^
+  symbol:   class RequestConfig
+  location: class FileUpload
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileUpload.java:120: error: cannot find symbol
+	private void cleanup(HttpPost request, @Nullable CloseableHttpClient client) {
+	                     ^
+  symbol:   class HttpPost
+  location: class FileUpload
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileUpload.java:120: error: cannot find symbol
+	private void cleanup(HttpPost request, @Nullable CloseableHttpClient client) {
+	                                                 ^
+  symbol:   class CloseableHttpClient
+  location: class FileUpload
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileUpload.java:131: error: cannot find symbol
+	private void setupRequest(HttpPost request) throws FileNotFoundException {
+	                          ^
+  symbol:   class HttpPost
+  location: class FileUpload
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileUpload.java:152: error: cannot find symbol
+	private void handleResponse(HttpResponse response, UploadResult.Builder uploadResultBuilder) throws IOException {
+	                            ^
+  symbol:   class HttpResponse
+  location: class FileUpload
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileUpload.java:182: error: cannot find symbol
+	private long getRetryDelaySeconds(HttpResponse response) {
+	                                  ^
+  symbol:   class HttpResponse
+  location: class FileUpload
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileUpload.java:191: error: cannot find symbol
+	static class CustomInputStreamEntity extends InputStreamEntity {
+	                                             ^
+  symbol:   class InputStreamEntity
+  location: class FileUpload
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileDownload.java:36: error: package org.apache.http does not exist
+import org.apache.http.HttpResponse;
+                      ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileDownload.java:37: error: package org.apache.http.client.config does not exist
+import org.apache.http.client.config.RequestConfig;
+                                    ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileDownload.java:38: error: package org.apache.http.client.methods does not exist
+import org.apache.http.client.methods.CloseableHttpResponse;
+                                     ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileDownload.java:39: error: package org.apache.http.client.methods does not exist
+import org.apache.http.client.methods.HttpGet;
+                                     ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileDownload.java:40: error: package org.apache.http.impl.client does not exist
+import org.apache.http.impl.client.CloseableHttpClient;
+                                  ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileDownload.java:41: error: package org.apache.http.impl.client does not exist
+import org.apache.http.impl.client.HttpClientBuilder;
+                                  ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileDownload.java:55: error: cannot find symbol
+	private volatile HttpGet httpRequest;
+	                 ^
+  symbol:   class HttpGet
+  location: class FileDownload
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileDownload.java:58: error: cannot find symbol
+	private final RequestConfig requestConfig = RequestConfig.custom().setSocketTimeout(120000).setConnectTimeout(120000).build();
+	              ^
+  symbol:   class RequestConfig
+  location: class FileDownload
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/screen/AccessibilityOnboardingScreen.java:3: error: package com.mojang.text2speech does not exist
+import com.mojang.text2speech.Narrator;
+                             ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/chunk/ChunkStatus.java:54: error: cannot find symbol
+	@VisibleForTesting
+	 ^
+  symbol:   class VisibleForTesting
+  location: class ChunkStatus
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/Formatting.java:137: error: cannot find symbol
+	@Contract("!null->!null;_->_")
+	 ^
+  symbol:   class Contract
+  location: class Formatting
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/ai/pathing/PathNodeTypeCache.java:21: error: cannot find symbol
+	@Nullable
+	 ^
+  symbol:   class Nullable
+  location: class PathNodeTypeCache
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/DyeColor.java:125: error: cannot find symbol
+	@Contract("_,!null->!null;_,null->_")
+	 ^
+  symbol:   class Contract
+  location: class DyeColor
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/network/message/MessageSignatureStorage.java:52: error: cannot find symbol
+	@VisibleForTesting
+	 ^
+  symbol:   class VisibleForTesting
+  location: class MessageSignatureStorage
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/GameMode.java:95: error: cannot find symbol
+	@Contract("_,!null->!null;_,null->_")
+	 ^
+  symbol:   class Contract
+  location: class GameMode
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/TrackedPosition.java:10: error: cannot find symbol
+	@VisibleForTesting
+	 ^
+  symbol:   class VisibleForTesting
+  location: class TrackedPosition
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/TrackedPosition.java:15: error: cannot find symbol
+	@VisibleForTesting
+	 ^
+  symbol:   class VisibleForTesting
+  location: class TrackedPosition
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/mob/WardenEntity.java:390: error: cannot find symbol
+	@Contract("null->false")
+	 ^
+  symbol:   class Contract
+  location: class WardenEntity
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/entry/RegistryEntryList.java:70: error: cannot find symbol
+	@VisibleForTesting
+	 ^
+  symbol:   class VisibleForTesting
+  location: interface RegistryEntryList<T>
+  where T is a type-variable:
+    T extends Object declared in interface RegistryEntryList
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/JsonHelper.java:105: error: cannot find symbol
+	@Contract("_,_,!null->!null;_,_,null->_")
+	 ^
+  symbol:   class Contract
+  location: class JsonHelper
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/JsonHelper.java:130: error: cannot find symbol
+	@Contract("_,_,!null->!null;_,_,null->_")
+	 ^
+  symbol:   class Contract
+  location: class JsonHelper
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/JsonHelper.java:352: error: cannot find symbol
+	@Contract("_,_,!null->!null;_,_,null->_")
+	 ^
+  symbol:   class Contract
+  location: class JsonHelper
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/JsonHelper.java:374: error: cannot find symbol
+	@Contract("_,_,!null->!null;_,_,null->_")
+	 ^
+  symbol:   class Contract
+  location: class JsonHelper
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/JsonHelper.java:396: error: cannot find symbol
+	@Contract("_,_,!null,_,_->!null;_,_,null,_,_->_")
+	 ^
+  symbol:   class Contract
+  location: class JsonHelper
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/chunk/light/ChunkSkyLightProvider.java:26: error: cannot find symbol
+	@VisibleForTesting
+	 ^
+  symbol:   class VisibleForTesting
+  location: class ChunkSkyLightProvider
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/world/ChunkLevels.java:23: error: cannot find symbol
+	@Contract("_,!null->!null;_,_->_")
+	 ^
+  symbol:   class Contract
+  location: class ChunkLevels
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/NumberRange.java:39: error: incompatible types: inference variable R#1 has incompatible bounds
+			.xmap(either -> either.map(range -> range, value -> rangeFactory.create(Optional.of(value), Optional.of(value))), range -> {
+			     ^
+    equality constraints: T
+    lower bounds: Number
+  where R#1,L,T,R#2 are type-variables:
+    R#1 extends Object declared in method <L,R#1>right(R#1)
+    L extends Object declared in method <L,R#1>right(R#1)
+    T extends Number declared in method <T,R#2>createCodec(Codec<T>,Factory<T,R#2>)
+    R#2 extends NumberRange<T> declared in method <T,R#2>createCodec(Codec<T>,Factory<T,R#2>)
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/NumberRange.java:97: error: incompatible types: inference variable T#1 has incompatible bounds
+				return Optional.of((Number)converter.apply(string));
+				                  ^
+    equality constraints: T#2
+    lower bounds: Number
+  where T#1,T#2 are type-variables:
+    T#1 extends Object declared in method <T#1>of(T#1)
+    T#2 extends Number declared in method <T#2>fromStringReader(StringReader,Function<String,T#2>,Supplier<DynamicCommandExceptionType>)
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/NumberRange.java:120: error: non-static type variable T cannot be referenced from a static context
+		public static final Codec<NumberRange.DoubleRange> CODEC = NumberRange.createCodec((Codec<T>)Codec.DOUBLE, NumberRange.DoubleRange::new);
+		                                                                                          ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/NumberRange.java:168: error: non-static type variable T cannot be referenced from a static context
+				reader, NumberRange.DoubleRange::create, Double::parseDouble, CommandSyntaxException.BUILT_IN_EXCEPTIONS::readerInvalidDouble, (Function<T, T>)mapper
+				                                                                                                                                         ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/NumberRange.java:168: error: non-static type variable T cannot be referenced from a static context
+				reader, NumberRange.DoubleRange::create, Double::parseDouble, CommandSyntaxException.BUILT_IN_EXCEPTIONS::readerInvalidDouble, (Function<T, T>)mapper
+				                                                                                                                                            ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/NumberRange.java:180: error: non-static type variable T cannot be referenced from a static context
+		public static final Codec<NumberRange.IntRange> CODEC = NumberRange.createCodec((Codec<T>)Codec.INT, NumberRange.IntRange::new);
+		                                                                                       ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/NumberRange.java:228: error: non-static type variable T cannot be referenced from a static context
+				reader, NumberRange.IntRange::parse, Integer::parseInt, CommandSyntaxException.BUILT_IN_EXCEPTIONS::readerInvalidInt, (Function<T, T>)converter
+				                                                                                                                                ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/NumberRange.java:228: error: non-static type variable T cannot be referenced from a static context
+				reader, NumberRange.IntRange::parse, Integer::parseInt, CommandSyntaxException.BUILT_IN_EXCEPTIONS::readerInvalidInt, (Function<T, T>)converter
+				                                                                                                                                   ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/StringIdentifiable.java:67: error: incompatible types: bad return type in lambda expression
+			return name -> name == null ? null : (StringIdentifiable)map.get(name);
+			                                     ^
+    bad type in conditional expression
+      StringIdentifiable cannot be converted to T
+  where T is a type-variable:
+    T extends StringIdentifiable declared in method <T>createMapper(T[],Function<String,String>)
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/tag/TagKey.java:42: error: incompatible types: bad type in conditional expression
+		return this.isOf(registryRef) ? Optional.of(this) : Optional.empty();
+		                                           ^
+    inference variable T#1 has incompatible bounds
+      equality constraints: TagKey<E>
+      lower bounds: TagKey<T#2>
+  where T#1,E,T#2 are type-variables:
+    T#1 extends Object declared in method <T#1>of(T#1)
+    E extends Object declared in method <E>tryCast(RegistryKey<? extends Registry<E>>)
+    T#2 extends Object declared in record TagKey
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/RegistryKey.java:102: error: incompatible types: bad type in conditional expression
+		return this.isOf(registryRef) ? Optional.of(this) : Optional.empty();
+		                                           ^
+    inference variable T#1 has incompatible bounds
+      equality constraints: RegistryKey<E>
+      lower bounds: RegistryKey<T#2>
+  where T#1,E,T#2 are type-variables:
+    T#1 extends Object declared in method <T#1>of(T#1)
+    E extends Object declared in method <E>tryCast(RegistryKey<? extends Registry<E>>)
+    T#2 extends Object declared in class RegistryKey
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/Registry.java:192: error: cannot find symbol
+				entry -> entry.registryKey().getValue()
+				              ^
+  symbol:   method registryKey()
+  location: variable entry of type Object
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/Registry.java:430: error: incompatible types: Iterator<Reference<T>> cannot be converted to Iterator<RegistryEntry<T>>
+				return Registry.this.streamEntries().map(entry -> entry).iterator();
+				                                                                 ^
+  where T is a type-variable:
+    T extends Object declared in interface Registry
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/ComponentPredicate.java:23: error: incompatible types: incompatible parameter types in method reference
+			map -> new ComponentPredicate((List<Component<?>>)map.entrySet().stream().map(Component::of).collect(Collectors.toList())),
+			                                                                              ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/component/Component.java:14: error: non-static type variable T cannot be referenced from a static context
+			return read(registryByteBuf, (ComponentType<T>)componentType);
+			                                            ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/component/Component.java:22: error: non-static type variable T cannot be referenced from a static context
+			write(registryByteBuf, (Component<T>)component);
+			                                  ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/component/Component.java:32: error: non-static type variable T cannot be referenced from a static context
+		return of((ComponentType<T>)entry.getKey(), entry.getValue());
+		                         ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/component/ComponentType.java:102: error: incompatible types: Registry<ComponentType<?>> cannot be converted to Registry<SimpleDataComponentType<T>>
+				return Util.registryValueToString((Registry<ComponentType.Builder.SimpleDataComponentType<T>>)Registries.DATA_COMPONENT_TYPE, this);
+				                                                                                                        ^
+  where T is a type-variable:
+    T extends Object declared in class SimpleDataComponentType
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/BlockView.java:33: error: incompatible types: bad type in conditional expression
+		return blockEntity != null && blockEntity.getType() == type ? Optional.of(blockEntity) : Optional.empty();
+		                                                                         ^
+    inference variable T#1 has incompatible bounds
+      equality constraints: T#2
+      lower bounds: BlockEntity
+  where T#1,T#2 are type-variables:
+    T#1 extends Object declared in method <T#1>of(T#1)
+    T#2 extends BlockEntity declared in method <T#2>getBlockEntity(BlockPos,BlockEntityType<T#2>)
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/StatePredicate.java:126: error: incompatible types: Comparable cannot be converted to T
+			return optional.isPresent() && comparable.compareTo((Comparable)optional.get()) == 0;
+			                                                    ^
+  where T is a type-variable:
+    T extends Comparable<T> declared in method <T>test(State<?,?>,Property<T>)
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/StatePredicate.java:151: error: incompatible types: Comparable cannot be converted to T
+				if (optional.isEmpty() || comparable.compareTo((Comparable)optional.get()) < 0) {
+				                                               ^
+  where T is a type-variable:
+    T extends Comparable<T> declared in method <T>test(State<?,?>,Property<T>)
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/StatePredicate.java:158: error: incompatible types: Comparable cannot be converted to T
+				if (optional.isEmpty() || comparable.compareTo((Comparable)optional.get()) > 0) {
+				                                               ^
+  where T is a type-variable:
+    T extends Comparable<T> declared in method <T>test(State<?,?>,Property<T>)
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/state/State.java:99: error: incompatible types: bad type in conditional expression
+		return comparable == null ? Optional.empty() : Optional.of((Comparable)property.getType().cast(comparable));
+		                                                          ^
+    inference variable T#1 has incompatible bounds
+      equality constraints: T#2
+      lower bounds: Comparable
+  where T#1,T#2 are type-variables:
+    T#1 extends Object declared in method <T#1>of(T#1)
+    T#2 extends Comparable<T#2> declared in method <T#2>getOrEmpty(Property<T#2>)
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/state/State.java:163: error: incompatible types: inference variable E has incompatible bounds
+		return codec.dispatch(
+		                     ^
+    equality constraints: S#1
+    lower bounds: S#2,A#3,State,S#1
+  where E,A#1,S#1,O,S#2,A#2,A#3 are type-variables:
+    E extends Object declared in method <E>dispatch(String,Function<? super E,? extends A#1>,Function<? super A#1,? extends MapCodec<? extends E>>)
+    A#1 extends Object declared in interface Codec
+    S#1 extends State<O,S#1> declared in method <O,S#1>createCodec(Codec<O>,Function<O,S#1>)
+    O extends Object declared in method <O,S#1>createCodec(Codec<O>,Function<O,S#1>)
+    S#2 extends Object declared in method <S#2>xmap(Function<? super A#2,? extends S#2>,Function<? super S#2,? extends A#2>)
+    A#2 extends Object declared in class MapCodec
+    A#3 extends Object declared in method <A#3>unit(A#3)
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/math/BlockPos.java:575: error: incompatible types: inference variable L has incompatible bounds
+					nextQueuer.accept(blockPos, (Consumer)queuedPos -> queue.add(Pair.of(queuedPos, j + 1)));
+					                                                        ^
+    equality constraints: BlockPos
+    lower bounds: Object
+  where L,R are type-variables:
+    L extends Object declared in method <L,R>of(L,R)
+    R extends Object declared in method <L,R>of(L,R)
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/network/codec/PacketCodec.java:400: error: non-static type variable V cannot be referenced from a static context
+				((PacketCodec)this.codecSupplier.get()).encode(object, (V)object2);
+				                                                        ^
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/network/codec/PacketCodec.java:415: error: incompatible types: PacketCodec<B,V> cannot be converted to PacketCodec<S,V>
+		return this;
+		       ^
+  where B,V,S are type-variables:
+    B extends Object declared in interface PacketCodec
+    V extends Object declared in interface PacketCodec
+    S extends B declared in method <S>cast()
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/world/ServerWorld.java:493: error: cannot find symbol
+		((List)this.players.stream().filter(LivingEntity::isSleeping).collect(Collectors.toList())).forEach(player -> player.wakeUp(false, false));
+		                                                                                                                    ^
+  symbol:   method wakeUp(boolean,boolean)
+  location: variable player of type Object
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/world/ServerWorld.java:1822: error: incompatible types: cannot infer type-variable(s) T,U
+				.sorted(Comparator.comparing(Entry::getIntValue).reversed())
+				                            ^
+    (argument mismatch; invalid method reference
+      method getIntValue in interface Entry<K> cannot be applied to given types
+        required: no arguments
+        found:    Object
+        reason: actual and formal argument lists differ in length)
+  where T,U,K are type-variables:
+    T extends Object declared in method <T,U>comparing(Function<? super T,? extends U>)
+    U extends Comparable<? super U> declared in method <T,U>comparing(Function<? super T,? extends U>)
+    K extends Object declared in interface Entry
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/MinecraftServer.java:905: error: executeTask(ServerTask) in MinecraftServer cannot override executeTask(R) in ReentrantThreadExecutor
+	protected void executeTask(ServerTask serverTask) {
+	               ^
+  attempting to assign weaker access privileges; was public
+  where R is a type-variable:
+    R extends Runnable declared in class ReentrantThreadExecutor
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/text/Decoration.java:120: error: reference to createIdToValueFunction is ambiguous
+		private static final IntFunction<Decoration.Parameter> BY_ID = ValueLists.createIdToValueFunction(
+		                                                                         ^
+  both method <T#1>createIdToValueFunction(ToIntFunction<T#1>,T#1[],T#1) in ValueLists and method <T#2>createIdToValueFunction(ToIntFunction<T#2>,T#2[],OutOfBoundsHandling) in ValueLists match
+  where T#1,T#2 are type-variables:
+    T#1 extends Object declared in method <T#1>createIdToValueFunction(ToIntFunction<T#1>,T#1[],T#1)
+    T#2 extends Object declared in method <T#2>createIdToValueFunction(ToIntFunction<T#2>,T#2[],OutOfBoundsHandling)
+/Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/text/Decoration.java:120: error: incompatible types: inference variable T has incompatible bounds
+		private static final IntFunction<Decoration.Parameter> BY_ID = ValueLists.createIdToValueFunction(
+		                                                                                                 ^
+    equality constraints: Parameter
+    lower bounds: OutOfBoundsHandling,Parameter
+  where T is a type-variable:
+    T extends Object declared in method <T>createIdToValueFunction(ToIntFunction<T>,T[],T)
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API that is marked for removal.
+Note: Recompile with -Xlint:removal for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+100 errors
+
+> Task :compileJava FAILED
+
+[Incubating] Problems report is available at: file:///Users/Samar/Downloads/1.21.1-Deobfuscated-main%203/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler output below.
+  Note: Recompile with -Xlint:deprecation for details.
+  Note: Some input files use or override a deprecated API that is marked for removal.
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/MinecraftServer.java:905: error: executeTask(ServerTask) in MinecraftServer cannot override executeTask(R) in ReentrantThreadExecutor
+  	protected void executeTask(ServerTask serverTask) {
+  	               ^
+    attempting to assign weaker access privileges; was public
+    where R is a type-variable:
+      R extends Runnable declared in class ReentrantThreadExecutor
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/util/NarratorManager.java:28: error: cannot find symbol
+  	private final Narrator narrator = Narrator.getNarrator();
+  	              ^
+    symbol:   class Narrator
+    location: class NarratorManager
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/util/MacWindowUtil.java:31: error: cannot find symbol
+  	private static Optional<NSObject> getCocoaWindow(long handle) {
+  	                        ^
+    symbol:   class NSObject
+    location: class MacWindowUtil
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/util/MacWindowUtil.java:36: error: cannot find symbol
+  	private static boolean isFullscreen(NSObject handle) {
+  	                                    ^
+    symbol:   class NSObject
+    location: class MacWindowUtil
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/util/MacWindowUtil.java:40: error: cannot find symbol
+  	private static long getStyleMask(NSObject handle) {
+  	                                 ^
+    symbol:   class NSObject
+    location: class MacWindowUtil
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/util/MacWindowUtil.java:44: error: cannot find symbol
+  	private static void toggleFullscreen(NSObject handle) {
+  	                                     ^
+    symbol:   class NSObject
+    location: class MacWindowUtil
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileUpload.java:52: error: cannot find symbol
+  	private final RequestConfig requestConfig = RequestConfig.custom()
+  	              ^
+    symbol:   class RequestConfig
+    location: class FileUpload
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileUpload.java:120: error: cannot find symbol
+  	private void cleanup(HttpPost request, @Nullable CloseableHttpClient client) {
+  	                     ^
+    symbol:   class HttpPost
+    location: class FileUpload
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileUpload.java:120: error: cannot find symbol
+  	private void cleanup(HttpPost request, @Nullable CloseableHttpClient client) {
+  	                                                 ^
+    symbol:   class CloseableHttpClient
+    location: class FileUpload
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileUpload.java:131: error: cannot find symbol
+  	private void setupRequest(HttpPost request) throws FileNotFoundException {
+  	                          ^
+    symbol:   class HttpPost
+    location: class FileUpload
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileUpload.java:152: error: cannot find symbol
+  	private void handleResponse(HttpResponse response, UploadResult.Builder uploadResultBuilder) throws IOException {
+  	                            ^
+    symbol:   class HttpResponse
+    location: class FileUpload
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileUpload.java:182: error: cannot find symbol
+  	private long getRetryDelaySeconds(HttpResponse response) {
+  	                                  ^
+    symbol:   class HttpResponse
+    location: class FileUpload
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileUpload.java:191: error: cannot find symbol
+  	static class CustomInputStreamEntity extends InputStreamEntity {
+  	                                             ^
+    symbol:   class InputStreamEntity
+    location: class FileUpload
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileDownload.java:55: error: cannot find symbol
+  	private volatile HttpGet httpRequest;
+  	                 ^
+    symbol:   class HttpGet
+    location: class FileDownload
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileDownload.java:58: error: cannot find symbol
+  	private final RequestConfig requestConfig = RequestConfig.custom().setSocketTimeout(120000).setConnectTimeout(120000).build();
+  	              ^
+    symbol:   class RequestConfig
+    location: class FileDownload
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/chunk/ChunkStatus.java:54: error: cannot find symbol
+  	@VisibleForTesting
+  	 ^
+    symbol:   class VisibleForTesting
+    location: class ChunkStatus
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/Formatting.java:137: error: cannot find symbol
+  	@Contract("!null->!null;_->_")
+  	 ^
+    symbol:   class Contract
+    location: class Formatting
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/ai/pathing/PathNodeTypeCache.java:21: error: cannot find symbol
+  	@Nullable
+  	 ^
+    symbol:   class Nullable
+    location: class PathNodeTypeCache
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/DyeColor.java:125: error: cannot find symbol
+  	@Contract("_,!null->!null;_,null->_")
+  	 ^
+    symbol:   class Contract
+    location: class DyeColor
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/network/message/MessageSignatureStorage.java:52: error: cannot find symbol
+  	@VisibleForTesting
+  	 ^
+    symbol:   class VisibleForTesting
+    location: class MessageSignatureStorage
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/GameMode.java:95: error: cannot find symbol
+  	@Contract("_,!null->!null;_,null->_")
+  	 ^
+    symbol:   class Contract
+    location: class GameMode
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/TrackedPosition.java:10: error: cannot find symbol
+  	@VisibleForTesting
+  	 ^
+    symbol:   class VisibleForTesting
+    location: class TrackedPosition
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/TrackedPosition.java:15: error: cannot find symbol
+  	@VisibleForTesting
+  	 ^
+    symbol:   class VisibleForTesting
+    location: class TrackedPosition
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/mob/WardenEntity.java:390: error: cannot find symbol
+  	@Contract("null->false")
+  	 ^
+    symbol:   class Contract
+    location: class WardenEntity
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/entry/RegistryEntryList.java:70: error: cannot find symbol
+  	@VisibleForTesting
+  	 ^
+    symbol:   class VisibleForTesting
+    location: interface RegistryEntryList<T>
+    where T is a type-variable:
+      T extends Object declared in interface RegistryEntryList
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/JsonHelper.java:105: error: cannot find symbol
+  	@Contract("_,_,!null->!null;_,_,null->_")
+  	 ^
+    symbol:   class Contract
+    location: class JsonHelper
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/JsonHelper.java:130: error: cannot find symbol
+  	@Contract("_,_,!null->!null;_,_,null->_")
+  	 ^
+    symbol:   class Contract
+    location: class JsonHelper
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/JsonHelper.java:352: error: cannot find symbol
+  	@Contract("_,_,!null->!null;_,_,null->_")
+  	 ^
+    symbol:   class Contract
+    location: class JsonHelper
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/JsonHelper.java:374: error: cannot find symbol
+  	@Contract("_,_,!null->!null;_,_,null->_")
+  	 ^
+    symbol:   class Contract
+    location: class JsonHelper
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/JsonHelper.java:396: error: cannot find symbol
+  	@Contract("_,_,!null,_,_->!null;_,_,null,_,_->_")
+  	 ^
+    symbol:   class Contract
+    location: class JsonHelper
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/chunk/light/ChunkSkyLightProvider.java:26: error: cannot find symbol
+  	@VisibleForTesting
+  	 ^
+    symbol:   class VisibleForTesting
+    location: class ChunkSkyLightProvider
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/world/ChunkLevels.java:23: error: cannot find symbol
+  	@Contract("_,!null->!null;_,_->_")
+  	 ^
+    symbol:   class Contract
+    location: class ChunkLevels
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:878: error: Wrapping has protected access in DensityFunctionTypes
+  		public DensityFunctionTypes.Wrapping.Type type() {
+  		                           ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:698: error: Wrapping has protected access in DensityFunctionTypes
+  		public DensityFunctionTypes.Wrapping.Type type() {
+  		                           ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:831: error: Wrapping has protected access in DensityFunctionTypes
+  		public DensityFunctionTypes.Wrapping.Type type() {
+  		                           ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:592: error: Wrapping has protected access in DensityFunctionTypes
+  		public DensityFunctionTypes.Wrapping.Type type() {
+  		                           ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/ChunkNoiseSampler.java:647: error: Wrapping has protected access in DensityFunctionTypes
+  		public DensityFunctionTypes.Wrapping.Type type() {
+  		                           ^
+  Note: Recompile with -Xlint:unchecked for details.
+  Note: Some input files use or override a deprecated API.
+  Note: Some input files use unchecked or unsafe operations.
+  Note: Recompile with -Xlint:removal for details.
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/Registry.java:192: error: cannot find symbol
+  				entry -> entry.registryKey().getValue()
+  				              ^
+    symbol:   method registryKey()
+    location: variable entry of type Object
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/world/ServerWorld.java:493: error: cannot find symbol
+  		((List)this.players.stream().filter(LivingEntity::isSleeping).collect(Collectors.toList())).forEach(player -> player.wakeUp(false, false));
+  		                                                                                                                    ^
+    symbol:   method wakeUp(boolean,boolean)
+    location: variable player of type Object
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/text/Decoration.java:120: error: reference to createIdToValueFunction is ambiguous
+  		private static final IntFunction<Decoration.Parameter> BY_ID = ValueLists.createIdToValueFunction(
+  		                                                                         ^
+    both method <T#1>createIdToValueFunction(ToIntFunction<T#1>,T#1[],T#1) in ValueLists and method <T#2>createIdToValueFunction(ToIntFunction<T#2>,T#2[],OutOfBoundsHandling) in ValueLists match
+    where T#1,T#2 are type-variables:
+      T#1 extends Object declared in method <T#1>createIdToValueFunction(ToIntFunction<T#1>,T#1[],T#1)
+      T#2 extends Object declared in method <T#2>createIdToValueFunction(ToIntFunction<T#2>,T#2[],OutOfBoundsHandling)
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/NumberRange.java:39: error: incompatible types: inference variable R#1 has incompatible bounds
+  			.xmap(either -> either.map(range -> range, value -> rangeFactory.create(Optional.of(value), Optional.of(value))), range -> {
+  			     ^
+      equality constraints: T
+      lower bounds: Number
+    where R#1,L,T,R#2 are type-variables:
+      R#1 extends Object declared in method <L,R#1>right(R#1)
+      L extends Object declared in method <L,R#1>right(R#1)
+      T extends Number declared in method <T,R#2>createCodec(Codec<T>,Factory<T,R#2>)
+      R#2 extends NumberRange<T> declared in method <T,R#2>createCodec(Codec<T>,Factory<T,R#2>)
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/NumberRange.java:97: error: incompatible types: inference variable T#1 has incompatible bounds
+  				return Optional.of((Number)converter.apply(string));
+  				                  ^
+      equality constraints: T#2
+      lower bounds: Number
+    where T#1,T#2 are type-variables:
+      T#1 extends Object declared in method <T#1>of(T#1)
+      T#2 extends Number declared in method <T#2>fromStringReader(StringReader,Function<String,T#2>,Supplier<DynamicCommandExceptionType>)
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/StringIdentifiable.java:67: error: incompatible types: bad return type in lambda expression
+  			return name -> name == null ? null : (StringIdentifiable)map.get(name);
+  			                                     ^
+      bad type in conditional expression
+        StringIdentifiable cannot be converted to T
+    where T is a type-variable:
+      T extends StringIdentifiable declared in method <T>createMapper(T[],Function<String,String>)
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/tag/TagKey.java:42: error: incompatible types: bad type in conditional expression
+  		return this.isOf(registryRef) ? Optional.of(this) : Optional.empty();
+  		                                           ^
+      inference variable T#1 has incompatible bounds
+        equality constraints: TagKey<E>
+        lower bounds: TagKey<T#2>
+    where T#1,E,T#2 are type-variables:
+      T#1 extends Object declared in method <T#1>of(T#1)
+      E extends Object declared in method <E>tryCast(RegistryKey<? extends Registry<E>>)
+      T#2 extends Object declared in record TagKey
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/RegistryKey.java:102: error: incompatible types: bad type in conditional expression
+  		return this.isOf(registryRef) ? Optional.of(this) : Optional.empty();
+  		                                           ^
+      inference variable T#1 has incompatible bounds
+        equality constraints: RegistryKey<E>
+        lower bounds: RegistryKey<T#2>
+    where T#1,E,T#2 are type-variables:
+      T#1 extends Object declared in method <T#1>of(T#1)
+      E extends Object declared in method <E>tryCast(RegistryKey<? extends Registry<E>>)
+      T#2 extends Object declared in class RegistryKey
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/Registry.java:430: error: incompatible types: Iterator<Reference<T>> cannot be converted to Iterator<RegistryEntry<T>>
+  				return Registry.this.streamEntries().map(entry -> entry).iterator();
+  				                                                                 ^
+    where T is a type-variable:
+      T extends Object declared in interface Registry
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/ComponentPredicate.java:23: error: incompatible types: incompatible parameter types in method reference
+  			map -> new ComponentPredicate((List<Component<?>>)map.entrySet().stream().map(Component::of).collect(Collectors.toList())),
+  			                                                                              ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/component/ComponentType.java:102: error: incompatible types: Registry<ComponentType<?>> cannot be converted to Registry<SimpleDataComponentType<T>>
+  				return Util.registryValueToString((Registry<ComponentType.Builder.SimpleDataComponentType<T>>)Registries.DATA_COMPONENT_TYPE, this);
+  				                                                                                                        ^
+    where T is a type-variable:
+      T extends Object declared in class SimpleDataComponentType
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/BlockView.java:33: error: incompatible types: bad type in conditional expression
+  		return blockEntity != null && blockEntity.getType() == type ? Optional.of(blockEntity) : Optional.empty();
+  		                                                                         ^
+      inference variable T#1 has incompatible bounds
+        equality constraints: T#2
+        lower bounds: BlockEntity
+    where T#1,T#2 are type-variables:
+      T#1 extends Object declared in method <T#1>of(T#1)
+      T#2 extends BlockEntity declared in method <T#2>getBlockEntity(BlockPos,BlockEntityType<T#2>)
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/StatePredicate.java:126: error: incompatible types: Comparable cannot be converted to T
+  			return optional.isPresent() && comparable.compareTo((Comparable)optional.get()) == 0;
+  			                                                    ^
+    where T is a type-variable:
+      T extends Comparable<T> declared in method <T>test(State<?,?>,Property<T>)
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/StatePredicate.java:151: error: incompatible types: Comparable cannot be converted to T
+  				if (optional.isEmpty() || comparable.compareTo((Comparable)optional.get()) < 0) {
+  				                                               ^
+    where T is a type-variable:
+      T extends Comparable<T> declared in method <T>test(State<?,?>,Property<T>)
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/StatePredicate.java:158: error: incompatible types: Comparable cannot be converted to T
+  				if (optional.isEmpty() || comparable.compareTo((Comparable)optional.get()) > 0) {
+  				                                               ^
+    where T is a type-variable:
+      T extends Comparable<T> declared in method <T>test(State<?,?>,Property<T>)
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/state/State.java:99: error: incompatible types: bad type in conditional expression
+  		return comparable == null ? Optional.empty() : Optional.of((Comparable)property.getType().cast(comparable));
+  		                                                          ^
+      inference variable T#1 has incompatible bounds
+        equality constraints: T#2
+        lower bounds: Comparable
+    where T#1,T#2 are type-variables:
+      T#1 extends Object declared in method <T#1>of(T#1)
+      T#2 extends Comparable<T#2> declared in method <T#2>getOrEmpty(Property<T#2>)
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/state/State.java:163: error: incompatible types: inference variable E has incompatible bounds
+  		return codec.dispatch(
+  		                     ^
+      equality constraints: S#1
+      lower bounds: S#2,A#3,State,S#1
+    where E,A#1,S#1,O,S#2,A#2,A#3 are type-variables:
+      E extends Object declared in method <E>dispatch(String,Function<? super E,? extends A#1>,Function<? super A#1,? extends MapCodec<? extends E>>)
+      A#1 extends Object declared in interface Codec
+      S#1 extends State<O,S#1> declared in method <O,S#1>createCodec(Codec<O>,Function<O,S#1>)
+      O extends Object declared in method <O,S#1>createCodec(Codec<O>,Function<O,S#1>)
+      S#2 extends Object declared in method <S#2>xmap(Function<? super A#2,? extends S#2>,Function<? super S#2,? extends A#2>)
+      A#2 extends Object declared in class MapCodec
+      A#3 extends Object declared in method <A#3>unit(A#3)
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/math/BlockPos.java:575: error: incompatible types: inference variable L has incompatible bounds
+  					nextQueuer.accept(blockPos, (Consumer)queuedPos -> queue.add(Pair.of(queuedPos, j + 1)));
+  					                                                        ^
+      equality constraints: BlockPos
+      lower bounds: Object
+    where L,R are type-variables:
+      L extends Object declared in method <L,R>of(L,R)
+      R extends Object declared in method <L,R>of(L,R)
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/network/codec/PacketCodec.java:415: error: incompatible types: PacketCodec<B,V> cannot be converted to PacketCodec<S,V>
+  		return this;
+  		       ^
+    where B,V,S are type-variables:
+      B extends Object declared in interface PacketCodec
+      V extends Object declared in interface PacketCodec
+      S extends B declared in method <S>cast()
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/world/ServerWorld.java:1822: error: incompatible types: cannot infer type-variable(s) T,U
+  				.sorted(Comparator.comparing(Entry::getIntValue).reversed())
+  				                            ^
+      (argument mismatch; invalid method reference
+        method getIntValue in interface Entry<K> cannot be applied to given types
+          required: no arguments
+          found:    Object
+          reason: actual and formal argument lists differ in length)
+    where T,U,K are type-variables:
+      T extends Object declared in method <T,U>comparing(Function<? super T,? extends U>)
+      U extends Comparable<? super U> declared in method <T,U>comparing(Function<? super T,? extends U>)
+      K extends Object declared in interface Entry
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/text/Decoration.java:120: error: incompatible types: inference variable T has incompatible bounds
+  		private static final IntFunction<Decoration.Parameter> BY_ID = ValueLists.createIdToValueFunction(
+  		                                                                                                 ^
+      equality constraints: Parameter
+      lower bounds: OutOfBoundsHandling,Parameter
+    where T is a type-variable:
+      T extends Object declared in method <T>createIdToValueFunction(ToIntFunction<T>,T[],T)
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/NumberRange.java:120: error: non-static type variable T cannot be referenced from a static context
+  		public static final Codec<NumberRange.DoubleRange> CODEC = NumberRange.createCodec((Codec<T>)Codec.DOUBLE, NumberRange.DoubleRange::new);
+  		                                                                                          ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/NumberRange.java:168: error: non-static type variable T cannot be referenced from a static context
+  				reader, NumberRange.DoubleRange::create, Double::parseDouble, CommandSyntaxException.BUILT_IN_EXCEPTIONS::readerInvalidDouble, (Function<T, T>)mapper
+  				                                                                                                                                         ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/NumberRange.java:168: error: non-static type variable T cannot be referenced from a static context
+  				reader, NumberRange.DoubleRange::create, Double::parseDouble, CommandSyntaxException.BUILT_IN_EXCEPTIONS::readerInvalidDouble, (Function<T, T>)mapper
+  				                                                                                                                                            ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/NumberRange.java:180: error: non-static type variable T cannot be referenced from a static context
+  		public static final Codec<NumberRange.IntRange> CODEC = NumberRange.createCodec((Codec<T>)Codec.INT, NumberRange.IntRange::new);
+  		                                                                                       ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/NumberRange.java:228: error: non-static type variable T cannot be referenced from a static context
+  				reader, NumberRange.IntRange::parse, Integer::parseInt, CommandSyntaxException.BUILT_IN_EXCEPTIONS::readerInvalidInt, (Function<T, T>)converter
+  				                                                                                                                                ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/NumberRange.java:228: error: non-static type variable T cannot be referenced from a static context
+  				reader, NumberRange.IntRange::parse, Integer::parseInt, CommandSyntaxException.BUILT_IN_EXCEPTIONS::readerInvalidInt, (Function<T, T>)converter
+  				                                                                                                                                   ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/component/Component.java:14: error: non-static type variable T cannot be referenced from a static context
+  			return read(registryByteBuf, (ComponentType<T>)componentType);
+  			                                            ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/component/Component.java:22: error: non-static type variable T cannot be referenced from a static context
+  			write(registryByteBuf, (Component<T>)component);
+  			                                  ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/component/Component.java:32: error: non-static type variable T cannot be referenced from a static context
+  		return of((ComponentType<T>)entry.getKey(), entry.getValue());
+  		                         ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/network/codec/PacketCodec.java:400: error: non-static type variable V cannot be referenced from a static context
+  				((PacketCodec)this.codecSupplier.get()).encode(object, (V)object2);
+  				                                                        ^
+  Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/entry/RegistryEntryList.java:16: error: package org.jetbrains.annotations does not exist
+  import org.jetbrains.annotations.VisibleForTesting;
+                                  ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/chunk/ChunkStatus.java:12: error: package org.jetbrains.annotations does not exist
+  import org.jetbrains.annotations.VisibleForTesting;
+                                  ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/GameMode.java:9: error: package org.jetbrains.annotations does not exist
+  import org.jetbrains.annotations.Contract;
+                                  ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/Formatting.java:13: error: package org.jetbrains.annotations does not exist
+  import org.jetbrains.annotations.Contract;
+                                  ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/network/message/MessageSignatureStorage.java:8: error: package org.jetbrains.annotations does not exist
+  import org.jetbrains.annotations.VisibleForTesting;
+                                  ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/ai/pathing/PathNodeTypeCache.java:6: error: package org.jetbrains.annotations does not exist
+  import org.jetbrains.annotations.Nullable;
+                                  ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/DyeColor.java:15: error: package org.jetbrains.annotations does not exist
+  import org.jetbrains.annotations.Contract;
+                                  ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/TrackedPosition.java:4: error: package org.jetbrains.annotations does not exist
+  import org.jetbrains.annotations.VisibleForTesting;
+                                  ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/mob/WardenEntity.java:75: error: package org.jetbrains.annotations does not exist
+  import org.jetbrains.annotations.Contract;
+                                  ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/JsonHelper.java:31: error: package org.jetbrains.annotations does not exist
+  import org.jetbrains.annotations.Contract;
+                                  ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/chunk/light/ChunkSkyLightProvider.java:13: error: package org.jetbrains.annotations does not exist
+  import org.jetbrains.annotations.VisibleForTesting;
+                                  ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/world/ChunkLevels.java:7: error: package org.jetbrains.annotations does not exist
+  import org.jetbrains.annotations.Contract;
+                                  ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/util/NarratorManager.java:4: error: package com.mojang.text2speech does not exist
+  import com.mojang.text2speech.Narrator;
+                               ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/util/MacWindowUtil.java:3: error: package ca.weblite.objc does not exist
+  import ca.weblite.objc.Client;
+                        ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/util/MacWindowUtil.java:4: error: package ca.weblite.objc does not exist
+  import ca.weblite.objc.NSObject;
+                        ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/network/BlockListChecker.java:5: error: package com.mojang.blocklist does not exist
+  import com.mojang.blocklist.BlockListSupplier;
+                             ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileUpload.java:24: error: package org.apache.http does not exist
+  import org.apache.http.HttpResponse;
+                        ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileUpload.java:25: error: package org.apache.http does not exist
+  import org.apache.http.NameValuePair;
+                        ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileUpload.java:26: error: package org.apache.http.client.config does not exist
+  import org.apache.http.client.config.RequestConfig;
+                                      ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileUpload.java:27: error: package org.apache.http.client.methods does not exist
+  import org.apache.http.client.methods.HttpPost;
+                                       ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileUpload.java:28: error: package org.apache.http.entity does not exist
+  import org.apache.http.entity.InputStreamEntity;
+                               ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileUpload.java:29: error: package org.apache.http.impl.client does not exist
+  import org.apache.http.impl.client.CloseableHttpClient;
+                                    ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileUpload.java:30: error: package org.apache.http.impl.client does not exist
+  import org.apache.http.impl.client.HttpClientBuilder;
+                                    ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileUpload.java:31: error: package org.apache.http.util does not exist
+  import org.apache.http.util.Args;
+                             ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileUpload.java:32: error: package org.apache.http.util does not exist
+  import org.apache.http.util.EntityUtils;
+                             ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileDownload.java:36: error: package org.apache.http does not exist
+  import org.apache.http.HttpResponse;
+                        ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileDownload.java:37: error: package org.apache.http.client.config does not exist
+  import org.apache.http.client.config.RequestConfig;
+                                      ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileDownload.java:38: error: package org.apache.http.client.methods does not exist
+  import org.apache.http.client.methods.CloseableHttpResponse;
+                                       ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileDownload.java:39: error: package org.apache.http.client.methods does not exist
+  import org.apache.http.client.methods.HttpGet;
+                                       ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileDownload.java:40: error: package org.apache.http.impl.client does not exist
+  import org.apache.http.impl.client.CloseableHttpClient;
+                                    ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/FileDownload.java:41: error: package org.apache.http.impl.client does not exist
+  import org.apache.http.impl.client.HttpClientBuilder;
+                                    ^
+  /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/screen/AccessibilityOnboardingScreen.java:3: error: package com.mojang.text2speech does not exist
+  import com.mojang.text2speech.Narrator;
+                               ^
+  100 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 9s
+1 actionable task: 1 executed

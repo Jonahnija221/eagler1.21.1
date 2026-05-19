@@ -1,0 +1,2391 @@
+
+> Task :compileJavaEcj
+----------
+1. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/item/EnchantmentPredicate.java (at line 34)
+	for (RegistryEntry<Enchantment> registryEntry : (RegistryEntryList)this.enchantments.get()) {
+	                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from element type Object to RegistryEntry<Enchantment>
+----------
+----------
+2. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/item/JukeboxPlayablePredicate.java (at line 34)
+	for (RegistryEntry<JukeboxSong> registryEntry : (RegistryEntryList)this.song.get()) {
+	                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from element type Object to RegistryEntry<JukeboxSong>
+----------
+----------
+3. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/NumberRange.java (at line 227)
+	return NumberRange.parse(
+				reader, NumberRange.IntRange::parse, Integer::parseInt, CommandSyntaxException.BUILT_IN_EXCEPTIONS::readerInvalidInt, (Function)converter
+			);
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from NumberRange to NumberRange.IntRange
+----------
+4. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/predicate/NumberRange.java (at line 228)
+	reader, NumberRange.IntRange::parse, Integer::parseInt, CommandSyntaxException.BUILT_IN_EXCEPTIONS::readerInvalidInt, (Function)converter
+	        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type NumberRange.IntRange does not define parse(StringReader, Optional<Number>, Optional<Number>) that is applicable here
+----------
+----------
+5. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/test/TestFunctions.java (at line 56)
+	Consumer<ServerWorld> consumer = (Consumer<ServerWorld>)batchConsumerMap.putIfAbsent(string, getInvoker(method));
+	                                                                         ^^^^^^^^^^^
+The method putIfAbsent(String, Consumer<ServerWorld>) in the type Map<String,Consumer<ServerWorld>> is not applicable for the arguments (String, Consumer<capture#3-of ?>)
+----------
+----------
+6. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/TopologicalSorts.java (at line 41)
+	for (T object : (Set)successors.getOrDefault(now, ImmutableSet.of())) {
+	                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from element type Object to T
+----------
+----------
+7. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/collection/Weighting.java (at line 28)
+	throw (IllegalArgumentException)Util.throwOrPause((T)(new IllegalArgumentException("Negative total weight in getRandomItem")));
+	                                     ^^^^^^^^^^^^
+The method throwOrPause(T extends Throwable) in the type Util is not applicable for the arguments (T extends Weighted)
+----------
+----------
+8. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/dynamic/CodecCache.java (at line 41)
+	return result.map(object -> object instanceof NbtElement nbtElement ? nbtElement.copy() : object);
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from DataResult<Object> to DataResult<T>
+----------
+----------
+9. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/Util.java (at line 345)
+	return var4;
+	       ^^^^
+Type mismatch: cannot convert from Object to V
+----------
+10. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/Util.java (at line 1211)
+	Process process = (Process)AccessController.doPrivileged(() -> Runtime.getRuntime().exec(this.getURIOpenCommand(uri)));
+	                                            ^^^^^^^^^^^^
+The method doPrivileged(PrivilegedAction<Process>) is ambiguous for the type AccessController
+----------
+----------
+11. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/ZipCompressor.java (at line 109)
+	for (Path path3 : (List)stream.collect(Collectors.toList())) {
+	                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from element type Object to Path
+----------
+----------
+12. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/profiling/jfr/JfrProfile.java (at line 44)
+	return map.entrySet()
+			.stream()
+			.map(entry -> Pair.of((ChunkStatus)entry.getKey(), LongRunningSampleStatistics.fromSamples((List)entry.getValue())))
+			.sorted(Comparator.comparing(pair -> ((LongRunningSampleStatistics)pair.getSecond()).totalDuration()).reversed())
+			.toList();
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from List<Pair<ChunkStatus,LongRunningSampleStatistics>> to List<Pair<ChunkStatus,LongRunningSampleStatistics<ChunkGenerationSample>>>
+----------
+13. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/profiling/jfr/JfrProfile.java (at line 47)
+	.sorted(Comparator.comparing(pair -> ((LongRunningSampleStatistics)pair.getSecond()).totalDuration()).reversed())
+	                                                                        ^^^^^^^^^
+The method getSecond() is undefined for the type Object
+----------
+----------
+14. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/profiling/jfr/sample/FileIoSample.java (at line 26)
+	.map(entry -> Pair.of((String)entry.getKey(), (Long)entry.getValue()))
+	                                    ^^^^^^
+The method getKey() is undefined for the type Object
+----------
+15. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/profiling/jfr/sample/FileIoSample.java (at line 26)
+	.map(entry -> Pair.of((String)entry.getKey(), (Long)entry.getValue()))
+	                                                          ^^^^^^^^
+The method getValue() is undefined for the type Object
+----------
+----------
+16. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/profiler/ProfileResultImpl.java (at line 50)
+	private static final Comparator<Entry<String, ProfileResultImpl.CounterInfo>> COMPARATOR = Entry.comparingByValue(
+			Comparator.comparingLong(counterInfo -> counterInfo.totalTime)
+		)
+		.reversed();
+	                                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from Comparator<Map.Entry<Object,Object>> to Comparator<Map.Entry<String,ProfileResultImpl.CounterInfo>>
+----------
+17. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/util/profiler/ProfileResultImpl.java (at line 51)
+	Comparator.comparingLong(counterInfo -> counterInfo.totalTime)
+	                                                    ^^^^^^^^^
+totalTime cannot be resolved or is not a field
+----------
+----------
+18. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/nbt/NbtLongArray.java (at line 98)
+	@Override
+	^^^^^^^^^
+Duplicate annotation of non-repeatable type @Override. Only annotation types marked @Repeatable can be used multiple times at one target.
+----------
+19. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/nbt/NbtLongArray.java (at line 100)
+	@Override
+	^^^^^^^^^
+Duplicate annotation of non-repeatable type @Override. Only annotation types marked @Repeatable can be used multiple times at one target.
+----------
+----------
+20. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/nbt/StringNbtReader.java (at line 278)
+	list.add(((AbstractNbtNumber)nbtElement).byteValue());
+	     ^^^
+The method add(T) in the type List<T> is not applicable for the arguments (byte)
+----------
+21. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/nbt/StringNbtReader.java (at line 280)
+	list.add(((AbstractNbtNumber)nbtElement).longValue());
+	     ^^^
+The method add(T) in the type List<T> is not applicable for the arguments (long)
+----------
+22. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/nbt/StringNbtReader.java (at line 282)
+	list.add(((AbstractNbtNumber)nbtElement).intValue());
+	     ^^^
+The method add(int, T) in the type List<T> is not applicable for the arguments (int)
+----------
+----------
+23. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/nbt/NbtOps.java (at line 262)
+	? DataResult.success(abstractNbtList::forEach)
+	  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from DataResult<Object> to DataResult<Consumer<Consumer<NbtElement>>>
+----------
+24. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/nbt/NbtOps.java (at line 262)
+	? DataResult.success(abstractNbtList::forEach)
+	                     ^^^^^^^^^^^^^^^^^^^^^^^^
+The target type of this expression must be a functional interface
+----------
+25. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/nbt/NbtOps.java (at line 498)
+	return new NbtOps.CompoundListMerger().merge(this.list).merge(nbt);
+	                                       ^^^^^
+The method merge(NbtElement) is ambiguous for the type NbtOps.CompoundListMerger
+----------
+----------
+26. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/nbt/NbtHelper.java (at line 48)
+	private static final Comparator<NbtList> BLOCK_POS_COMPARATOR = Comparator.comparingInt(nbt -> nbt.getInt(1))
+		.thenComparingInt(nbt -> nbt.getInt(0))
+		.thenComparingInt(nbt -> nbt.getInt(2));
+	                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from Comparator<Object> to Comparator<NbtList>
+----------
+27. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/nbt/NbtHelper.java (at line 48)
+	private static final Comparator<NbtList> BLOCK_POS_COMPARATOR = Comparator.comparingInt(nbt -> nbt.getInt(1))
+	                                                                                                   ^^^^^^
+The method getInt(int) is undefined for the type Object
+----------
+28. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/nbt/NbtHelper.java (at line 49)
+	.thenComparingInt(nbt -> nbt.getInt(0))
+	                             ^^^^^^
+The method getInt(int) is undefined for the type Object
+----------
+29. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/nbt/NbtHelper.java (at line 50)
+	.thenComparingInt(nbt -> nbt.getInt(2));
+	                             ^^^^^^
+The method getInt(int) is undefined for the type Object
+----------
+30. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/nbt/NbtHelper.java (at line 51)
+	private static final Comparator<NbtList> ENTITY_POS_COMPARATOR = Comparator.comparingDouble(nbt -> nbt.getDouble(1))
+		.thenComparingDouble(nbt -> nbt.getDouble(0))
+		.thenComparingDouble(nbt -> nbt.getDouble(2));
+	                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from Comparator<Object> to Comparator<NbtList>
+----------
+31. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/nbt/NbtHelper.java (at line 51)
+	private static final Comparator<NbtList> ENTITY_POS_COMPARATOR = Comparator.comparingDouble(nbt -> nbt.getDouble(1))
+	                                                                                                       ^^^^^^^^^
+The method getDouble(int) is undefined for the type Object
+----------
+32. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/nbt/NbtHelper.java (at line 52)
+	.thenComparingDouble(nbt -> nbt.getDouble(0))
+	                                ^^^^^^^^^
+The method getDouble(int) is undefined for the type Object
+----------
+33. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/nbt/NbtHelper.java (at line 53)
+	.thenComparingDouble(nbt -> nbt.getDouble(2));
+	                                ^^^^^^^^^
+The method getDouble(int) is undefined for the type Object
+----------
+34. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/nbt/NbtHelper.java (at line 239)
+	return state.with(property, (Comparable)optional.get());
+	             ^^^^
+Bound mismatch: The generic method with(Property<T>, V) of type State<O,S> is not applicable for the arguments (Property<T>, Comparable). The inferred type Comparable is not a valid substitute for the bounded parameter <V extends T>
+----------
+35. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/nbt/NbtHelper.java (at line 397)
+	int ix = list.stream().mapToInt(String::length).max().orElse(0);
+	    ^^
+Duplicate local variable ix
+----------
+36. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/nbt/NbtHelper.java (at line 419)
+	int ix = 0;
+	    ^^
+Duplicate local variable ix
+----------
+37. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/nbt/NbtHelper.java (at line 603)
+	Map<String, NbtElement> map = (Map<String, NbtElement>)nbtList.stream()
+			.map(NbtString.class::cast)
+			.map(NbtString::asString)
+			.collect(Collectors.toMap(Function.identity(), NbtHelper::fromNbtProviderFormattedPalette));
+	                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot cast from Map<String,NbtCompound> to Map<String,NbtElement>
+----------
+----------
+38. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/nbt/scanner/NbtCollector.java (at line 143)
+	this.stack.addLast((Consumer)nbt -> nbtCompound.put(this.currentKey, nbt));
+	                                                ^^^
+The method put(String, NbtElement) in the type NbtCompound is not applicable for the arguments (String, Object)
+----------
+39. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/nbt/scanner/NbtCollector.java (at line 162)
+	this.stack.addLast((Consumer)nbt -> nbtCompound.put(this.currentKey, nbt));
+	                                                ^^^
+The method put(String, NbtElement) in the type NbtCompound is not applicable for the arguments (String, Object)
+----------
+40. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/nbt/scanner/NbtCollector.java (at line 164)
+	this.stack.addLast((Consumer)nbt -> this.root = nbt);
+	                                                ^^^
+Type mismatch: cannot convert from Object to NbtElement
+----------
+----------
+41. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/SpawnRestriction.java (at line 76)
+	return entry == null || entry.predicate.test(type, world, spawnReason, pos, random);
+	                                        ^^^^
+The method test(EntityType<capture#7-of ?>, ServerWorldAccess, SpawnReason, BlockPos, Random) in the type SpawnRestriction.SpawnPredicate<capture#7-of ?> is not applicable for the arguments (EntityType<T>, ServerWorldAccess, SpawnReason, BlockPos, Random)
+----------
+42. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/SpawnRestriction.java (at line 104)
+	register(EntityType.GLOW_SQUID, SpawnLocationTypes.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, GlowSquidEntity::canSpawn);
+	                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+The type GlowSquidEntity does not define canSpawn(EntityType<GlowSquidEntity>, ServerWorldAccess, SpawnReason, BlockPos, Random) that is applicable here
+----------
+----------
+43. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/passive/AxolotlBrain.java (at line 127)
+	ForgetAttackTargetTask.<MobEntity>create(AxolotlEntity::appreciatePlayer),
+	                                  ^^^^^^
+The parameterized method <MobEntity>create(BiConsumer<MobEntity,LivingEntity>) of type ForgetAttackTargetTask is not applicable for the arguments (AxolotlEntity::appreciatePlayer)
+----------
+44. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/passive/AxolotlBrain.java (at line 127)
+	ForgetAttackTargetTask.<MobEntity>create(AxolotlEntity::appreciatePlayer),
+	                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type AxolotlEntity does not define appreciatePlayer(MobEntity, LivingEntity) that is applicable here
+----------
+----------
+45. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/ai/brain/sensor/SensorType.java (at line 32)
+	() -> new ArmadilloScareDetectedSensor(5, (BiPredicate)((armadillo, threat) -> ((ArmadilloEntity)armadillo).isEntityThreatening((LivingEntity)threat)), armadillo -> ((ArmadilloEntity)armadillo).canRollUp(), MemoryModuleType.DANGER_DETECTED_RECENTLY, 80)
+	      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The constructor ArmadilloScareDetectedSensor(int, BiPredicate, (<no type> armadillo) -> {}, MemoryModuleType<Boolean>, int) is undefined
+----------
+46. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/ai/brain/sensor/SensorType.java (at line 32)
+	() -> new ArmadilloScareDetectedSensor(5, (BiPredicate)((armadillo, threat) -> ((ArmadilloEntity)armadillo).isEntityThreatening((LivingEntity)threat)), armadillo -> ((ArmadilloEntity)armadillo).canRollUp(), MemoryModuleType.DANGER_DETECTED_RECENTLY, 80)
+	                                           ^^^^^^^^^^^
+BiPredicate cannot be resolved to a type
+----------
+47. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/ai/brain/sensor/SensorType.java (at line 32)
+	() -> new ArmadilloScareDetectedSensor(5, (BiPredicate)((armadillo, threat) -> ((ArmadilloEntity)armadillo).isEntityThreatening((LivingEntity)threat)), armadillo -> ((ArmadilloEntity)armadillo).canRollUp(), MemoryModuleType.DANGER_DETECTED_RECENTLY, 80)
+	                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The target type of this expression must be a functional interface
+----------
+----------
+48. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/ai/brain/task/OpenDoorsTask.java (at line 124)
+	.filter(mob -> mob.getType() == entity.getType())
+	                   ^^^^^^^
+The method getType() is undefined for the type Object
+----------
+49. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/ai/brain/task/OpenDoorsTask.java (at line 125)
+	.filter(mob -> pos.isWithinDistance(mob.getPos(), 2.0))
+	                                        ^^^^^^
+The method getPos() is undefined for the type Object
+----------
+50. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/ai/brain/task/OpenDoorsTask.java (at line 126)
+	.anyMatch(mob -> hasReached(mob.getBrain(), pos));
+	                                ^^^^^^^^
+The method getBrain() is undefined for the type Object
+----------
+----------
+51. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/ai/brain/task/FindEntityTask.java (at line 29)
+	Predicate<LivingEntity> predicate = entity -> type.equals(entity.getType()) && targetPredicate.test(entity);
+	                                                                                               ^^^^
+The method test(T) in the type Predicate<T> is not applicable for the arguments (LivingEntity)
+----------
+52. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/ai/brain/task/FindEntityTask.java (at line 42)
+	targetValue.remember(target);
+	            ^^^^^^^^
+The method remember(T) in the type MemoryQueryResult<OptionalBox.Mu,T> is not applicable for the arguments (LivingEntity)
+----------
+----------
+53. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/ai/brain/task/WorkStationCompetitionTask.java (at line 24)
+	poiType -> context.<List>getValue(mobs)
+	                         ^^^^^^^^
+The parameterized method <List>getValue(MemoryQueryResult<IdF.Mu,List>) of type TaskTriggerer.TaskContext<VillagerEntity> is not applicable for the arguments (MemoryQueryResult<IdF.Mu,List<LivingEntity>>)
+----------
+----------
+54. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/ai/brain/task/GiveInventoryToLookTargetTask.java (at line 58)
+	((Optional)this.lookTargetFunction.apply(entity)).ifPresent(target -> LookTargetUtil.walkTowards(entity, target, this.speed, 3));
+	                                                                                     ^^^^^^^^^^^
+The method walkTowards(LivingEntity, Entity, float, int) in the type LookTargetUtil is not applicable for the arguments (E, Object, float, int)
+----------
+----------
+55. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/ai/brain/task/TakeJobSiteTask.java (at line 40)
+	context.<List>getValue(mobs)
+	              ^^^^^^^^
+The parameterized method <List>getValue(MemoryQueryResult<IdF.Mu,List>) of type TaskTriggerer.TaskContext<VillagerEntity> is not applicable for the arguments (MemoryQueryResult<IdF.Mu,List<LivingEntity>>)
+----------
+----------
+56. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/ai/brain/task/TaskTriggerer.java (at line 158)
+	Optional<Value> optional = brain.getOptionalMemory(query.memory());
+	                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from Optional<MemoryQuery.Value> to Optional<Value>
+----------
+57. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/ai/brain/task/TaskTriggerer.java (at line 159)
+	return optional == null ? null : query.toQueryResult(brain, optional);
+	                                       ^^^^^^^^^^^^^
+The method toQueryResult(Brain<?>, Optional<MemoryQuery.Value>) in the type MemoryQuery<F,Value> is not applicable for the arguments (Brain<capture#3-of ?>, Optional<Value>)
+----------
+58. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/ai/brain/task/TaskTriggerer.java (at line 208)
+	return new TaskTriggerer.QueryMemory<>(new MemoryQuery.Optional<>(type));
+	                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot infer type arguments for MemoryQuery.Optional<>
+----------
+59. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/ai/brain/task/TaskTriggerer.java (at line 212)
+	return new TaskTriggerer.QueryMemory<>(new MemoryQuery.Value<>(type));
+	                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot infer type arguments for MemoryQuery.Value<>
+----------
+60. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/ai/brain/task/TaskTriggerer.java (at line 216)
+	return new TaskTriggerer.QueryMemory<>(new MemoryQuery.Absent<>(type));
+	                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot infer type arguments for MemoryQuery.Absent<>
+----------
+----------
+61. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/ai/brain/Brain.java (at line 98)
+	mutableObject.setValue(mutableObject.getValue().apply2(Builder::add, dataResult2));
+	                                                ^^^^^^
+The method apply2(Builder::add, DataResult<capture#26-of ? extends Brain.MemoryEntry<?>>) is undefined for the type Codec<Brain<E>>
+----------
+62. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/ai/brain/Brain.java (at line 109)
+	.flatMap(codec -> codec.parse(ops, value))
+	                        ^^^^^
+The method parse(DynamicOps<T>, T) is undefined for the type Object
+----------
+63. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/ai/brain/Brain.java (at line 110)
+	.map(data -> new Brain.MemoryEntry<>(memoryType, Optional.of(data)));
+	             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot infer type arguments for Brain.MemoryEntry<>
+----------
+----------
+64. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/ai/goal/FleeEntityGoal.java (at line 31)
+	this(mob, fleeFromType, livingEntity -> true, distance, slowSpeed, fastSpeed, ((Entity de_e) -> EntityPredicates.EXCEPT_CREATIVE_OR_SPECTATOR.test(de_e)));
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The constructor FleeEntityGoal<T>(PathAwareEntity, Class<T>, (<no type> livingEntity) -> {}, float, double, double, ((Entity de_e) -> {})) is undefined
+----------
+65. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/ai/goal/FleeEntityGoal.java (at line 31)
+	this(mob, fleeFromType, livingEntity -> true, distance, slowSpeed, fastSpeed, ((Entity de_e) -> EntityPredicates.EXCEPT_CREATIVE_OR_SPECTATOR.test(de_e)));
+	                        ^^^^^^^^^^^^^^^^^^^^
+The target type of this expression must be a functional interface
+----------
+66. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/ai/goal/FleeEntityGoal.java (at line 31)
+	this(mob, fleeFromType, livingEntity -> true, distance, slowSpeed, fastSpeed, ((Entity de_e) -> EntityPredicates.EXCEPT_CREATIVE_OR_SPECTATOR.test(de_e)));
+	                                                                                ^^^^^^
+Entity cannot be resolved to a type
+----------
+----------
+67. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/mob/HoglinBrain.java (at line 113)
+	ForgetTask.<PathAwareEntity>create(HoglinBrain::isLoneAdult, MemoryModuleType.AVOID_TARGET)
+	                            ^^^^^^
+The parameterized method <PathAwareEntity>create(Predicate<PathAwareEntity>, MemoryModuleType<?>) of type ForgetTask is not applicable for the arguments (HoglinBrain::isLoneAdult, MemoryModuleType<LivingEntity>)
+----------
+68. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/mob/HoglinBrain.java (at line 113)
+	ForgetTask.<PathAwareEntity>create(HoglinBrain::isLoneAdult, MemoryModuleType.AVOID_TARGET)
+	                                   ^^^^^^^^^^^^^^^^^^^^^^^^
+The type HoglinBrain does not define isLoneAdult(PathAwareEntity) that is applicable here
+----------
+----------
+69. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/mob/PiglinBrain.java (at line 173)
+	brain.setTaskList(
+	      ^^^^^^^^^^^
+The method setTaskList(Activity, int, ImmutableList<? extends Task<? super PiglinEntity>>, MemoryModuleType<?>) in the type Brain<PiglinEntity> is not applicable for the arguments (Activity, int, ImmutableList<Task>, MemoryModuleType<LivingEntity>)
+----------
+70. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/mob/PiglinBrain.java (at line 193)
+	ImmutableList.of(
+	              ^^
+The method of(E, E, E, E, E, E) in the type ImmutableList is not applicable for the arguments (Task<PathAwareEntity>, SingleTickTask<LivingEntity>, Task<PiglinEntity>, SingleTickTask<MobEntity>, SingleTickTask<PiglinEntity>, RandomTask<LivingEntity>)
+----------
+71. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/mob/PiglinBrain.java (at line 196)
+	UpdateAttackTargetTask.create(AbstractPiglinEntity::isAdult, PiglinBrain::getPreferredTarget),
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from Task<PiglinEntity> to E
+----------
+72. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/mob/PiglinBrain.java (at line 197)
+	TaskTriggerer.runIf(piglin -> !piglin.isDancing(), WalkTowardsPosTask.create(MemoryModuleType.CELEBRATE_LOCATION, 2, 1.0F)),
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from SingleTickTask<MobEntity> to E
+----------
+73. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/mob/PiglinBrain.java (at line 197)
+	TaskTriggerer.runIf(piglin -> !piglin.isDancing(), WalkTowardsPosTask.create(MemoryModuleType.CELEBRATE_LOCATION, 2, 1.0F)),
+	                                      ^^^^^^^^^
+The method isDancing() is undefined for the type MobEntity
+----------
+74. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/mob/PiglinBrain.java (at line 198)
+	TaskTriggerer.runIf(PiglinEntity::isDancing, WalkTowardsPosTask.create(MemoryModuleType.CELEBRATE_LOCATION, 4, 0.6F)),
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from SingleTickTask<PiglinEntity> to E
+----------
+75. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/mob/PiglinBrain.java (at line 199)
+	new RandomTask<LivingEntity>(
+					ImmutableList.of(Pair.of(LookAtMobTask.create(EntityType.PIGLIN, 8.0F), 1), Pair.of(StrollTask.create(0.6F, 2, 1), 1), Pair.of(new WaitTask(10, 20), 1))
+				)
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The constructor RandomTask<LivingEntity>(ImmutableList<Pair<? extends Task<? extends LivingEntity>,Integer>>) is undefined
+----------
+76. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/mob/PiglinBrain.java (at line 228)
+	ForgetTask.<PathAwareEntity>create(PiglinBrain::shouldRunAwayFromHoglins, MemoryModuleType.AVOID_TARGET)
+	                            ^^^^^^
+The parameterized method <PathAwareEntity>create(Predicate<PathAwareEntity>, MemoryModuleType<?>) of type ForgetTask is not applicable for the arguments (PiglinBrain::shouldRunAwayFromHoglins, MemoryModuleType<LivingEntity>)
+----------
+77. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/mob/PiglinBrain.java (at line 228)
+	ForgetTask.<PathAwareEntity>create(PiglinBrain::shouldRunAwayFromHoglins, MemoryModuleType.AVOID_TARGET)
+	                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type PiglinBrain does not define shouldRunAwayFromHoglins(PathAwareEntity) that is applicable here
+----------
+78. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/mob/PiglinBrain.java (at line 246)
+	.add(Pair.of(TaskTriggerer.predicate((Predicate<? super LivingEntity>)(piglinEntity -> true)), 1))
+	                           ^^^^^^^^^
+The method predicate(Predicate<E>) in the type TaskTriggerer is not applicable for the arguments (Predicate<capture#7-of ? super LivingEntity>)
+----------
+79. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/mob/PiglinBrain.java (at line 250)
+	RidingTask.<LivingEntity>create(8, PiglinBrain::canRide)
+	                         ^^^^^^
+The parameterized method <LivingEntity>create(int, BiPredicate<LivingEntity,Entity>) of type RidingTask is not applicable for the arguments (int, PiglinBrain::canRide)
+----------
+80. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/entity/mob/PiglinBrain.java (at line 250)
+	RidingTask.<LivingEntity>create(8, PiglinBrain::canRide)
+	                                   ^^^^^^^^^^^^^^^^^^^^
+The type PiglinBrain does not define canRide(LivingEntity, Entity) that is applicable here
+----------
+----------
+81. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/village/VillagerGossips.java (at line 164)
+	.forEach(entry -> this.getReputationFor(entry.target).associatedGossip.put(entry.type, entry.value));
+	                                              ^^^^^^
+target cannot be resolved or is not a field
+----------
+82. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/village/VillagerGossips.java (at line 164)
+	.forEach(entry -> this.getReputationFor(entry.target).associatedGossip.put(entry.type, entry.value));
+	                                                                                 ^^^^
+type cannot be resolved or is not a field
+----------
+83. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/village/VillagerGossips.java (at line 164)
+	.forEach(entry -> this.getReputationFor(entry.target).associatedGossip.put(entry.type, entry.value));
+	                                                                                             ^^^^^
+value cannot be resolved or is not a field
+----------
+----------
+84. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/network/codec/PacketCodecs.java (at line 191)
+	PacketCodec<ByteBuf, byte[]> BYTE_ARRAY = new PacketCodec<ByteBuf, byte[]>() {
+	                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type new PacketCodec<ByteBuf,byte[]>(){} must implement the inherited abstract method PacketDecoder<ByteBuf,byte[]>.decode(ByteBuf)
+----------
+85. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/network/codec/PacketCodecs.java (at line 191)
+	PacketCodec<ByteBuf, byte[]> BYTE_ARRAY = new PacketCodec<ByteBuf, byte[]>() {
+	                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type new PacketCodec<ByteBuf,byte[]>(){} must implement the inherited abstract method PacketEncoder<ByteBuf,byte[]>.encode(ByteBuf, byte[])
+----------
+----------
+86. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/network/NetworkStateBuilder.java (at line 40)
+	net.minecraft.network.packet.PacketType<D> packetType = (net.minecraft.network.packet.PacketType<D>)splitter.getPacketId();
+	                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot cast from PacketType<capture#7-of ? extends BundleSplitterPacket<capture#5-of ? super T>> to PacketType<D>
+----------
+----------
+87. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/Schemas.java (at line 1047)
+	schema162, "Change cat variant type", TypeReferences.ENTITY, "minecraft:cat", "CatType", Util.make(new Int2ObjectOpenHashMap(), catVariants -> {
+					catVariants.defaultReturnValue("minecraft:tabby");
+					catVariants.put(0, "minecraft:tabby");
+					catVariants.put(1, "minecraft:black");
+					catVariants.put(2, "minecraft:red");
+					catVariants.put(3, "minecraft:siamese");
+					catVariants.put(4, "minecraft:british");
+					catVariants.put(5, "minecraft:calico");
+					catVariants.put(6, "minecraft:persian");
+					catVariants.put(7, "minecraft:ragdoll");
+					catVariants.put(8, "minecraft:white");
+					catVariants.put(9, "minecraft:jellie");
+					catVariants.put(10, "minecraft:all_black");
+				})::get
+	                                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type of get(int) from the type Int2ObjectOpenHashMap is Object, this is incompatible with the descriptor's return type: String
+----------
+88. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/Schemas.java (at line 1084)
+	schema163, "Change frog variant type", TypeReferences.ENTITY, "minecraft:frog", "Variant", Util.make(new Int2ObjectOpenHashMap(), frogVariants -> {
+					frogVariants.put(0, "minecraft:temperate");
+					frogVariants.put(1, "minecraft:warm");
+					frogVariants.put(2, "minecraft:cold");
+				})::get
+	                                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type of get(int) from the type Int2ObjectOpenHashMap is Object, this is incompatible with the descriptor's return type: String
+----------
+----------
+89. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/EmptyItemInHotbarFix.java (at line 30)
+	Optional<String> optional = ((Either)pairx.getFirst()).left().map(Pair::getSecond);
+	                                                                  ^^^^^^^^^^^^^^^
+The type Pair does not define getSecond(Object) that is applicable here
+----------
+----------
+90. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/ChoiceWriteReadFix.java (at line 46)
+	return typed.update(opticFinder, outputSubtype, object -> {
+				Typed<A> typedx = new Typed<>((Type<A>)rewrittenType, dynamicOps, (A)object);
+				return Util.apply(typedx, outputSubtype, this::transform).getValue();
+			}).getValue();
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from capture#23-of ? to T
+----------
+----------
+91. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/TicksInWrongChunkFix.java (at line 40)
+	int k = tickDynamic.get("x").asInt(0);
+	                    ^^^
+The method get(String) is undefined for the type Object
+----------
+92. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/TicksInWrongChunkFix.java (at line 41)
+	int l = tickDynamic.get("z").asInt(0);
+	                    ^^^
+The method get(String) is undefined for the type Object
+----------
+----------
+93. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/MobSpawnerEntityIdentifiersFix.java (at line 42)
+	Optional<String> optionalx = spawnPotentialsDynamic.get("Type").asString().result();
+	                                                    ^^^
+The method get(String) is undefined for the type Object
+----------
+94. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/MobSpawnerEntityIdentifiersFix.java (at line 44)
+	Dynamic<?> dynamic = DataFixUtils.orElse(spawnPotentialsDynamic.get("Properties").result(), spawnPotentialsDynamic.emptyMap())
+	                                                                ^^^
+The method get(String) is undefined for the type Object
+----------
+95. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/MobSpawnerEntityIdentifiersFix.java (at line 44)
+	Dynamic<?> dynamic = DataFixUtils.orElse(spawnPotentialsDynamic.get("Properties").result(), spawnPotentialsDynamic.emptyMap())
+	                                                                                                                   ^^^^^^^^
+The method emptyMap() is undefined for the type Object
+----------
+96. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/MobSpawnerEntityIdentifiersFix.java (at line 45)
+	.set("id", spawnPotentialsDynamic.createString((String)optionalx.get()));
+	                                  ^^^^^^^^^^^^
+The method createString(String) is undefined for the type Object
+----------
+97. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/MobSpawnerEntityIdentifiersFix.java (at line 46)
+	return spawnPotentialsDynamic.set("Entity", dynamic).remove("Type").remove("Properties");
+	                              ^^^
+The method set(String, Dynamic<capture#21-of ?>) is undefined for the type Object
+----------
+----------
+98. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/ChunkHeightAndBiomeFix.java (at line 136)
+	List<Dynamic<?>> list = (List<Dynamic<?>>)dynamic3.asStream().map(dynamic2xx -> {
+							int jx = dynamic2xx.get("Y").asInt(0);
+							Dynamic<?> dynamic3x = DataFixUtils.orElse(dynamic2xx.get("Palette").result().flatMap(dynamic2xxx -> {
+								dynamic2xxx.asStream().map(dynamicxxxx -> dynamicxxxx.get("Name").asString("minecraft:air")).forEach(set::add);
+								return dynamic2xx.get("BlockStates").result().map(dynamic2xxxx -> fixPalette(dynamic2xxx, dynamic2xxxx));
+							}), dynamic2);
+							Dynamic<?> dynamic4x = dynamic2xx;
+							int kx = jx - i;
+							if (kx >= 0 && kx < dynamics.length) {
+								dynamic4x = dynamic2xx.set("biomes", dynamics[kx]);
+							}
+
+							intSet.add(jx);
+							if (dynamic2xx.get("Y").asInt(Integer.MAX_VALUE) == 0) {
+								mutableObject.setValue(() -> {
+									List<? extends Dynamic<?>> listx = dynamic3x.get("palette").asList(Function.identity());
+									long[] ls = dynamic3x.get("data").asLongStream().toArray();
+									return new ProtoChunkTickListFix.PalettedSection(listx, ls);
+								});
+							}
+
+							return dynamic4x.set("block_states", dynamic3x).remove("Palette").remove("BlockStates");
+						}).collect(Collectors.toCollection(ArrayList::new));
+	                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot cast from ArrayList<Dynamic<capture#49-of ?>> to List<Dynamic<?>>
+----------
+99. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/ChunkHeightAndBiomeFix.java (at line 218)
+	dynamics[k] = fixBiomes(level, sectionY -> getClamped(is, j * 64 + sectionY));
+	                                                          ^
+Local variable j defined in an enclosing scope must be final or effectively final
+----------
+100. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/ChunkHeightAndBiomeFix.java (at line 337)
+	List<Dynamic<?>> list = (List<Dynamic<?>>)level.get(key).orElseEmptyList().asStream().collect(Collectors.toCollection(ArrayList::new));
+	                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot cast from ArrayList<Dynamic<capture#625-of ?>> to List<Dynamic<?>>
+----------
+101. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/ChunkHeightAndBiomeFix.java (at line 429)
+	List<Dynamic<?>> list = (List<Dynamic<?>>)dynamic.asStream().collect(Collectors.toCollection(ArrayList::new));
+	                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot cast from ArrayList<Dynamic<capture#661-of ?>> to List<Dynamic<?>>
+----------
+----------
+102. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/StatsCounterFix.java (at line 245)
+	for (Entry<? extends Dynamic<?>, ? extends Dynamic<?>> entry : ((Map)optional.get()).entrySet()) {
+	                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from element type Object to Map.Entry<? extends Dynamic<?>,? extends Dynamic<?>>
+----------
+----------
+103. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/ChunkToProtoChunkFix.java (at line 71)
+	List<ShortList> list = (List<ShortList>)IntStream.range(0, 16).mapToObj(sectionY -> new ShortArrayList()).collect(Collectors.toList());
+	                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot cast from List<ShortArrayList> to List<ShortList>
+----------
+----------
+104. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/ItemStackUuidFix.java (at line 38)
+	attributeModifiersDynamic -> tagDynamic.createList(
+	                                        ^^^^^^^^^^
+The method createList(Stream<? extends Dynamic<?>>) in the type DynamicLike<capture#98-of ?> is not applicable for the arguments (Stream<Dynamic>)
+----------
+----------
+105. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/ItemPotionFix.java (at line 174)
+	Dynamic<?> dynamic2 = ((Typed)optional2.get()).get(DSL.remainderFinder());
+	                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from Object to Dynamic<?>
+----------
+----------
+106. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/BedBlockEntityFix.java (at line 47)
+	dynamicOps -> pair -> pair
+	                      ^^^^
+Type mismatch: cannot convert from Pair<capture#9-of ?,capture#13-of ?> to Pair<capture#10-of ?,?>
+----------
+107. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/BedBlockEntityFix.java (at line 81)
+	list.add(
+	     ^^^
+The method add(TE) in the type List<TE> is not applicable for the arguments (Object)
+----------
+----------
+108. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/ItemSpawnEggFix.java (at line 119)
+	Typed<?> typed5 = Util.apply(typed4, type2, dynamic2 -> dynamic2.set("id", dynamic.createString(string)));
+	                                                                           ^^^^^^^
+Local variable dynamic defined in an enclosing scope must be final or effectively final
+----------
+----------
+109. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/PersistentStateUuidFix.java (at line 34)
+	heroesOfTheVillageDynamic -> heroesOfTheVillageDynamic.createList(
+	                                                       ^^^^^^^^^^
+The method createList(Stream<? extends Dynamic<?>>) in the type DynamicLike<capture#8-of ?> is not applicable for the arguments (Stream<Dynamic>)
+----------
+----------
+110. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/ChoiceTypesFix.java (at line 33)
+	return this.fixTypeEverywhere(this.name, inputChoiceType, (Type<Pair<K, ?>>)outputChoiceType, dynamicOps -> pair -> {
+	                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot cast from TaggedChoice.TaggedChoiceType<capture#6-of ?> to Type<Pair<K,?>>
+----------
+----------
+111. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/EntityBlockStateFix.java (at line 331)
+	int i = state.<Integer>map(pair -> ((Either)pair.getSecond()).map(id -> id, EntityBlockStateFix::getNumericalBlockId), unit -> {
+	                                                              ^^^
+The method map(Function, Function) in the type Either is not applicable for the arguments (Function, EntityBlockStateFix::getNumericalBlockId)
+----------
+112. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/EntityBlockStateFix.java (at line 331)
+	int i = state.<Integer>map(pair -> ((Either)pair.getSecond()).map(id -> id, EntityBlockStateFix::getNumericalBlockId), unit -> {
+	                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type EntityBlockStateFix does not define getNumericalBlockId(Object) that is applicable here
+----------
+113. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/EntityBlockStateFix.java (at line 347)
+	int i = ((Either)state.getSecond()).<Integer>map(id -> id, EntityBlockStateFix::getNumericalBlockId);
+	                                             ^^^
+The method map(Function, Function) in the type Either is not applicable for the arguments (Function, EntityBlockStateFix::getNumericalBlockId)
+----------
+114. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/EntityBlockStateFix.java (at line 347)
+	int i = ((Either)state.getSecond()).<Integer>map(id -> id, EntityBlockStateFix::getNumericalBlockId);
+	                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type EntityBlockStateFix does not define getNumericalBlockId(Object) that is applicable here
+----------
+----------
+115. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/OptionsKeyLwjgl3Fix.java (at line 171)
+	.orElse(optionsDynamic)
+	 ^^^^^^
+The method orElse(Dynamic<capture#5-of ?>) in the type Optional<Dynamic<capture#5-of ?>> is not applicable for the arguments (Dynamic<capture#15-of ?>)
+----------
+----------
+116. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/BlockEntityUuidFix.java (at line 27)
+	.orElse(skullDynamic);
+	 ^^^^^^
+The method orElse(Dynamic<capture#24-of ?>) in the type Optional<Dynamic<capture#24-of ?>> is not applicable for the arguments (Dynamic<capture#26-of ?>)
+----------
+----------
+117. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/StatusEffectDurationFix.java (at line 46)
+	Dynamic<?> dynamic = ((Typed)optional2.get()).get(DSL.remainderFinder());
+	                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from Object to Dynamic<?>
+----------
+----------
+118. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/ItemStackComponentizationFix.java (at line 377)
+	predicatesDynamic.asString().map(string -> createBlockPredicateListDynamic(predicatesDynamic, string)).result(), predicatesDynamic
+	                  ^^^^^^^^
+The method asString() is undefined for the type Object
+----------
+119. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/ItemStackComponentizationFix.java (at line 691)
+	.set("value", propertiesDynamic.createString((String)pair.getFirst()));
+	                                                          ^^^^^^^^
+The method getFirst() is undefined for the type Object
+----------
+120. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/ItemStackComponentizationFix.java (at line 692)
+	Optional<String> optional = (Optional<String>)pair.getSecond();
+	                                                   ^^^^^^^^^
+The method getSecond() is undefined for the type Object
+----------
+121. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/ItemStackComponentizationFix.java (at line 784)
+	public Dynamic<?> finalize() {
+	       ^^^^^^^^^^
+The return type is incompatible with Object.finalize()
+----------
+----------
+122. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/ProjectileItemTypeFix.java (at line 48)
+	return typed -> typed.updateTyped(opticFinder, outputType, typedx -> fixer.fix(typedx, outputType));
+	                                                                           ^^^
+The method fix(Typed<?>, Type<capture#13-of ?>) in the type ProjectileItemTypeFix.Fixer<capture#13-of ?> is not applicable for the arguments (Typed<capture#14-of ?>, Type<T>)
+----------
+----------
+123. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/EntityVariantTypeFix.java (at line 29)
+	Function<T, T> function2 = objectx -> ((Dynamic)variantIntToId.apply(new Dynamic<>(dynamicOps, (T)objectx))).getValue();
+	                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from Object to T
+----------
+----------
+124. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/WorldUuidFix.java (at line 55)
+	playersDynamic -> bossbarDynamic.createList(
+	                                 ^^^^^^^^^^
+The method createList(Stream<? extends Dynamic<?>>) in the type DynamicLike<capture#112-of ?> is not applicable for the arguments (Stream<Dynamic>)
+----------
+----------
+125. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/StructuresToConfiguredStructuresFix.java (at line 229)
+	((List)entry.getKey()).forEach(key -> builder.put(key, (String)entry.getValue()));
+	                                              ^^^
+The method put(String, String) in the type ImmutableMap.Builder<String,String> is not applicable for the arguments (Object, String)
+----------
+----------
+126. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/OptionsKeyTranslationFix.java (at line 37)
+	.orElse(optionsDynamic)
+	 ^^^^^^
+The method orElse(Dynamic<capture#5-of ?>) in the type Optional<Dynamic<capture#5-of ?>> is not applicable for the arguments (Dynamic<capture#23-of ?>)
+----------
+----------
+127. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/VillagerGossipFix.java (at line 25)
+	.map(gossipsDynamic::createList),
+	 ^^^
+The method map(Function<? super Stream<Dynamic>,? extends U>) in the type Optional<Stream<Dynamic>> is not applicable for the arguments (gossipsDynamic::createList)
+----------
+128. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/VillagerGossipFix.java (at line 25)
+	.map(gossipsDynamic::createList),
+	     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type Dynamic<capture#8-of ?> does not define createList(Stream<Dynamic>) that is applicable here
+----------
+----------
+129. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/EntityUuidFix.java (at line 106)
+	.map(dynamic2 -> dynamic.createList(dynamic2.asStream().map(dynamicxx -> (Dynamic)createArrayFromCompoundUuid(dynamicxx).orElseGet(() -> {
+	                         ^^^^^^^^^^
+The method createList(Stream<? extends Dynamic<?>>) in the type DynamicLike<capture#199-of ?> is not applicable for the arguments (Stream<Dynamic>)
+----------
+130. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/EntityUuidFix.java (at line 139)
+	dynamic2x -> dynamicxx.createList(
+	                       ^^^^^^^^^^
+The method createList(Stream<? extends Dynamic<?>>) in the type DynamicLike<capture#237-of ?> is not applicable for the arguments (Stream<Dynamic>)
+----------
+----------
+131. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/UpdateSignTextFormatFix.java (at line 27)
+	List<Dynamic<T>> list = streamKeys(signData, "Text").map(text -> (Dynamic)text.orElse(dynamic)).toList();
+	                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from List<Dynamic> to List<Dynamic<T>>
+----------
+----------
+132. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/LeavesFix.java (at line 359)
+	(List<Pair<String, Dynamic<?>>>)this.properties
+							.stream()
+							.map(propertiesDynamic -> Pair.of(TypeReferences.BLOCK_STATE.typeName(), propertiesDynamic))
+							.collect(Collectors.toList())
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot cast from List<Pair<String,Dynamic<capture#57-of ?>>> to List<Pair<String,Dynamic<?>>>
+----------
+----------
+133. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/LevelDataGeneratorOptionsFix.java (at line 195)
+	.map(entryx -> Pair.of(levelDynamicOps.createString((String)entryx.getKey()), levelDynamicOps.createString((String)entryx.getValue())))
+	                                                                   ^^^^^^
+The method getKey() is undefined for the type Object
+----------
+134. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/LevelDataGeneratorOptionsFix.java (at line 195)
+	.map(entryx -> Pair.of(levelDynamicOps.createString((String)entryx.getKey()), levelDynamicOps.createString((String)entryx.getValue())))
+	                                                                                                                          ^^^^^^^^
+The method getValue() is undefined for the type Object
+----------
+135. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/LevelDataGeneratorOptionsFix.java (at line 196)
+	.collect(Collectors.toMap(Pair::getFirst, Pair::getSecond))
+	                          ^^^^^^^^^^^^^^
+The type Pair does not define getFirst(Object) that is applicable here
+----------
+136. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/LevelDataGeneratorOptionsFix.java (at line 196)
+	.collect(Collectors.toMap(Pair::getFirst, Pair::getSecond))
+	                                          ^^^^^^^^^^^^^^^
+The type Pair does not define getSecond(Object) that is applicable here
+----------
+----------
+137. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/ProtoChunkTickListFix.java (at line 141)
+	.mapToInt(posDynamic -> posDynamic.asShort((short)-1))
+	                                   ^^^^^^^
+The method asShort(short) is undefined for the type Object
+----------
+138. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/ProtoChunkTickListFix.java (at line 184)
+	return levelDynamic.createMap(
+	                    ^^^^^^^^^
+The method createMap(Map<? extends Dynamic<?>,? extends Dynamic<?>>) in the type DynamicLike<capture#381-of ?> is not applicable for the arguments (ImmutableMap<Object,Object>)
+----------
+----------
+139. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/datafixer/fix/DropInvalidSignDatafixDataFix.java (at line 44)
+	List<Dynamic<T>> list2 = Streams.<Dynamic, Dynamic<T>>mapWithIndex((Stream<Dynamic>)optional.get(), (message, index) -> {
+	                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot cast from Stream<Dynamic<T>> to Stream<Dynamic>
+----------
+----------
+140. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/chunk/PalettedContainer.java (at line 84)
+	instance -> instance.<PalettedContainer.Serialized<T>>group(
+	                                                      ^^^^^
+Incorrect number of type arguments for generic method <T1, T2>group(App<RecordCodecBuilder.Mu<Object>,T1>, App<RecordCodecBuilder.Mu<Object>,T2>) of type Kind1<RecordCodecBuilder.Mu<Object>,RecordCodecBuilder.Instance.Mu<Object>>; it cannot be parameterized with arguments <ReadableContainer.Serialized<T>>
+----------
+----------
+141. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/GameRules.java (at line 262)
+	.collect(Collectors.<Map.Entry<GameRules.Key<?>, GameRules.Type<?>>, GameRules.Key<?>, GameRules.Rule<?>>toMap(e -> e.getKey(), e -> ((GameRules.Type)e.getValue()).createRule()));
+	         ^^^^^^^^^^
+Collectors cannot be resolved
+----------
+142. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/GameRules.java (at line 288)
+	.collect(Collectors.<Map.Entry<GameRules.Key<?>, GameRules.Rule<?>>, GameRules.Key<?>, GameRules.Rule<?>>toMap(e -> e.getKey(), entry -> ((GameRules.Rule)entry.getValue()).copy()))
+	         ^^^^^^^^^^
+Collectors cannot be resolved
+----------
+----------
+143. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/SimulationDistanceLevelPropagator.java (at line 29)
+	.computeIfAbsent(pos, (Long2ObjectFunction<? extends SortedArraySet<ChunkTicket<?>>>)(p -> (SortedArraySet<ChunkTicket<?>>)SortedArraySet.create(4)));
+	                                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot cast from SortedArraySet<Comparable<Comparable<T>>> to SortedArraySet<ChunkTicket<?>>
+----------
+----------
+144. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/FlatChunkGeneratorConfig.java (at line 156)
+	builder.addFeature(i, registryEntry2);
+	                      ^^^^^^^^^^^^^^
+registryEntry2 cannot be resolved to a variable
+----------
+----------
+145. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/GenerationShapeConfig.java (at line 13)
+	instance -> instance.group(
+	                     ^^^^^
+The method group(App<RecordCodecBuilder.Mu<Object>,T1>, App<RecordCodecBuilder.Mu<Object>,T2>, App<RecordCodecBuilder.Mu<Object>,T3>, App<RecordCodecBuilder.Mu<Object>,T4>) in the type Kind1<RecordCodecBuilder.Mu<Object>,RecordCodecBuilder.Instance.Mu<Object>> is not applicable for the arguments (RecordCodecBuilder<GenerationShapeConfig,Integer>, RecordCodecBuilder<GenerationShapeConfig,Integer>, RecordCodecBuilder<GenerationShapeConfig,Integer>, RecordCodecBuilder<GenerationShapeConfig,Integer>)
+----------
+146. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/chunk/GenerationShapeConfig.java (at line 19)
+	.apply(instance, (com.mojang.datafixers.util.Function4) GenerationShapeConfig::new)
+	                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type GenerationShapeConfig does not define GenerationShapeConfig(Object, Object, Object, Object) that is applicable here
+----------
+----------
+147. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/densityfunction/DensityFunctions.java (at line 460)
+	int i = Stream.of(OreVeinSampler.VeinType.values()).mapToInt(veinType -> veinType.minY).min().orElse(-DimensionType.MIN_HEIGHT * 2);
+	                  ^^^^^^^^^^^^^^^^^^^^^^^
+The type OreVeinSampler.VeinType is not visible
+----------
+148. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/gen/densityfunction/DensityFunctions.java (at line 461)
+	int j = Stream.of(OreVeinSampler.VeinType.values()).mapToInt(veinType -> veinType.maxY).max().orElse(-DimensionType.MIN_HEIGHT * 2);
+	                  ^^^^^^^^^^^^^^^^^^^^^^^
+The type OreVeinSampler.VeinType is not visible
+----------
+----------
+149. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/biome/SpawnSettings.java (at line 103)
+	.collect(Collectors.toMap(Entry::getKey, entry -> Pool.of((List<SpawnSettings.SpawnEntry>)entry.getValue()))),
+	         ^^^^^^^^^^
+Collectors cannot be resolved
+----------
+----------
+150. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/biome/source/util/MultiNoiseUtil.java (at line 398)
+	List<MultiNoiseUtil.SearchTree.TreeLeafNode<T>> list = (List<MultiNoiseUtil.SearchTree.TreeLeafNode<T>>)entries.stream()
+						.map(entry -> new MultiNoiseUtil.SearchTree.TreeLeafNode<>((MultiNoiseUtil.NoiseHypercube)entry.getFirst(), entry.getSecond()))
+						.collect(Collectors.toCollection(ArrayList::new));
+	                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot cast from ArrayList<MultiNoiseUtil.SearchTree.TreeLeafNode<T>> to List<MultiNoiseUtil.SearchTree.TreeLeafNode<T>>
+----------
+----------
+151. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/world/biome/source/MultiNoiseBiomeSourceParameterList.java (at line 53)
+	return (Map<MultiNoiseBiomeSourceParameterList.Preset, MultiNoiseUtil.Entries<RegistryKey<Biome>>>)MultiNoiseBiomeSourceParameterList.Preset.BY_IDENTIFIER
+			.values()
+			.stream()
+			.collect(Collectors.toMap(preset -> preset, preset -> preset.biomeSourceFunction().apply(registryKey -> registryKey)));
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot cast from Map<MultiNoiseBiomeSourceParameterList.Preset,MultiNoiseUtil.Entries<Object>> to Map<MultiNoiseBiomeSourceParameterList.Preset,MultiNoiseUtil.Entries<RegistryKey<Biome>>>
+----------
+----------
+152. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/component/DataComponentTypes.java (at line 221)
+	return Registry.register(Registries.DATA_COMPONENT_TYPE, id, ((ComponentType.Builder)builderOperator.apply(ComponentType.builder())).build());
+	                ^^^^^^^^
+The method register(Registry<? super T>, String, T) in the type Registry is not applicable for the arguments (Registry<ComponentType<?>>, String, ComponentType)
+----------
+----------
+153. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/component/ComponentChanges.java (at line 54)
+	return (Map<ComponentChanges.Type, Object>)(Map)reference2ObjectMap;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Map<ComponentChanges.Type,Object> cannot be resolved to a type
+----------
+154. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/component/ComponentChanges.java (at line 54)
+	return (Map<ComponentChanges.Type, Object>)(Map)reference2ObjectMap;
+	        ^^^
+Map cannot be resolved to a type
+----------
+155. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/component/ComponentChanges.java (at line 54)
+	return (Map<ComponentChanges.Type, Object>)(Map)reference2ObjectMap;
+	                                            ^^^
+Map cannot be resolved to a type
+----------
+----------
+156. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/component/EnchantmentEffectComponentTypes.java (at line 119)
+	return Registry.register(Registries.ENCHANTMENT_EFFECT_COMPONENT_TYPE, id, ((ComponentType.Builder)builderOperator.apply(ComponentType.builder())).build());
+	                ^^^^^^^^
+The method register(Registry<? super T>, String, T) in the type Registry is not applicable for the arguments (Registry<ComponentType<?>>, String, ComponentType)
+----------
+----------
+157. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/component/type/DebugStickStateComponent.java (at line 20)
+	.xmap(DebugStickStateComponent::new, DebugStickStateComponent::properties);
+	 ^^^^
+The method xmap(Function<? super Map<RegistryEntry<Block>,Property<capture#3-of ?>>,? extends S>, Function<? super S,? extends Map<RegistryEntry<Block>,Property<capture#3-of ?>>>) in the type Codec<Map<RegistryEntry<Block>,Property<capture#3-of ?>>> is not applicable for the arguments (DebugStickStateComponent::new, DebugStickStateComponent::properties)
+----------
+158. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/component/type/DebugStickStateComponent.java (at line 20)
+	.xmap(DebugStickStateComponent::new, DebugStickStateComponent::properties);
+	      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type DebugStickStateComponent does not define DebugStickStateComponent(Map<RegistryEntry<Block>,Property<capture#3-of ?>>) that is applicable here
+----------
+159. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/component/type/DebugStickStateComponent.java (at line 20)
+	.xmap(DebugStickStateComponent::new, DebugStickStateComponent::properties);
+	                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type DebugStickStateComponent does not define properties(S) that is applicable here
+----------
+----------
+160. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/SampleSubscriptionTracker.java (at line 34)
+	for (ServerPlayerEntity serverPlayerEntity : ((Map)this.subscriptionMap.get(packet.debugSampleType())).keySet()) {
+	                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from element type Object to ServerPlayerEntity
+----------
+----------
+161. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/world/OptionalChunk.java (at line 104)
+	throw (Throwable)exceptionSupplier.get();
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Unhandled exception type Throwable
+----------
+----------
+162. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/world/ServerChunkManager.java (at line 571)
+	protected boolean runTask() {
+	                  ^^^^^^^^^
+Cannot reduce the visibility of the inherited method from ThreadExecutor<Runnable>
+----------
+----------
+163. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/world/ChunkTicketManager.java (at line 206)
+	.computeIfAbsent(position, (Long2ObjectFunction<? extends SortedArraySet<ChunkTicket<?>>>)(pos -> (SortedArraySet<ChunkTicket<?>>)SortedArraySet.create(4)));
+	                                                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot cast from SortedArraySet<Comparable<Comparable<T>>> to SortedArraySet<ChunkTicket<?>>
+----------
+----------
+164. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/integrated/IntegratedServerLoader.java (at line 178)
+	return this.load(
+			dataPacks,
+			context -> {
+				Registry<DimensionOptions> registry = new SimpleRegistry<>(RegistryKeys.DIMENSION, Lifecycle.stable()).freeze();
+				ParsedSaveProperties parsedSaveProperties = LevelStorage.parseSaveProperties(
+					dynamic, context.dataConfiguration(), registry, context.worldGenRegistryManager()
+				);
+				return new SaveLoading.LoadContext<>(
+					new CurrentSettings(
+						parsedSaveProperties.properties().getLevelInfo(), parsedSaveProperties.properties().getGeneratorOptions(), parsedSaveProperties.dimensions().dimensions()
+					),
+					context.dimensionsRegistryManager()
+				);
+			},
+			(resourceManager, dataPackContents, combinedRegistryManager, currentSettings) -> {
+				resourceManager.close();
+				return Pair.of(
+					currentSettings.levelInfo,
+					new GeneratorOptionsHolder(
+						currentSettings.options,
+						new DimensionOptionsRegistryHolder(currentSettings.existingDimensionRegistry),
+						combinedRegistryManager,
+						dataPackContents,
+						currentSettings.levelInfo.getDataConfiguration()
+					)
+				);
+			}
+		);
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from Object to Pair<LevelInfo,GeneratorOptionsHolder>
+----------
+165. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/integrated/IntegratedServerLoader.java (at line 195)
+	currentSettings.levelInfo,
+	                ^^^^^^^^^
+levelInfo cannot be resolved or is not a field
+----------
+166. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/integrated/IntegratedServerLoader.java (at line 197)
+	currentSettings.options,
+	                ^^^^^^^
+options cannot be resolved or is not a field
+----------
+167. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/integrated/IntegratedServerLoader.java (at line 198)
+	new DimensionOptionsRegistryHolder(currentSettings.existingDimensionRegistry),
+	                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+existingDimensionRegistry cannot be resolved or is not a field
+----------
+168. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/integrated/IntegratedServerLoader.java (at line 201)
+	currentSettings.levelInfo.getDataConfiguration()
+	                ^^^^^^^^^
+levelInfo cannot be resolved or is not a field
+----------
+----------
+169. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/dedicated/AbstractPropertiesHandler.java (at line 133)
+	return (Number)parser.apply(string);
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from Number to V
+----------
+170. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/dedicated/AbstractPropertiesHandler.java (at line 177)
+	return new AbstractPropertiesHandler.PropertyAccessor<>(key, object, stringifier);
+	           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The member type AbstractPropertiesHandler.PropertyAccessor<> must be qualified with a parameterized type, since it is not static
+----------
+----------
+171. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/dedicated/ServerPropertiesHandler.java (at line 217)
+	.or(() -> Optional.ofNullable((RegistryKey)LEVEL_TYPE_TO_PRESET_KEY.get(this.levelType)))
+	 ^^
+The method or(Supplier<? extends Optional<? extends RegistryKey<WorldPreset>>>) in the type Optional<RegistryKey<WorldPreset>> is not applicable for the arguments (() -> {})
+----------
+172. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/dedicated/ServerPropertiesHandler.java (at line 217)
+	.or(() -> Optional.ofNullable((RegistryKey)LEVEL_TYPE_TO_PRESET_KEY.get(this.levelType)))
+	          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from Optional<RegistryKey> to Optional<? extends RegistryKey<WorldPreset>>
+----------
+----------
+173. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/command/ReturnCommand.java (at line 19)
+	dispatcher.register(
+	           ^^^^^^^^
+The method register(LiteralArgumentBuilder<T>) in the type CommandDispatcher<T> is not applicable for the arguments (ArgumentBuilder)
+----------
+174. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/command/ReturnCommand.java (at line 20)
+	((LiteralArgumentBuilder)LiteralArgumentBuilder.literal("return").requires(source -> source.hasPermissionLevel(2)))
+	                                                                                            ^^^^^^^^^^^^^^^^^^
+The method hasPermissionLevel(int) is undefined for the type Object
+----------
+----------
+175. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/command/DebugCommand.java (at line 127)
+	serverCommandSource.sendError(var18.getMessage());
+	                    ^^^^^^^^^
+The method sendError(Text) in the type ServerCommandSource is not applicable for the arguments (String)
+----------
+----------
+176. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/command/TestFinder.java (at line 98)
+	((Supplier)this.testFunctionsSupplierMapper.apply(testFunctionFinder::findTestFunctions))::get,
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type of get() from the type Supplier is Object, this is incompatible with the descriptor's return type: Stream<TestFunction>
+----------
+177. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/command/TestFinder.java (at line 99)
+	((Supplier)this.structurePosSupplierMapper.apply(structureBlockFinder::findStructureBlockPos))::get
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type of get() from the type Supplier is Object, this is incompatible with the descriptor's return type: Stream<BlockPos>
+----------
+----------
+178. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/command/ExecuteCommand.java (at line 975)
+	.filter(entityx -> !entityx.isRemoved())
+	                            ^^^^^^^^^
+The method isRemoved() is undefined for the type Object
+----------
+179. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/command/ExecuteCommand.java (at line 976)
+	.map(entityx -> List.of(serverCommandSource.withEntity(entityx)))
+	                                            ^^^^^^^^^^
+The method withEntity(Entity) in the type ServerCommandSource is not applicable for the arguments (Object)
+----------
+180. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/command/ExecuteCommand.java (at line 985)
+	return entity == null ? List.of() : ((Stream)function.apply(entity)).filter(entityx -> !entityx.isRemoved()).map(serverCommandSource::withEntity).toList();
+	                                                                                                ^^^^^^^^^
+The method isRemoved() is undefined for the type Object
+----------
+181. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/command/ExecuteCommand.java (at line 985)
+	return entity == null ? List.of() : ((Stream)function.apply(entity)).filter(entityx -> !entityx.isRemoved()).map(serverCommandSource::withEntity).toList();
+	                                                                                                             ^^^
+The method map(Function) in the type Stream is not applicable for the arguments (serverCommandSource::withEntity)
+----------
+182. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/command/ExecuteCommand.java (at line 985)
+	return entity == null ? List.of() : ((Stream)function.apply(entity)).filter(entityx -> !entityx.isRemoved()).map(serverCommandSource::withEntity).toList();
+	                                                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type ServerCommandSource does not define withEntity(Object) that is applicable here
+----------
+----------
+183. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/command/ForceLoadCommand.java (at line 171)
+	source.sendFeedback(
+	       ^^^^^^^^^^^^
+The method sendFeedback(Supplier<Text>, boolean) in the type ServerCommandSource is not applicable for the arguments (() -> {}, boolean)
+----------
+184. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/server/command/ForceLoadCommand.java (at line 173)
+	"commands.forceload." + (forceLoaded ? "added" : "removed") + ".multiple", t, Text.of(registryKey.getValue()), Text.of(chunkPos3), Text.of(chunkPos4)
+	                                                                           ^
+t cannot be resolved to a variable
+----------
+----------
+185. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/state/property/EnumProperty.java (at line 113)
+	return of(name, type, (Collection<T>)Arrays.stream((Enum[])type.getEnumConstants()).filter(filter).collect(Collectors.toList()));
+	                                                                                    ^^^^^^
+The method filter(Predicate<? super Enum>) in the type Stream<Enum> is not applicable for the arguments (Predicate<T>)
+----------
+----------
+186. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/entry/LeafEntry.java (at line 76)
+	static class BasicBuilder extends LeafEntry.Builder<LeafEntry.BasicBuilder> {
+	             ^^^^^^^^^^^^
+The type LeafEntry.BasicBuilder must implement the inherited abstract method LootFunctionConsumingBuilder<LeafEntry.BasicBuilder>.getThisFunctionConsumingBuilder()
+----------
+----------
+187. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/entry/LootTableEntry.java (at line 23)
+	.<int, int, List<LootCondition>, List<LootFunction>>and(addLeafFields(instance))
+	  ^^^
+Syntax error, insert "Dimensions" to complete TypeArgument
+----------
+188. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/entry/LootTableEntry.java (at line 23)
+	.<int, int, List<LootCondition>, List<LootFunction>>and(addLeafFields(instance))
+	       ^^^
+Syntax error, insert "Dimensions" to complete TypeArgument
+----------
+----------
+189. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/entry/TagEntry.java (at line 24)
+	.<int, int, List<LootCondition>, List<LootFunction>>and(addLeafFields(instance))
+	  ^^^
+Syntax error, insert "Dimensions" to complete TypeArgument
+----------
+190. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/entry/TagEntry.java (at line 24)
+	.<int, int, List<LootCondition>, List<LootFunction>>and(addLeafFields(instance))
+	       ^^^
+Syntax error, insert "Dimensions" to complete TypeArgument
+----------
+----------
+191. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/entry/DynamicEntry.java (at line 16)
+	.<int, int, List<LootCondition>, List<LootFunction>>and(addLeafFields(instance))
+	  ^^^
+Syntax error, insert "Dimensions" to complete TypeArgument
+----------
+192. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/entry/DynamicEntry.java (at line 16)
+	.<int, int, List<LootCondition>, List<LootFunction>>and(addLeafFields(instance))
+	       ^^^
+Syntax error, insert "Dimensions" to complete TypeArgument
+----------
+----------
+193. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/entry/ItemEntry.java (at line 19)
+	.<int, int, List<LootCondition>, List<LootFunction>>and(addLeafFields(instance))
+	  ^^^
+Syntax error, insert "Dimensions" to complete TypeArgument
+----------
+194. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/entry/ItemEntry.java (at line 19)
+	.<int, int, List<LootCondition>, List<LootFunction>>and(addLeafFields(instance))
+	       ^^^
+Syntax error, insert "Dimensions" to complete TypeArgument
+----------
+----------
+195. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/function/SetDamageLootFunction.java (at line 22)
+	.<LootNumberProvider, boolean>and(
+	                      ^^^^^^^
+Syntax error, insert "Dimensions" to complete ReferenceType
+----------
+196. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/function/SetDamageLootFunction.java (at line 25)
+	Codec.BOOL.fieldOf("add").orElse(false).forGetter(function -> function.add)
+	                                                                          ^
+Syntax error on token ")", ElidedSemicolonAndRightBrace expected
+----------
+197. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/function/SetDamageLootFunction.java (at line 29)
+	);
+	^
+Syntax error, insert ")" to complete Expression
+----------
+----------
+198. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/function/SetAttributesLootFunction.java (at line 33)
+	.<List<SetAttributesLootFunction.Attribute>, boolean>and(
+	                                             ^^^^^^^
+Syntax error, insert "Dimensions" to complete ReferenceType
+----------
+199. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/function/SetAttributesLootFunction.java (at line 36)
+	Codec.BOOL.optionalFieldOf("replace", true).forGetter(lootFunction -> lootFunction.replace)
+	                                                                                          ^
+Syntax error on token ")", ElidedSemicolonAndRightBrace expected
+----------
+200. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/function/SetAttributesLootFunction.java (at line 40)
+	);
+	^
+Syntax error, insert ")" to complete Expression
+----------
+----------
+201. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/function/SetNameLootFunction.java (at line 58)
+	return (Set<LootContextParameter<?>>)this.entity.map(entity -> Set.of(entity.getParameter())).orElse(Set.of());
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot cast from Set<LootContextParameter<capture#1-of ? extends Entity>> to Set<LootContextParameter<?>>
+----------
+----------
+202. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/function/SetLoreLootFunction.java (at line 51)
+	return (Set<LootContextParameter<?>>)this.entity.map(entity -> Set.of(entity.getParameter())).orElseGet(Set::of);
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot cast from Set<LootContextParameter<capture#1-of ? extends Entity>> to Set<LootContextParameter<?>>
+----------
+----------
+203. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/function/SetCountLootFunction.java (at line 18)
+	.<LootNumberProvider, boolean>and(
+	                      ^^^^^^^
+Syntax error, insert "Dimensions" to complete ReferenceType
+----------
+204. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/function/SetCountLootFunction.java (at line 21)
+	Codec.BOOL.fieldOf("add").orElse(false).forGetter(function -> function.add)
+	                                                                          ^
+Syntax error on token ")", ElidedSemicolonAndRightBrace expected
+----------
+205. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/function/SetCountLootFunction.java (at line 25)
+	);
+	^
+Syntax error, insert ")" to complete Expression
+----------
+----------
+206. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/function/ExplorationMapLootFunction.java (at line 36)
+	.<TagKey<Structure>, RegistryEntry<MapDecorationType>, byte, int, boolean>and(
+	                                                       ^^^^
+Syntax error, insert "Dimensions" to complete TypeArgument
+----------
+207. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/function/ExplorationMapLootFunction.java (at line 36)
+	.<TagKey<Structure>, RegistryEntry<MapDecorationType>, byte, int, boolean>and(
+	                                                             ^^^
+Syntax error, insert "Dimensions" to complete TypeArgument
+----------
+208. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/function/ExplorationMapLootFunction.java (at line 36)
+	.<TagKey<Structure>, RegistryEntry<MapDecorationType>, byte, int, boolean>and(
+	                                                                  ^^^^^^^
+Syntax error, insert "Dimensions" to complete ReferenceType
+----------
+209. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/function/ExplorationMapLootFunction.java (at line 42)
+	Codec.BOOL.optionalFieldOf("skip_existing_chunks", true).forGetter(function -> function.skipExistingChunks)
+	                                                                                                          ^
+Syntax error on token ")", ElidedSemicolonAndRightBrace expected
+----------
+210. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/function/ExplorationMapLootFunction.java (at line 46)
+	);
+	^
+Syntax error, insert ")" to complete Expression
+----------
+----------
+211. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/function/SetEnchantmentsLootFunction.java (at line 27)
+	.<Map<RegistryEntry<Enchantment>, LootNumberProvider>, boolean>and(
+	                                                       ^^^^^^^
+Syntax error, insert "Dimensions" to complete ReferenceType
+----------
+212. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/function/SetEnchantmentsLootFunction.java (at line 32)
+	Codec.BOOL.fieldOf("add").orElse(false).forGetter(function -> function.add)
+	                                                                          ^
+Syntax error on token ")", ElidedSemicolonAndRightBrace expected
+----------
+213. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/function/SetEnchantmentsLootFunction.java (at line 36)
+	);
+	^
+Syntax error, insert ")" to complete Expression
+----------
+----------
+214. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/function/CopyStateLootFunction.java (at line 48)
+	(Set<Property<?>>)properties.stream().map(block.value().getStateManager()::getProperty).filter(Objects::nonNull).collect(Collectors.toSet())
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot cast from Set<Property<capture#5-of ?>> to Set<Property<?>>
+----------
+----------
+215. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/function/ToggleTooltipsLootFunction.java (at line 26)
+	private static final Map<ComponentType<?>, ToggleTooltipsLootFunction.Toggle<?>> TOGGLES = (Map<ComponentType<?>, ToggleTooltipsLootFunction.Toggle<?>>)Stream.of(
+			new ToggleTooltipsLootFunction.Toggle<>(DataComponentTypes.TRIM, ArmorTrim::withShowInTooltip),
+			new ToggleTooltipsLootFunction.Toggle<>(DataComponentTypes.DYED_COLOR, DyedColorComponent::withShowInTooltip),
+			new ToggleTooltipsLootFunction.Toggle<>(DataComponentTypes.ENCHANTMENTS, ItemEnchantmentsComponent::withShowInTooltip),
+			new ToggleTooltipsLootFunction.Toggle<>(DataComponentTypes.STORED_ENCHANTMENTS, ItemEnchantmentsComponent::withShowInTooltip),
+			new ToggleTooltipsLootFunction.Toggle<>(DataComponentTypes.UNBREAKABLE, UnbreakableComponent::withShowInTooltip),
+			new ToggleTooltipsLootFunction.Toggle<>(DataComponentTypes.CAN_BREAK, BlockPredicatesChecker::withShowInTooltip),
+			new ToggleTooltipsLootFunction.Toggle<>(DataComponentTypes.CAN_PLACE_ON, BlockPredicatesChecker::withShowInTooltip),
+			new ToggleTooltipsLootFunction.Toggle<>(DataComponentTypes.ATTRIBUTE_MODIFIERS, AttributeModifiersComponent::withShowInTooltip),
+			new ToggleTooltipsLootFunction.Toggle<>(DataComponentTypes.JUKEBOX_PLAYABLE, JukeboxPlayableComponent::withShowInTooltip)
+		)
+		.collect(Collectors.toMap(ToggleTooltipsLootFunction.Toggle::type, toggle -> toggle));
+	                                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot cast from Map<ComponentType<capture#2-of ? extends Object>,ToggleTooltipsLootFunction.Toggle<capture#3-of ? extends Object>> to Map<ComponentType<?>,ToggleTooltipsLootFunction.Toggle<?>>
+----------
+----------
+216. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/function/EnchantRandomlyLootFunction.java (at line 31)
+	.<Optional<RegistryEntryList<Enchantment>>, boolean>and(
+	                                            ^^^^^^^
+Syntax error, insert "Dimensions" to complete ReferenceType
+----------
+217. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/function/EnchantRandomlyLootFunction.java (at line 34)
+	Codec.BOOL.optionalFieldOf("only_compatible", true).forGetter(function -> function.onlyCompatible)
+	                                                                                                 ^
+Syntax error on token ")", ElidedSemicolonAndRightBrace expected
+----------
+218. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/function/EnchantRandomlyLootFunction.java (at line 38)
+	);
+	^
+Syntax error, insert ")" to complete Expression
+----------
+219. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/function/EnchantRandomlyLootFunction.java (at line 61)
+	.filter(entry -> !bl2 || ((Enchantment)entry.value()).isAcceptableItem(stack));
+	                                             ^^^^^
+The method value() is undefined for the type Object
+----------
+----------
+220. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/function/SetBannerPatternLootFunction.java (at line 19)
+	.<BannerPatternsComponent, boolean>and(
+	                           ^^^^^^^
+Syntax error, insert "Dimensions" to complete ReferenceType
+----------
+221. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/function/SetBannerPatternLootFunction.java (at line 22)
+	Codec.BOOL.fieldOf("append").forGetter(function -> function.append)
+	                                                                  ^
+Syntax error on token ")", ElidedSemicolonAndRightBrace expected
+----------
+222. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/function/SetBannerPatternLootFunction.java (at line 26)
+	);
+	^
+Syntax error, insert ")" to complete Expression
+----------
+----------
+223. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/function/SetLootTableLootFunction.java (at line 23)
+	.<RegistryKey<LootTable>, long, RegistryEntry<BlockEntityType<?>>>and(
+	                          ^^^^
+Syntax error, insert "Dimensions" to complete TypeArgument
+----------
+224. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/function/SetLootTableLootFunction.java (at line 27)
+	Registries.BLOCK_ENTITY_TYPE.getEntryCodec().fieldOf("type").forGetter(function -> function.type)
+	                                                                                                ^
+Syntax error on token ")", ElidedSemicolonAndRightBrace expected
+----------
+225. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/function/SetLootTableLootFunction.java (at line 31)
+	);
+	^
+Syntax error, insert ")" to complete Expression
+----------
+----------
+226. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/function/EnchantedCountIncreaseLootFunction.java (at line 30)
+	.<RegistryEntry<Enchantment>, LootNumberProvider, int>and(
+	                                                  ^^^
+Syntax error, insert "Dimensions" to complete ReferenceType
+----------
+227. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/function/EnchantedCountIncreaseLootFunction.java (at line 34)
+	Codec.INT.optionalFieldOf("limit", 0).forGetter(function -> function.limit)
+	                                                                          ^
+Syntax error on token ")", ElidedSemicolonAndRightBrace expected
+----------
+228. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/function/EnchantedCountIncreaseLootFunction.java (at line 38)
+	);
+	^
+Syntax error, insert ")" to complete Expression
+----------
+----------
+229. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/condition/EntityScoresLootCondition.java (at line 36)
+	return (Set<LootContextParameter<?>>)Stream.concat(
+				Stream.of(this.entity.getParameter()), this.scores.values().stream().flatMap(operator -> operator.getRequiredParameters().stream())
+			)
+			.collect(ImmutableSet.toImmutableSet());
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot cast from ImmutableSet<LootContextParameter<? extends Object>> to Set<LootContextParameter<?>>
+----------
+----------
+230. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/condition/BlockStatePropertyLootCondition.java (at line 28)
+	return (DataResult<BlockStatePropertyLootCondition>)condition.properties()
+			.flatMap(predicate -> predicate.findMissing(condition.block().value().getStateManager()))
+			.map(property -> DataResult.error(() -> "Block " + condition.block() + " has no property" + property))
+			.orElse(DataResult.success(condition));
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot cast from DataResult<Object> to DataResult<BlockStatePropertyLootCondition>
+----------
+----------
+231. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/loot/ContainerComponentModifiers.java (at line 73)
+	Map<ComponentType<?>, ContainerComponentModifier<?>> TYPE_TO_MODIFIER = (Map<ComponentType<?>, ContainerComponentModifier<?>>)Stream.of(
+			CONTAINER, BUNDLE_CONTENTS, CHARGED_PROJECTILES
+		)
+		.collect(Collectors.toMap(ContainerComponentModifier::getComponentType, containerComponentModifier -> containerComponentModifier));
+	                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot cast from Map<ComponentType<capture#2-of ? extends Object>,ContainerComponentModifier<capture#3-of ? extends Object>> to Map<ComponentType<?>,ContainerComponentModifier<?>>
+----------
+----------
+232. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/item/BlockPredicatesChecker.java (at line 131)
+	.map(registryEntry -> ((Block)registryEntry.value()).getName().formatted(Formatting.DARK_GRAY))
+	                                            ^^^^^
+The method value() is undefined for the type Object
+----------
+----------
+233. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/item/AnimalArmorItem.java (at line 39)
+	public AnimalArmorItem.Type getType() {
+	       ^^^^^^^^^^^^^^^^^^^^
+The return type is incompatible with ArmorItem.getType()
+----------
+----------
+234. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/screen/AbstractFurnaceScreenHandler.java (at line 171)
+	return this.world.getRecipeManager().getFirstMatch(this.recipeType, new SingleStackRecipeInput(itemStack), this.world).isPresent();
+	                                     ^^^^^^^^^^^^^
+The method getFirstMatch(RecipeType<T>, I, World) in the type RecipeManager is not applicable for the arguments (RecipeType<capture#6-of ? extends AbstractCookingRecipe>, SingleStackRecipeInput, World)
+----------
+----------
+235. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/screen/slot/CraftingResultSlot.java (at line 44)
+	protected void onTake(int amount) {
+	               ^^^^^^^^^^^^^^^^^^
+Cannot reduce the visibility of the inherited method from Slot
+----------
+----------
+236. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/Registries.java (at line 150)
+	public static final Registry<ArgumentSerializer<?, ?>> COMMAND_ARGUMENT_TYPE = create(RegistryKeys.COMMAND_ARGUMENT_TYPE, ArgumentTypes::register);
+	                                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^
+The type ArgumentTypes does not define register(Registry<ArgumentSerializer<capture#18-of ?,capture#19-of ?>>) that is applicable here
+----------
+237. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/Registries.java (at line 203)
+	public static final Registry<MapCodec<? extends BiomeSource>> BIOME_SOURCE = create(RegistryKeys.BIOME_SOURCE, BiomeSources::registerAndGetDefault);
+	                                                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type BiomeSources does not define registerAndGetDefault(Registry<MapCodec<capture#26-of ? extends BiomeSource>>) that is applicable here
+----------
+238. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/Registries.java (at line 204)
+	public static final Registry<MapCodec<? extends ChunkGenerator>> CHUNK_GENERATOR = create(RegistryKeys.CHUNK_GENERATOR, ChunkGenerators::registerAndGetDefault);
+	                                                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type ChunkGenerators does not define registerAndGetDefault(Registry<MapCodec<capture#22-of ? extends ChunkGenerator>>) that is applicable here
+----------
+239. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/Registries.java (at line 206)
+	RegistryKeys.MATERIAL_CONDITION, MaterialRules.MaterialCondition::registerAndGetDefault
+	                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type MaterialRules.MaterialCondition does not define registerAndGetDefault(Registry<MapCodec<capture#32-of ? extends MaterialRules.MaterialCondition>>) that is applicable here
+----------
+240. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/Registries.java (at line 209)
+	RegistryKeys.MATERIAL_RULE, MaterialRules.MaterialRule::registerAndGetDefault
+	                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type MaterialRules.MaterialRule does not define registerAndGetDefault(Registry<MapCodec<capture#28-of ? extends MaterialRules.MaterialRule>>) that is applicable here
+----------
+241. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/Registries.java (at line 212)
+	RegistryKeys.DENSITY_FUNCTION_TYPE, DensityFunctionTypes::registerAndGetDefault
+	                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type DensityFunctionTypes does not define registerAndGetDefault(Registry<MapCodec<capture#30-of ? extends DensityFunction>>) that is applicable here
+----------
+242. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/Registries.java (at line 214)
+	public static final Registry<MapCodec<? extends Block>> BLOCK_TYPE = create(RegistryKeys.BLOCK_TYPE, BlockTypes::registerAndGetDefault);
+	                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type BlockTypes does not define registerAndGetDefault(Registry<MapCodec<capture#38-of ? extends Block>>) that is applicable here
+----------
+243. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/Registries.java (at line 222)
+	RegistryKeys.POOL_ALIAS_BINDING, StructurePoolAliasBindings::registerAndGetDefault
+	                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type StructurePoolAliasBindings does not define registerAndGetDefault(Registry<MapCodec<capture#24-of ? extends StructurePoolAliasBinding>>) that is applicable here
+----------
+244. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/Registries.java (at line 231)
+	public static final Registry<Criterion<?>> CRITERION = create(RegistryKeys.CRITERION, Criteria::getDefault);
+	                                                                                      ^^^^^^^^^^^^^^^^^^^^
+The type Criteria does not define getDefault(Registry<Criterion<capture#34-of ?>>) that is applicable here
+----------
+245. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/Registries.java (at line 232)
+	public static final Registry<NumberFormatType<?>> NUMBER_FORMAT_TYPE = create(RegistryKeys.NUMBER_FORMAT_TYPE, NumberFormatTypes::registerAndGetDefault);
+	                                                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type NumberFormatTypes does not define registerAndGetDefault(Registry<NumberFormatType<capture#36-of ?>>) that is applicable here
+----------
+246. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/Registries.java (at line 234)
+	public static final Registry<ComponentType<?>> DATA_COMPONENT_TYPE = create(RegistryKeys.DATA_COMPONENT_TYPE, DataComponentTypes::getDefault);
+	                                                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type DataComponentTypes does not define getDefault(Registry<ComponentType<capture#1-of ?>>) that is applicable here
+----------
+247. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/Registries.java (at line 236)
+	RegistryKeys.ENTITY_SUB_PREDICATE_TYPE, EntitySubPredicateTypes::getDefault
+	                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type EntitySubPredicateTypes does not define getDefault(Registry<MapCodec<capture#5-of ? extends EntitySubPredicate>>) that is applicable here
+----------
+248. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/Registries.java (at line 239)
+	RegistryKeys.ITEM_SUB_PREDICATE_TYPE, ItemSubPredicateTypes::getDefault
+	                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type ItemSubPredicateTypes does not define getDefault(Registry<ItemSubPredicate.Type<capture#3-of ?>>) that is applicable here
+----------
+249. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/Registries.java (at line 243)
+	RegistryKeys.ENCHANTMENT_EFFECT_COMPONENT_TYPE, EnchantmentEffectComponentTypes::getDefault
+	                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type EnchantmentEffectComponentTypes does not define getDefault(Registry<ComponentType<capture#1-of ?>>) that is applicable here
+----------
+250. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/Registries.java (at line 246)
+	RegistryKeys.ENCHANTMENT_LEVEL_BASED_VALUE_TYPE, EnchantmentLevelBasedValue::registerAndGetDefault
+	                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type EnchantmentLevelBasedValue does not define registerAndGetDefault(Registry<MapCodec<capture#9-of ? extends EnchantmentLevelBasedValue>>) that is applicable here
+----------
+251. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/Registries.java (at line 249)
+	RegistryKeys.ENCHANTMENT_ENTITY_EFFECT_TYPE, EnchantmentEntityEffect::registerAndGetDefault
+	                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type EnchantmentEntityEffect does not define registerAndGetDefault(Registry<MapCodec<capture#13-of ? extends EnchantmentEntityEffect>>) that is applicable here
+----------
+252. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/Registries.java (at line 252)
+	RegistryKeys.ENCHANTMENT_LOCATION_BASED_EFFECT_TYPE, EnchantmentLocationBasedEffect::registerAndGetDefault
+	                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type EnchantmentLocationBasedEffect does not define registerAndGetDefault(Registry<MapCodec<capture#15-of ? extends EnchantmentLocationBasedEffect>>) that is applicable here
+----------
+253. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/Registries.java (at line 255)
+	RegistryKeys.ENCHANTMENT_VALUE_EFFECT_TYPE, EnchantmentValueEffect::registerAndGetDefault
+	                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type EnchantmentValueEffect does not define registerAndGetDefault(Registry<MapCodec<capture#7-of ? extends EnchantmentValueEffect>>) that is applicable here
+----------
+254. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/Registries.java (at line 258)
+	RegistryKeys.ENCHANTMENT_PROVIDER_TYPE, EnchantmentProviderType::registerAndGetDefault
+	                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type EnchantmentProviderType does not define registerAndGetDefault(Registry<MapCodec<capture#11-of ? extends EnchantmentProvider>>) that is applicable here
+----------
+----------
+255. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/entry/RegistryEntryListCodec.java (at line 69)
+	DataResult<RegistryEntryList<E>> dataResult = ((Either)pair.getFirst())
+								.map(tag -> get(registryEntryLookup, tag), entries -> DataResult.success(RegistryEntryList.of(entries)));
+	                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from Object to DataResult<RegistryEntryList<E>>
+----------
+256. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/entry/RegistryEntryListCodec.java (at line 70)
+	.map(tag -> get(registryEntryLookup, tag), entries -> DataResult.success(RegistryEntryList.of(entries)));
+	            ^^^
+The method get(RegistryEntryLookup<E>, TagKey<E>) in the type RegistryEntryListCodec<E> is not applicable for the arguments (RegistryEntryLookup<E>, Object)
+----------
+257. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/entry/RegistryEntryListCodec.java (at line 70)
+	.map(tag -> get(registryEntryLookup, tag), entries -> DataResult.success(RegistryEntryList.of(entries)));
+	                                                                                           ^^
+The method of(RegistryEntry<T>...) in the type RegistryEntryList is not applicable for the arguments (Object)
+----------
+258. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/entry/RegistryEntryListCodec.java (at line 81)
+	return (DataResult<RegistryEntryList<E>>)registry.getOptional(tag)
+			.map(DataResult::success)
+			.orElseGet(() -> DataResult.error(() -> "Missing tag: '" + tag.id() + "' in '" + tag.registry().getValue() + "'"));
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot cast from DataResult<RegistryEntryList.Named<E>> to DataResult<RegistryEntryList<E>>
+----------
+259. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/entry/RegistryEntryListCodec.java (at line 105)
+	for (RegistryEntry<E> registryEntry : (List)pair.getFirst()) {
+	                                      ^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from element type Object to RegistryEntry<E>
+----------
+----------
+260. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/BuiltinRegistries.java (at line 40)
+	.addRegistry(RegistryKeys.CONFIGURED_CARVER, ConfiguredCarvers::bootstrap)
+	                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type ConfiguredCarvers does not define bootstrap(Registerable<ConfiguredCarver<capture#1-of ?>>) that is applicable here
+----------
+261. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/BuiltinRegistries.java (at line 41)
+	.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ConfiguredFeatures::bootstrap)
+	                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type ConfiguredFeatures does not define bootstrap(Registerable<ConfiguredFeature<capture#2-of ?,capture#3-of ?>>) that is applicable here
+----------
+----------
+262. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/RegistryBuilder.java (at line 149)
+	List<RegistryWrapper.Impl<?>> list = (List<RegistryWrapper.Impl<?>>)initializedRegistries.keySet()
+			.stream()
+			.map(registryRef -> this.applyPatches(anyOwner, cloneableRegistries, registryRef, patches, base, mutableObject))
+			.collect(Collectors.toUnmodifiableList());
+	                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot cast from List<RegistryWrapper.Impl<Object>> to List<RegistryWrapper.Impl<?>>
+----------
+263. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/RegistryBuilder.java (at line 213)
+	return this;
+	       ^^^^
+Type mismatch: cannot convert from RegistryBuilder.AnyOwner to RegistryEntryOwner<T>
+----------
+264. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/RegistryBuilder.java (at line 274)
+	protected void setValue(T value) {
+	               ^^^^^^^^^^^^^^^^^
+Cannot reduce the visibility of the inherited method from RegistryEntry.Reference<T>
+----------
+265. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/RegistryBuilder.java (at line 369)
+	map.put(registryKey, new RegistryBuilder.EntryAssociatedValue<>(registeredValue, Optional.ofNullable(reference)));
+	    ^^^
+The method put(RegistryKey<T>, RegistryBuilder.EntryAssociatedValue<T>) in the type Map<RegistryKey<T>,RegistryBuilder.EntryAssociatedValue<T>> is not applicable for the arguments (RegistryKey<capture#26-of ?>, RegistryBuilder.EntryAssociatedValue<T>)
+----------
+266. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/RegistryBuilder.java (at line 391)
+	return (RegistryEntry.Reference<T>)this.keysToEntries.computeIfAbsent(key, key2 -> RegistryEntry.Reference.standAlone(this.entryOwner, key2));
+	                                                      ^^^^^^^^^^^^^^^
+The method computeIfAbsent(RegistryKey<Object>, Function<? super RegistryKey<Object>,? extends RegistryEntry.Reference<Object>>) in the type Map<RegistryKey<Object>,RegistryEntry.Reference<Object>> is not applicable for the arguments (RegistryKey<T>, (<no type> key2) -> {})
+----------
+----------
+267. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/SimpleRegistry.java (at line 129)
+	Util.throwOrPause((T)(new IllegalStateException("Adding duplicate key '" + key + "' to registry")));
+	     ^^^^^^^^^^^^
+The method throwOrPause(T extends Throwable) in the type Util is not applicable for the arguments (T)
+----------
+268. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/SimpleRegistry.java (at line 133)
+	Util.throwOrPause((T)(new IllegalStateException("Adding duplicate value '" + value + "' to registry")));
+	     ^^^^^^^^^^^^
+The method throwOrPause(T extends Throwable) in the type Util is not applicable for the arguments (T)
+----------
+----------
+269. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/RegistryWrapper.java (at line 130)
+	final Map<RegistryKey<? extends Registry<?>>, RegistryWrapper.Impl<?>> map = (Map<RegistryKey<? extends Registry<?>>, RegistryWrapper.Impl<?>>)wrappers.collect(
+				Collectors.toUnmodifiableMap(RegistryWrapper.Impl::getRegistryKey, wrapper -> wrapper)
+			);
+	                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot cast from Map<RegistryKey<capture#9-of ? extends Registry<? extends capture#8-of ?>>,RegistryWrapper.Impl<capture#11-of ?>> to Map<RegistryKey<? extends Registry<?>>,RegistryWrapper.Impl<?>>
+----------
+----------
+270. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/RegistryLoader.java (at line 130)
+	List<RegistryLoader.Loader<?>> list = (List<RegistryLoader.Loader<?>>)entries.stream()
+			.map(entry -> entry.getLoader(Lifecycle.stable(), map))
+			.collect(Collectors.toUnmodifiableList());
+	                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot cast from List<RegistryLoader.Loader<capture#8-of ?>> to List<RegistryLoader.Loader<?>>
+----------
+----------
+271. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/tag/TagPacketSerializer.java (at line 28)
+	.collect(Collectors.<RegistryKey, TagPacketSerializer.Serialized>toMap(p -> (RegistryKey)((Pair)p).getFirst(), p -> (TagPacketSerializer.Serialized)((Pair)p).getSecond()));
+	                                                                 ^^^^^
+Incorrect number of type arguments for generic method <T, K, U>toMap(Function<? super T,? extends K>, Function<? super T,? extends U>) of type Collectors; it cannot be parameterized with arguments <RegistryKey, TagPacketSerializer.Serialized>
+----------
+272. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/tag/TagPacketSerializer.java (at line 28)
+	.collect(Collectors.<RegistryKey, TagPacketSerializer.Serialized>toMap(p -> (RegistryKey)((Pair)p).getFirst(), p -> (TagPacketSerializer.Serialized)((Pair)p).getSecond()));
+	                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from RegistryKey to K
+----------
+273. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/tag/TagPacketSerializer.java (at line 28)
+	.collect(Collectors.<RegistryKey, TagPacketSerializer.Serialized>toMap(p -> (RegistryKey)((Pair)p).getFirst(), p -> (TagPacketSerializer.Serialized)((Pair)p).getSecond()));
+	                                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from TagPacketSerializer.Serialized to U
+----------
+----------
+274. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/registry/RegistryPair.java (at line 37)
+	return (Either<RegistryEntry<T>, RegistryKey<T>>)this.entry.map(Either::left).orElseGet(() -> Either.right(this.key));
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot cast from Either<RegistryEntry<T>,Object> to Either<RegistryEntry<T>,RegistryKey<T>>
+----------
+----------
+275. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/command/EntitySelectorOptions.java (at line 399)
+	map2.put(string, (Predicate)criterionProgress -> criterionProgress.isObtained() == bl);
+	                                                                   ^^^^^^^^^^
+The method isObtained() is undefined for the type Object
+----------
+276. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/command/EntitySelectorOptions.java (at line 411)
+	CriterionProgress criterionProgress = advancementProgress.getCriterionProgress((String)entry.getKey());
+	                                                          ^^^^^^^^^^^^^^^^^^^^
+The method getCriterionProgress(String) is undefined for the type Object
+----------
+277. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/command/EntitySelectorOptions.java (at line 421)
+	map.put(identifier, (Predicate)advancementProgress -> advancementProgress.isDone() == bl2);
+	                                                                          ^^^^^^
+The method isDone() is undefined for the type Object
+----------
+----------
+278. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/command/EntitySelector.java (at line 246)
+	list2.add((Predicate)entity -> entity.getType().isEnabled(enabledFeatures));
+	                                      ^^^^^^^
+The method getType() is undefined for the type Object
+----------
+279. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/command/EntitySelector.java (at line 250)
+	list2.add((Predicate)entity -> box.intersects(entity.getBoundingBox()));
+	                                                     ^^^^^^^^^^^^^^
+The method getBoundingBox() is undefined for the type Object
+----------
+280. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/command/EntitySelector.java (at line 254)
+	list2.add((Predicate)entity -> this.distance.testSqrt(entity.squaredDistanceTo(pos)));
+	                                                             ^^^^^^^^^^^^^^^^^
+The method squaredDistanceTo(Vec3d) is undefined for the type Object
+----------
+----------
+281. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/command/suggestion/SuggestionProviders.java (at line 44)
+	return new SuggestionProviders.LocalProvider(id, provider);
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from SuggestionProviders.LocalProvider to SuggestionProvider<S>
+----------
+----------
+282. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/command/argument/packrat/ArgumentParser.java (at line 25)
+	List<Exception> list = impl.getErrors().stream().mapMulti((error, consumer) -> {
+				if (error.reason() instanceof Exception exceptionx) {
+					consumer.accept(exceptionx);
+				}
+			}).toList();
+	                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from List<Object> to List<Exception>
+----------
+----------
+283. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/command/argument/RegistryEntryPredicateArgumentType.java (at line 113)
+	return this.value.registryKey().isOf(registryRef) ? Optional.of(this) : Optional.empty();
+	                                                    ^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from Optional<RegistryEntryPredicateArgumentType.EntryBased<T>> to Optional<RegistryEntryPredicateArgumentType.EntryPredicate<E>>
+----------
+284. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/command/argument/RegistryEntryPredicateArgumentType.java (at line 180)
+	return this.tag.getTag().isOf(registryRef) ? Optional.of(this) : Optional.empty();
+	                                             ^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from Optional<RegistryEntryPredicateArgumentType.TagBased<T>> to Optional<RegistryEntryPredicateArgumentType.EntryPredicate<E>>
+----------
+----------
+285. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/command/argument/ArgumentTypes.java (at line 47)
+	register(registry, "vec3", Vec3ArgumentType.class, ConstantArgumentSerializer.of(Vec3ArgumentType::vec3));
+	                                                                              ^^
+The method of(Supplier<ArgumentType<?>>) is ambiguous for the type ConstantArgumentSerializer
+----------
+286. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/command/argument/ArgumentTypes.java (at line 48)
+	register(registry, "vec2", Vec2ArgumentType.class, ConstantArgumentSerializer.of(Vec2ArgumentType::vec2));
+	                                                                              ^^
+The method of(Supplier<ArgumentType<?>>) is ambiguous for the type ConstantArgumentSerializer
+----------
+----------
+287. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/command/argument/serialize/ConstantArgumentSerializer.java (at line 18)
+	return new ConstantArgumentSerializer<>(commandRegistryAccess -> (ArgumentType)typeSupplier.get());
+	                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from ArgumentType to T
+----------
+----------
+288. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/command/argument/BlockArgumentParser.java (at line 495)
+	this.blockState = this.blockState.with(property, (Comparable)optional.get());
+	                                  ^^^^
+Bound mismatch: The generic method with(Property<T>, V) of type State<O,S> is not applicable for the arguments (Property<T>, Comparable). The inferred type Comparable is not a valid substitute for the bounded parameter <V extends T>
+----------
+----------
+289. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/command/argument/ItemStackArgument.java (at line 81)
+	return this.item.getKey().map(RegistryKey::getValue).orElseGet(() -> "unknown[" + this.item + "]").toString();
+	                                                     ^^^^^^^^^
+The method orElseGet(Supplier<? extends Identifier>) in the type Optional<Identifier> is not applicable for the arguments (() -> {})
+----------
+290. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/command/argument/ItemStackArgument.java (at line 81)
+	return this.item.getKey().map(RegistryKey::getValue).orElseGet(() -> "unknown[" + this.item + "]").toString();
+	                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from String to Identifier
+----------
+----------
+291. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/command/argument/OperationArgumentType.java (at line 57)
+	return (OperationArgumentType.Operation)(operator.equals("><") ? (a, b) -> {
+	                                                                 ^^^^^^^^^
+The target type of this expression must be a functional interface
+----------
+----------
+292. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/command/SingleCommandAction.java (at line 46)
+	if (redirectModifier instanceof Forkable<T> forkable) {
+	    ^^^^^^^^^^^^^^^^
+Type RedirectModifier<T> cannot be safely cast to Forkable<T>
+----------
+293. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/command/SingleCommandAction.java (at line 83)
+	context.enqueueCommand(new CommandQueueEntry<>(frame, FallthroughCommandAction.getInstance()));
+	                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot infer type arguments for CommandQueueEntry<>
+----------
+294. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/command/SingleCommandAction.java (at line 87)
+	if (commandContext2.getCommand() instanceof ControlFlowAware<T> controlFlowAware) {
+	    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type Command<T> cannot be safely cast to ControlFlowAware<T>
+----------
+----------
+295. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/text/Texts.java (at line 75)
+	return (Text)transformer.apply((Comparable)elements.iterator().next());
+	                         ^^^^^
+The method apply(T) in the type Function<T,Text> is not applicable for the arguments (Comparable)
+----------
+----------
+296. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/text/TextColor.java (at line 27)
+	.collect(Collectors.<Formatting, Formatting, TextColor>toMap(Function.identity(), formatting -> new TextColor(formatting.getColorValue(), formatting.getName())));
+	         ^^^^^^^^^^
+Collectors cannot be resolved
+----------
+297. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/text/TextColor.java (at line 30)
+	.collect(Collectors.<TextColor, String, TextColor>toMap(textColor -> textColor.name, Function.identity()));
+	         ^^^^^^^^^^
+Collectors cannot be resolved
+----------
+----------
+298. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/text/TextCodecs.java (at line 89)
+	Stream.of(types).map(typeToCodec).toList(), object -> (MapEncoder)typeToCodec.apply((StringIdentifiable)valueToType.apply(object))
+	                                                                              ^^^^^
+The method apply(T) in the type Function<T,MapCodec<? extends E>> is not applicable for the arguments (StringIdentifiable)
+----------
+299. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/text/TextCodecs.java (at line 89)
+	Stream.of(types).map(typeToCodec).toList(), object -> (MapEncoder)typeToCodec.apply((StringIdentifiable)valueToType.apply(object))
+	                                                                                                                    ^^^^^
+The method apply(E) in the type Function<E,T> is not applicable for the arguments (Object)
+----------
+----------
+300. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/resource/VanillaResourcePackProvider.java (at line 77)
+	(profilePath, factory) -> consumer.accept(getFileName(profilePath), (Function)id -> this.create(id, factory, this.getDisplayName(id)))
+	                                                                                                                  ^^^^^^^^^^^^^^
+The method getDisplayName(String) in the type VanillaResourcePackProvider is not applicable for the arguments (Object)
+----------
+----------
+301. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/resource/DefaultResourcePack.java (at line 60)
+	for (Path pathx : (List)this.namespacePaths.get(type)) {
+	                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from element type Object to Path
+----------
+302. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/resource/DefaultResourcePack.java (at line 103)
+	for (Path path : (List)this.namespacePaths.get(type)) {
+	                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from element type Object to Path
+----------
+----------
+303. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/resource/fs/ResourceFileSystemProvider.java (at line 75)
+	return directory.children().values().stream().filter(child -> {
+						try {
+							return filter.accept(child);
+						} catch (IOException var3) {
+							throw new DirectoryIteratorException(var3);
+						}
+					}).map(child -> child).iterator();
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from Iterator<ResourcePath> to Iterator<Path>
+----------
+----------
+304. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/advancement/criterion/SlideDownBlockCriterion.java (at line 40)
+	return (DataResult<SlideDownBlockCriterion.Conditions>)conditions.block
+				.flatMap(
+					block -> conditions.state
+						.flatMap(state -> state.findMissing(((Block)block.value()).getStateManager()))
+						.map(property -> DataResult.error(() -> "Block" + block + " has no property " + property))
+				)
+				.orElseGet(() -> DataResult.success(conditions));
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot cast from DataResult<Object> to DataResult<SlideDownBlockCriterion.Conditions>
+----------
+----------
+305. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/advancement/criterion/EnterBlockCriterion.java (at line 40)
+	return (DataResult<EnterBlockCriterion.Conditions>)conditions.block
+				.flatMap(
+					block -> conditions.state
+						.flatMap(state -> state.findMissing(((Block)block.value()).getStateManager()))
+						.map(property -> DataResult.error(() -> "Block" + block + " has no property " + property))
+				)
+				.orElseGet(() -> DataResult.success(conditions));
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot cast from DataResult<Object> to DataResult<EnterBlockCriterion.Conditions>
+----------
+----------
+306. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/data/server/recipe/RecipeProvider.java (at line 622)
+	if (waxed.getRequiredFeatures().isSubsetOf(enabledFeatures)) {
+	          ^^^^^^^^^^^^^^^^^^^
+The method getRequiredFeatures() is undefined for the type Object
+----------
+307. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/data/server/recipe/RecipeProvider.java (at line 623)
+	ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, waxed)
+	                           ^^^^^^
+The method create(RecipeCategory, ItemConvertible) in the type ShapelessRecipeJsonBuilder is not applicable for the arguments (RecipeCategory, Object)
+----------
+308. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/data/server/recipe/RecipeProvider.java (at line 626)
+	.group(getItemPath(waxed))
+	       ^^^^^^^^^^^
+The method getItemPath(ItemConvertible) in the type RecipeProvider is not applicable for the arguments (Object)
+----------
+309. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/data/server/recipe/RecipeProvider.java (at line 627)
+	.criterion(hasItem(unwaxed), conditionsFromItem(unwaxed))
+	           ^^^^^^^
+The method hasItem(ItemConvertible) in the type RecipeProvider is not applicable for the arguments (Object)
+----------
+310. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/data/server/recipe/RecipeProvider.java (at line 627)
+	.criterion(hasItem(unwaxed), conditionsFromItem(unwaxed))
+	                             ^^^^^^^^^^^^^^^^^^
+The method conditionsFromItem(ItemConvertible) in the type RecipeProvider is not applicable for the arguments (Object)
+----------
+311. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/data/server/recipe/RecipeProvider.java (at line 628)
+	.offerTo(exporter, convertBetween(waxed, Items.HONEYCOMB));
+	                   ^^^^^^^^^^^^^^
+The method convertBetween(ItemConvertible, ItemConvertible) in the type RecipeProvider is not applicable for the arguments (Object, Item)
+----------
+----------
+312. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/data/report/PacketReportProvider.java (at line 49)
+	jsonObject.add(phase.getId(), jsonObject2);
+	                     ^^^^^
+The method getId() is undefined for the type Object
+----------
+313. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/data/report/PacketReportProvider.java (at line 50)
+	states.forEach(state -> {
+	       ^^^^^^^
+The method forEach((<no type> state) -> {}) is undefined for the type Object
+----------
+----------
+314. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/data/report/RegistryDumpProvider.java (at line 37)
+	int i = Registries.REGISTRIES.getRawId(registry);
+	                              ^^^^^^^^
+The method getRawId(capture#3-of ? extends Registry<?>) in the type Registry<capture#3-of ? extends Registry<?>> is not applicable for the arguments (Registry<T>)
+----------
+----------
+315. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/data/client/Model.java (at line 68)
+	.collect(Collectors.toMap(Function.identity(), textures::getTexture));
+	         ^^^^^^^^^^
+Collectors cannot be resolved
+----------
+----------
+316. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/network/MultiplayerServerListPinger.java (at line 52)
+	final ClientConnection clientConnection = ClientConnection.connect(inetSocketAddress, false, null);
+	                                                           ^^^^^^^
+The method connect(InetSocketAddress, boolean, MultiValueDebugSampleLogImpl) is ambiguous for the type ClientConnection
+----------
+----------
+317. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/render/entity/BoatEntityRenderer.java (at line 37)
+	.collect(Collectors.toMap(type -> type, type -> Pair.of(getTexture(type, chest), this.createModel(ctx, type, chest))));
+	         ^^^^^^^^^^
+Collectors cannot be resolved
+----------
+----------
+318. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/render/WorldRenderer.java (at line 2878)
+	this.world.playSoundAtBlockCenter(pos, SoundEvents.BLOCK_SCULK_CHARGE, SoundCategory.BLOCKS, l, w, false);
+	                                                                                             ^
+The local variable l may not have been initialized
+----------
+----------
+319. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/render/model/BlockStatesLoader.java (at line 106)
+	ModelVariantMap modelVariantMap = sourceTrackedData.readVariantMap(id, this.context);
+	                                  ^^^^^^^^^^^^^^^^^
+sourceTrackedData cannot be resolved
+----------
+320. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/render/model/BlockStatesLoader.java (at line 145)
+	sourceTrackedData.source,
+	^^^^^^^^^^^^^^^^^
+sourceTrackedData cannot be resolved to a variable
+----------
+321. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/render/model/BlockStatesLoader.java (at line 204)
+	Comparable<?> comparable = parseProperty((Property<Comparable<?>>)property, string3);
+	                           ^^^^^^^^^^^^^
+The method parseProperty(Property<T>, String) in the type BlockStatesLoader is not applicable for the arguments (Property<Comparable<?>>, String)
+----------
+322. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/render/model/BlockStatesLoader.java (at line 204)
+	Comparable<?> comparable = parseProperty((Property<Comparable<?>>)property, string3);
+	                                                   ^^^^^^^^^^
+Bound mismatch: The type Comparable<?> is not a valid substitute for the bounded parameter <T extends Comparable<T>> of the type Property<T>
+----------
+323. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/render/model/BlockStatesLoader.java (at line 254)
+	List<UnbakedModel> list = (List<UnbakedModel>)rawModel.getComponents()
+				.stream()
+				.filter(component -> component.getPredicate(stateManager).test(state))
+				.map(MultipartModelComponent::getModel)
+				.collect(Collectors.toUnmodifiableList());
+	                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot cast from List<WeightedUnbakedModel> to List<UnbakedModel>
+----------
+----------
+324. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/render/block/entity/ChestBlockEntityRenderer.java (at line 101)
+	ChestType chestType = blockState.contains((Property<T>)ChestBlock.CHEST_TYPE) ? blockState.get(ChestBlock.CHEST_TYPE) : ChestType.SINGLE;
+	                                 ^^^^^^^^
+The method contains(Property<T extends Comparable<T>>) in the type State<Block,BlockState> is not applicable for the arguments (Property<T extends BlockEntity & LidOpenable>)
+----------
+325. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/render/block/entity/ChestBlockEntityRenderer.java (at line 101)
+	ChestType chestType = blockState.contains((Property<T>)ChestBlock.CHEST_TYPE) ? blockState.get(ChestBlock.CHEST_TYPE) : ChestType.SINGLE;
+	                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot cast from EnumProperty<ChestType> to Property<T>
+----------
+326. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/render/block/entity/ChestBlockEntityRenderer.java (at line 101)
+	ChestType chestType = blockState.contains((Property<T>)ChestBlock.CHEST_TYPE) ? blockState.get(ChestBlock.CHEST_TYPE) : ChestType.SINGLE;
+	                                                    ^
+Bound mismatch: The type T is not a valid substitute for the bounded parameter <T extends Comparable<T>> of the type Property<T>
+----------
+----------
+327. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/render/block/entity/HangingSignBlockEntityRenderer.java (at line 49)
+	Collectors.toMap(
+	^^^^^^^^^^
+Collectors cannot be resolved
+----------
+----------
+328. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/render/block/entity/SignBlockEntityRenderer.java (at line 54)
+	Collectors.toMap(
+	^^^^^^^^^^
+Collectors cannot be resolved
+----------
+----------
+329. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/render/debug/StructureDebugRenderer.java (at line 40)
+	for (BlockBox blockBox : ((Map)this.structureBoundingBoxes.get(registryKey)).values()) {
+	                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from element type Object to BlockBox
+----------
+----------
+330. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/gui/screen/RealmsSelectFileToUploadScreen.java (at line 58)
+	.filter(LevelSummary::isImmediatelyLoadable)
+	 ^^^^^^
+The method filter(Predicate) in the type Stream is not applicable for the arguments (LevelSummary::isImmediatelyLoadable)
+----------
+331. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/realms/gui/screen/RealmsSelectFileToUploadScreen.java (at line 58)
+	.filter(LevelSummary::isImmediatelyLoadable)
+	        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type LevelSummary does not define isImmediatelyLoadable(Object) that is applicable here
+----------
+----------
+332. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/search/SearchManager.java (at line 63)
+	(SearchManager.RecipeResultCollection)resultCollection.getAllRecipes().stream().map(recipe -> ((RegistryEntry)recipe).value()), tooltipContext, tooltipType
+	 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SearchManager.RecipeResultCollection cannot be resolved to a type
+----------
+333. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/search/SearchManager.java (at line 63)
+	(SearchManager.RecipeResultCollection)resultCollection.getAllRecipes().stream().map(recipe -> ((RegistryEntry)recipe).value()), tooltipContext, tooltipType
+	                                                       ^^^^^^^^^^^^^
+The method getAllRecipes() is undefined for the type Object
+----------
+334. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/search/SearchManager.java (at line 65)
+	resultCollection -> resultCollection.getAllRecipes().stream().map(recipe -> registry.getId(recipe.value().getResult(registryManager).getItem())),
+	                                     ^^^^^^^^^^^^^
+The method getAllRecipes() is undefined for the type Object
+----------
+335. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/search/SearchManager.java (at line 85)
+	() -> new IdentifierSearchProvider(stack -> stack.streamTags().map(TagKey::id), stacks), Util.getMainWorkerExecutor()
+	                                                  ^^^^^^^^^^
+The method streamTags() is undefined for the type Object
+----------
+----------
+336. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/search/IdentifierSearcher.java (at line 48)
+	suffixArray.add(object, id.getNamespace().toLowerCase(Locale.ROOT));
+	                           ^^^^^^^^^^^^
+The method getNamespace() is undefined for the type Object
+----------
+337. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/search/IdentifierSearcher.java (at line 49)
+	suffixArray2.add(object, id.getPath().toLowerCase(Locale.ROOT));
+	                            ^^^^^^^
+The method getPath() is undefined for the type Object
+----------
+----------
+338. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/search/SearchProvider.java (at line 27)
+	((Stream)function.apply(object)).forEach(string -> suffixArray.add(object, string.toLowerCase(Locale.ROOT)));
+	                                                                                  ^^^^^^^^^^^
+The method toLowerCase(Locale) is undefined for the type Object
+----------
+----------
+339. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/widget/EditBoxWidget.java (at line 144)
+	for (EditBox.Substring substring : this.editBox.getLines()) {
+	     ^^^^^^^^^^^^^^^^^
+The type EditBox.Substring is not visible
+----------
+340. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/widget/EditBoxWidget.java (at line 144)
+	for (EditBox.Substring substring : this.editBox.getLines()) {
+	                                   ^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from element type net.minecraft.client.gui.EditBox.Substring to EditBox.Substring
+----------
+341. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/widget/EditBoxWidget.java (at line 146)
+	if (bl && bl2 && i >= substring.beginIndex() && i <= substring.endIndex()) {
+	                      ^^^^^^^^^
+The type EditBox.Substring is not visible
+----------
+342. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/widget/EditBoxWidget.java (at line 146)
+	if (bl && bl2 && i >= substring.beginIndex() && i <= substring.endIndex()) {
+	                                                     ^^^^^^^^^
+The type EditBox.Substring is not visible
+----------
+343. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/widget/EditBoxWidget.java (at line 148)
+	j = context.drawTextWithShadow(this.textRenderer, string.substring(substring.beginIndex(), i), this.getX() + this.getPadding(), l, -2039584) - 1;
+	                                                                   ^^^^^^^^^
+The type EditBox.Substring is not visible
+----------
+344. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/widget/EditBoxWidget.java (at line 150)
+	context.drawTextWithShadow(this.textRenderer, string.substring(i, substring.endIndex()), j, l, -2039584);
+	                                                                  ^^^^^^^^^
+The type EditBox.Substring is not visible
+----------
+345. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/widget/EditBoxWidget.java (at line 155)
+	this.textRenderer, string.substring(substring.beginIndex(), substring.endIndex()), this.getX() + this.getPadding(), l, -2039584
+	                                    ^^^^^^^^^
+The type EditBox.Substring is not visible
+----------
+346. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/widget/EditBoxWidget.java (at line 155)
+	this.textRenderer, string.substring(substring.beginIndex(), substring.endIndex()), this.getX() + this.getPadding(), l, -2039584
+	                                                            ^^^^^^^^^
+The type EditBox.Substring is not visible
+----------
+347. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/widget/EditBoxWidget.java (at line 171)
+	EditBox.Substring substring2 = this.editBox.getSelection();
+	^^^^^^^^^^^^^^^^^
+The type EditBox.Substring is not visible
+----------
+348. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/widget/EditBoxWidget.java (at line 175)
+	for (EditBox.Substring substring3 : this.editBox.getLines()) {
+	     ^^^^^^^^^^^^^^^^^
+The type EditBox.Substring is not visible
+----------
+349. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/widget/EditBoxWidget.java (at line 175)
+	for (EditBox.Substring substring3 : this.editBox.getLines()) {
+	                                    ^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from element type net.minecraft.client.gui.EditBox.Substring to EditBox.Substring
+----------
+350. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/widget/EditBoxWidget.java (at line 176)
+	if (substring2.beginIndex() > substring3.endIndex()) {
+	    ^^^^^^^^^^
+The type EditBox.Substring is not visible
+----------
+351. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/widget/EditBoxWidget.java (at line 176)
+	if (substring2.beginIndex() > substring3.endIndex()) {
+	                              ^^^^^^^^^^
+The type EditBox.Substring is not visible
+----------
+352. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/widget/EditBoxWidget.java (at line 179)
+	if (substring3.beginIndex() > substring2.endIndex()) {
+	    ^^^^^^^^^^
+The type EditBox.Substring is not visible
+----------
+353. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/widget/EditBoxWidget.java (at line 179)
+	if (substring3.beginIndex() > substring2.endIndex()) {
+	                              ^^^^^^^^^^
+The type EditBox.Substring is not visible
+----------
+354. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/widget/EditBoxWidget.java (at line 184)
+	int n = this.textRenderer.getWidth(string.substring(substring3.beginIndex(), Math.max(substring2.beginIndex(), substring3.beginIndex())));
+	                                                    ^^^^^^^^^^
+The type EditBox.Substring is not visible
+----------
+355. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/widget/EditBoxWidget.java (at line 184)
+	int n = this.textRenderer.getWidth(string.substring(substring3.beginIndex(), Math.max(substring2.beginIndex(), substring3.beginIndex())));
+	                                                                                      ^^^^^^^^^^
+The type EditBox.Substring is not visible
+----------
+356. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/widget/EditBoxWidget.java (at line 184)
+	int n = this.textRenderer.getWidth(string.substring(substring3.beginIndex(), Math.max(substring2.beginIndex(), substring3.beginIndex())));
+	                                                                                                               ^^^^^^^^^^
+The type EditBox.Substring is not visible
+----------
+357. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/widget/EditBoxWidget.java (at line 186)
+	if (substring2.endIndex() > substring3.endIndex()) {
+	    ^^^^^^^^^^
+The type EditBox.Substring is not visible
+----------
+358. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/widget/EditBoxWidget.java (at line 186)
+	if (substring2.endIndex() > substring3.endIndex()) {
+	                            ^^^^^^^^^^
+The type EditBox.Substring is not visible
+----------
+359. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/widget/EditBoxWidget.java (at line 189)
+	o = this.textRenderer.getWidth(string.substring(substring3.beginIndex(), substring2.endIndex()));
+	                                                ^^^^^^^^^^
+The type EditBox.Substring is not visible
+----------
+360. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/widget/EditBoxWidget.java (at line 189)
+	o = this.textRenderer.getWidth(string.substring(substring3.beginIndex(), substring2.endIndex()));
+	                                                                         ^^^^^^^^^^
+The type EditBox.Substring is not visible
+----------
+361. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/widget/EditBoxWidget.java (at line 233)
+	EditBox.Substring substring = this.editBox.getLine((int)(d / 9.0));
+	^^^^^^^^^^^^^^^^^
+The type EditBox.Substring is not visible
+----------
+362. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/widget/EditBoxWidget.java (at line 234)
+	if (this.editBox.getCursor() <= substring.beginIndex()) {
+	                                ^^^^^^^^^
+The type EditBox.Substring is not visible
+----------
+363. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/widget/EditBoxWidget.java (at line 237)
+	EditBox.Substring substring2 = this.editBox.getLine((int)((d + this.height) / 9.0) - 1);
+	^^^^^^^^^^^^^^^^^
+The type EditBox.Substring is not visible
+----------
+364. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/widget/EditBoxWidget.java (at line 238)
+	if (this.editBox.getCursor() > substring2.endIndex()) {
+	                               ^^^^^^^^^^
+The type EditBox.Substring is not visible
+----------
+----------
+365. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/screen/recipebook/AnimatedResultButton.java (at line 125)
+	public List<Text> getTooltip() {
+	       ^^^^^^^^^^
+The return type is incompatible with ClickableWidget.getTooltip()
+----------
+----------
+366. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/screen/world/WorldCreator.java (at line 302)
+	.orElse(CUSTOM_GENERATOR_TEXT);
+	 ^^^^^^
+The method orElse(MutableText) in the type Optional<MutableText> is not applicable for the arguments (Text)
+----------
+----------
+367. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/screen/world/PresetsScreen.java (at line 309)
+	.orElse(PresetsScreen.UNKNOWN_PRESET_TEXT);
+	 ^^^^^^
+The method orElse(MutableText) in the type Optional<MutableText> is not applicable for the arguments (Text)
+----------
+----------
+368. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/screen/world/EditGameRulesScreen.java (at line 286)
+	.sorted(java.util.Map.Entry.comparingByKey(Comparator.comparing(GameRules.Key::getName)))
+	                                                                ^^^^^^^^^^^^^^^^^^^^^^
+The type GameRules.Key does not define getName(Object) that is applicable here
+----------
+369. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/screen/world/EditGameRulesScreen.java (at line 287)
+	.forEach(e -> this.addEntry((EditGameRulesScreen.AbstractRuleWidget)e.getValue()));
+	                                                                      ^^^^^^^^
+The method getValue() is undefined for the type Object
+----------
+----------
+370. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/screen/ingame/BookScreen.java (at line 262)
+	return writableBookContentComponent != null ? new BookScreen.Contents(writableBookContentComponent.stream(bl).map(Text::literal).toList()) : null;
+	                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The constructor BookScreen.Contents(List<MutableText>) is undefined
+----------
+----------
+371. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/screen/ingame/BeaconScreen.java (at line 59)
+	BeaconScreen.this.primaryEffect = handler.getPrimaryEffect();
+	                                          ^^^^^^^^^^^^^^^^
+The method getPrimaryEffect() is undefined for the type ScreenHandler
+----------
+372. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/screen/ingame/BeaconScreen.java (at line 60)
+	BeaconScreen.this.secondaryEffect = handler.getSecondaryEffect();
+	                                            ^^^^^^^^^^^^^^^^^^
+The method getSecondaryEffect() is undefined for the type ScreenHandler
+----------
+----------
+373. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/screen/multiplayer/SocialInteractionsPlayerListWidget.java (at line 110)
+	this.players.sort(Comparator.comparing(player -> {
+			if (this.client.uuidEquals(player.getUuid())) {
+				return 0;
+			} else if (this.client.getAbuseReportContext().draftPlayerUuidEquals(player.getUuid())) {
+				return 1;
+			} else if (player.getUuid().version() == 2) {
+				return 4;
+			} else {
+				return player.hasSentMessage() ? 2 : 3;
+			}
+		}).thenComparing(player -> {
+	                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot infer type argument(s) for <T, U> comparing(Function<? super T,? extends U>)
+----------
+374. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/screen/multiplayer/SocialInteractionsPlayerListWidget.java (at line 111)
+	if (this.client.uuidEquals(player.getUuid())) {
+	                                  ^^^^^^^
+The method getUuid() is undefined for the type Object
+----------
+375. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/screen/multiplayer/SocialInteractionsPlayerListWidget.java (at line 112)
+	return 0;
+	       ^
+Type mismatch: cannot convert from int to Comparable<? super Comparable<? super U>>
+----------
+376. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/screen/multiplayer/SocialInteractionsPlayerListWidget.java (at line 113)
+	} else if (this.client.getAbuseReportContext().draftPlayerUuidEquals(player.getUuid())) {
+	                                                                            ^^^^^^^
+The method getUuid() is undefined for the type Object
+----------
+377. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/screen/multiplayer/SocialInteractionsPlayerListWidget.java (at line 114)
+	return 1;
+	       ^
+Type mismatch: cannot convert from int to Comparable<? super Comparable<? super U>>
+----------
+378. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/screen/multiplayer/SocialInteractionsPlayerListWidget.java (at line 115)
+	} else if (player.getUuid().version() == 2) {
+	                  ^^^^^^^
+The method getUuid() is undefined for the type Object
+----------
+379. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/screen/multiplayer/SocialInteractionsPlayerListWidget.java (at line 116)
+	return 4;
+	       ^
+Type mismatch: cannot convert from int to Comparable<? super Comparable<? super U>>
+----------
+380. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/screen/multiplayer/SocialInteractionsPlayerListWidget.java (at line 118)
+	return player.hasSentMessage() ? 2 : 3;
+	              ^^^^^^^^^^^^^^
+The method hasSentMessage() is undefined for the type Object
+----------
+----------
+381. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/hud/PlayerListHud.java (at line 66)
+	private static final Comparator<PlayerListEntry> ENTRY_ORDERING = Comparator.comparingInt(entry -> entry.getGameMode() == GameMode.SPECTATOR ? 1 : 0)
+		.thenComparing(entry -> Nullables.mapOrElse(entry.getScoreboardTeam(), Team::getName, ""))
+	                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot infer type argument(s) for <U> thenComparing(Function<? super T,? extends U>)
+----------
+382. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/hud/PlayerListHud.java (at line 66)
+	private static final Comparator<PlayerListEntry> ENTRY_ORDERING = Comparator.comparingInt(entry -> entry.getGameMode() == GameMode.SPECTATOR ? 1 : 0)
+	                                                                                                         ^^^^^^^^^^^
+The method getGameMode() is undefined for the type Object
+----------
+383. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/hud/PlayerListHud.java (at line 67)
+	.thenComparing(entry -> Nullables.mapOrElse(entry.getScoreboardTeam(), Team::getName, ""))
+	                                                  ^^^^^^^^^^^^^^^^^
+The method getScoreboardTeam() is undefined for the type Object
+----------
+----------
+384. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/gui/hud/spectator/TeleportSpectatorMenu.java (at line 28)
+	this.elements = entries.stream()
+			.filter(entry -> entry.getGameMode() != GameMode.SPECTATOR)
+			.sorted(ORDERING)
+			.map(entry -> new TeleportToSpecificPlayerSpectatorCommand(entry.getProfile()))
+			.toList();
+	                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from List<TeleportToSpecificPlayerSpectatorCommand> to List<SpectatorMenuCommand>
+----------
+----------
+385. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/texture/TextureStitcher.java (at line 16)
+	private static final Comparator<TextureStitcher.Holder<?>> COMPARATOR = Comparator.comparing(holder -> -holder.height)
+	                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot infer type argument(s) for <T, U> comparing(Function<? super T,? extends U>)
+----------
+386. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/texture/TextureStitcher.java (at line 16)
+	private static final Comparator<TextureStitcher.Holder<?>> COMPARATOR = Comparator.comparing(holder -> -holder.height)
+	                                                                                                               ^^^^^^
+height cannot be resolved or is not a field
+----------
+----------
+387. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/texture/NativeImage.java (at line 640)
+	writeCallback.free();
+	              ^^^^
+The method free() is undefined for the type NativeImage.WriteCallback
+----------
+----------
+388. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/font/FontManager.java (at line 291)
+	future -> ((Optional)future.join()).map(font -> List.of(new Font.FontFilterPair(font, this.filter))),
+	                                                     ^^
+The method of(E) in the type List is not applicable for the arguments (Font.FontFilterPair)
+----------
+389. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/font/FontManager.java (at line 291)
+	future -> ((Optional)future.join()).map(font -> List.of(new Font.FontFilterPair(font, this.filter))),
+	                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The constructor Font.FontFilterPair(Object, FontFilterType.FilterMap) is undefined
+----------
+----------
+390. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/font/TrueTypeFont.java (at line 66)
+	return (Glyph)(l > 0 && m > 0 ? new TrueTypeFont.TtfGlyph(j, k, l, m, f, i) : () -> f / this.oversample);
+	                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^
+The target type of this expression must be a functional interface
+----------
+----------
+391. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/resource/FoliageColormapResourceSupplier.java (at line 14)
+	public class FoliageColormapResourceSupplier extends SinglePreparationResourceReloader<int[]> {
+	             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type FoliageColormapResourceSupplier must implement the inherited abstract method SinglePreparationResourceReloader<int[]>.prepare(ResourceManager, Profiler)
+----------
+----------
+392. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/resource/GrassColormapResourceSupplier.java (at line 14)
+	public class GrassColormapResourceSupplier extends SinglePreparationResourceReloader<int[]> {
+	             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The type GrassColormapResourceSupplier must implement the inherited abstract method SinglePreparationResourceReloader<int[]>.prepare(ResourceManager, Profiler)
+----------
+----------
+393. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/sound/SoundExecutor.java (at line 47)
+	protected void waitForTasks() {
+	               ^^^^^^^^^^^^^^
+Cannot reduce the visibility of the inherited method from ThreadExecutor<Runnable>
+----------
+----------
+394. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/session/telemetry/SentTelemetryEvent.java (at line 15)
+	if (!telemetryEventType.hasProperty(property)) {
+	     ^^^^^^^^^^^^^^^^^^
+telemetryEventType cannot be resolved
+----------
+395. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/session/telemetry/SentTelemetryEvent.java (at line 16)
+	throw new IllegalArgumentException("Property '" + property.id() + "' not expected for event: '" + telemetryEventType.getId() + "'");
+	                                                                                                  ^^^^^^^^^^^^^^^^^^
+telemetryEventType cannot be resolved
+----------
+----------
+396. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/session/ProfileKeysImpl.java (at line 64)
+	? (Boolean)((Optional)this.keyFuture.join()).map(PlayerKeyPair::isExpired).orElse(true)
+	                                             ^^^
+The method map(Function) in the type Optional is not applicable for the arguments (PlayerKeyPair::isExpired)
+----------
+397. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/client/session/ProfileKeysImpl.java (at line 64)
+	? (Boolean)((Optional)this.keyFuture.join()).map(PlayerKeyPair::isExpired).orElse(true)
+	                                                 ^^^^^^^^^^^^^^^^^^^^^^^^
+The type PlayerKeyPair does not define isExpired(Object) that is applicable here
+----------
+----------
+398. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/block/HangingSignBlock.java (at line 42)
+	instance -> instance.group(WoodType.CODEC.fieldOf("wood_type").forGetter(AbstractSignBlock::getWoodType), createSettingsCodec())
+	                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Ambiguous method reference: both getWoodType() and getWoodType(Block) from the type AbstractSignBlock are eligible
+----------
+----------
+399. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/block/SignBlock.java (at line 21)
+	instance -> instance.group(WoodType.CODEC.fieldOf("wood_type").forGetter(AbstractSignBlock::getWoodType), createSettingsCodec())
+	                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Ambiguous method reference: both getWoodType() and getWoodType(Block) from the type AbstractSignBlock are eligible
+----------
+----------
+400. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/block/entity/AbstractFurnaceBlockEntity.java (at line 117)
+	this.matchGetter = RecipeManager.createCachedMatchGetter(recipeType);
+	                                 ^^^^^^^^^^^^^^^^^^^^^^^
+The method createCachedMatchGetter(RecipeType<T>) in the type RecipeManager is not applicable for the arguments (RecipeType<capture#3-of ? extends AbstractCookingRecipe>)
+----------
+----------
+401. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/block/WallSignBlock.java (at line 26)
+	instance -> instance.group(WoodType.CODEC.fieldOf("wood_type").forGetter(AbstractSignBlock::getWoodType), createSettingsCodec())
+	                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Ambiguous method reference: both getWoodType() and getWoodType(Block) from the type AbstractSignBlock are eligible
+----------
+----------
+402. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/block/WallHangingSignBlock.java (at line 40)
+	instance -> instance.group(WoodType.CODEC.fieldOf("wood_type").forGetter(AbstractSignBlock::getWoodType), createSettingsCodec())
+	                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Ambiguous method reference: both getWoodType() and getWoodType(Block) from the type AbstractSignBlock are eligible
+----------
+----------
+403. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/net/minecraft/block/Block.java (at line 733)
+	return (ImmutableMap<BlockState, VoxelShape>)this.stateManager.getStates().stream().collect(Collectors.toMap(Function.identity(), stateToShape));
+	                                                                                            ^^^^^^^^^^
+Collectors cannot be resolved
+----------
+----------
+404. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/org/teavm/classlib/java/io/TObjectInputStream.java (at line 7)
+	@Override public int read() throws TIOException { return -1; }
+	                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Exception TIOException is not compatible with throws clause in TInputStream.read()
+----------
+----------
+405. ERROR in /Users/Samar/Downloads/1.21.1-Deobfuscated-main 3/minecraft/src/com/mojang/blaze3d/platform/TextureUtil.java (at line 69)
+	GlStateManager._texParameter(GlConst.GL_TEXTURE_2D, GL14.GL_TEXTURE_LOD_BIAS, 0.0F);
+	                                                         ^^^^^^^^^^^^^^^^^^^
+GL_TEXTURE_LOD_BIAS cannot be resolved or is not a field
+----------
+405 problems (405 errors)
+
+[Incubating] Problems report is available at: file:///Users/Samar/Downloads/1.21.1-Deobfuscated-main%203/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.3.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 10s
+1 actionable task: 1 executed
