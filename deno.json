@@ -1,0 +1,12 @@
+{
+  "tasks": {
+    "start": "deno run --allow-net --allow-read main.ts"
+  },
+  "exclude": [
+    ".git/",
+    ".vscode/",
+    "gradle/",
+    "minecraft/",
+    "tools/"
+  ]
+}
